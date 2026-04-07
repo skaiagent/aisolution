@@ -22,7 +22,7 @@
             "tech": {
                 "llm": "GPT-5.4 Pro / o3 / Realtime"
             },
-            "link": "https://openai.com/enterprise",
+            "link": "https://openai.com/chatgpt/enterprise/",
             "users": "MAU 2억 5천만 명 이상",
             "models": [
                 {
@@ -47,15 +47,15 @@
             "clients": "아모레퍼시픽, 넥슨, LG전자 등 다수",
             "distributor": "삼성SDS, LG CNS",
             "sources": {
-                "summary": "https://openai.com/enterprise",
-                "pricing": "https://openai.com/pricing",
+                "summary": "https://openai.com/chatgpt/enterprise/",
+                "pricing": "https://openai.com/chatgpt/pricing/",
                 "models": "https://openai.com/index/openai-o1-preview/",
-                "context": "https://openai.com/enterprise",
-                "timelines": "https://en.wikipedia.org/wiki/ChatGPT",
-                "features": "https://openai.com/news",
-                "distributor": "https://www.samsungsds.com/kr/generative-ai/generative-ai.html",
-                "clients": "https://news.naver.com/",
-                "users": "https://bloomberg.com/"
+                "context": "https://openai.com/chatgpt/enterprise/",
+                "timelines": "https://openai.com/index/introducing-chatgpt-enterprise/",
+                "features": "https://openai.com/index/introducing-chatgpt-enterprise/",
+                "distributor": "https://www.samsungsds.com/kr/generative-ai/gen-ai.html",
+                "clients": "https://search.naver.com/search.naver?query=ChatGPT+Enterprise+%EB%8F%84%EC%9E%85",
+                "users": "https://www.bloomberg.com/news/articles/2024-08-29/openai-says-chatgpt-weekly-users-have-grown-to-200-million"
             }
         },
         "gemini": {
@@ -106,7 +106,8 @@
                 "models": "https://gemini.google.com/advanced",
                 "context": "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
                 "pricing": "https://workspace.google.com/pricing/",
-                "distributor": "https://www.megazone.com/partners-googlecloud/"
+                "distributor": "https://www.megazone.com/google-workspace/",
+                "clients": "https://search.naver.com/search.naver?query=Gemini+Enterprise+%EB%8F%84%EC%9E%85"
             }
         },
         "claude": {
@@ -155,8 +156,10 @@
             "distributor": "AWS 파트너스망 (메가존, 슬랙코리아)",
             "sources": {
                 "models": "https://www.anthropic.com/news/claude-3-5-sonnet",
-                "timelines": "https://www.anthropic.com/enterprise",
-                "clients": "https://www.anthropic.com/news/claude-enterprise"
+                "timelines": "https://www.anthropic.com/news/claude-enterprise",
+                "pricing": "https://www.anthropic.com/pricing",
+                "clients": "https://www.anthropic.com/news/claude-enterprise",
+                "distributor": "https://aws.amazon.com/bedrock/claude/"
             }
         },
         "copilot": {
@@ -206,8 +209,8 @@
             "sources": {
                 "features": "https://www.microsoft.com/en-us/microsoft-365/enterprise/copilot-for-microsoft-365",
                 "pricing": "https://www.microsoft.com/ko-kr/microsoft-365/enterprise/copilot-for-microsoft-365",
-                "clients": "https://www.samsungsds.com/kr/insights/ms_copilot.html",
-                "distributor": "https://news.microsoft.com/ko-kr/"
+                "clients": "https://search.naver.com/search.naver?query=Copilot+%EB%8F%84%EC%9E%85+KB%EA%B5%AD%EB%AF%BC%EC%9D%80%ED%96%89",
+                "distributor": "https://www.samsungsds.com/kr/insights/ms_copilot.html"
             }
         },
         "perplexity": {
@@ -255,8 +258,10 @@
             "clients": "SKT 기업용 에이닷 및 제휴 생태계",
             "distributor": "SK텔레콤 특별 전략 제휴",
             "sources": {
-                "distributor": "https://www.sktelecom.com/advertise/press_detail.do?page.page=1&idx=6000",
-                "pricing": "https://www.perplexity.ai/enterprise"
+                "distributor": "https://news.sktelecom.com/201292",
+                "pricing": "https://www.perplexity.ai/enterprise",
+                "models": "https://www.perplexity.ai/enterprise",
+                "clients": "https://search.naver.com/search.naver?query=%ED%8D%BC%ED%94%8C%EB%A0%89%EC%8B%9C%ED%8B%B0+SKT+%EB%8F%84%EC%9E%85"
             }
         },
         "cursor": {
@@ -305,7 +310,8 @@
             "distributor": "오픈소스 자체 글로벌 세일즈",
             "sources": {
                 "models": "https://cursor.com/features",
-                "pricing": "https://cursor.com/pricing"
+                "pricing": "https://cursor.com/pricing",
+                "clients": "https://search.naver.com/search.naver?query=Cursor+AI+%EB%8F%84%EC%9E%85"
             }
         }
     },
