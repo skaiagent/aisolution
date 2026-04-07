@@ -4,7 +4,8 @@
             "name": "ChatGPT Ent",
             "icon": "💬",
             "summary": "다단계 추론 기반 복합 전략 수립 최적화 솔루션임",
-            "update": "추론 시각화 (2024.03.15)",
+            "update": "o1-preview (Reasoning) 도입 (2024.10)",
+            "source_url": "https://openai.com/index/openai-o1-preview/",
             "features": [
                 "o1-preview 추론 엔진",
                 "Sora 영상 제작",
