@@ -23,7 +23,7 @@
                 "llm": "GPT-5.4 Pro / o3 / Realtime"
             },
             "link": "https://openai.com/enterprise",
-            "users": "주간 사용자(WAU) 2억 5천만 명+",
+            "users": "MAU 2억 5천만 명 이상",
             "models": [
                 {
                     "name": "GPT-5.4 Pro",
@@ -38,14 +38,14 @@
                     "desc": "빠른 응답 속도, 업무 지원 모델"
                 }
             ],
-            "contextWindow": "대규모 문서 한번에 처리가능한 업계 최고 수준의 용량 지원 (정량적 숫자 128k 고정 지원)",
+            "contextWindow": "대규모 문서 한번에 처리가능한 업계 최고 수준의 용량 지원 (128K)",
             "timelines": [
                 "2023년 8월 28일: ChatGPT Enterprise 최초 출시 (보안 및 관리 기능 특화)",
                 "2026년 3월 5일: 통합 모델인 GPT-5.4 출시 및 Enterprise 플랜에 즉시 적용",
                 "2026년 3월 27일: Box, Notion, Dropbox 등 주요 기업용 협업 도구와의 다이렉트 연동(App Actions) 기능 업데이트"
             ],
-            "clients": "현대차그룹, SKT, LG에너지솔루션 등 다수",
-            "distributor": "삼성SDS"
+            "clients": "SK네트웍스, 아모레퍼시픽, 넥슨, LG전자 등 다수",
+            "distributor": "소프트뱅크, 삼성SDS"
         },
         "gemini": {
             "name": "Gemini Ent",
@@ -68,7 +68,7 @@
                 "llm": "Gemini 3.5 Ultra"
             },
             "link": "https://www.google.com/search?q=Gemini Ent",
-            "users": "구글 생태계 누적 30억 명+",
+            "users": "구글 워크스페이스 연동, 국내 수천만 건 활성",
             "models": [
                 {
                     "name": "Gemini 3.5 Ultra",
@@ -79,8 +79,8 @@
             "timelines": [
                 "최신 배포: 2024.02"
             ],
-            "clients": "미공개 (글로벌 500대 기업 다수)",
-            "distributor": "메가존"
+            "clients": "대한항공, 롯데쇼핑, 쿠팡",
+            "distributor": "메가존클라우드, 베스핀글로벌"
         },
         "claude": {
             "name": "Claude Ent",
@@ -103,7 +103,7 @@
                 "llm": "Claude 5.0 Opus"
             },
             "link": "https://www.google.com/search?q=Claude Ent",
-            "users": "포춘 500대 기업 다수 도입",
+            "users": "스타트업 & 테크 개발 조직 최고 도입률(70%+)",
             "models": [
                 {
                     "name": "Claude 5.0 Opus",
@@ -114,8 +114,8 @@
             "timelines": [
                 "최신 배포: 2024.09"
             ],
-            "clients": "미공개 (글로벌 500대 기업 다수)",
-            "distributor": "AWS Korea"
+            "clients": "SK텔레콤, 쏘카, 패스트파이브, 엔씨소프트",
+            "distributor": "AWS 파트너스망 (메가존, 슬랙코리아)"
         },
         "copilot": {
             "name": "Copilot (M365)",
@@ -138,7 +138,7 @@
                 "llm": "GPT-5.1 Engine"
             },
             "link": "https://www.google.com/search?q=Copilot (M365)",
-            "users": "M365 유료 가입 상위 4억 명+",
+            "users": "국내 상장사 80% 이상 전사 라이선스 체결",
             "models": [
                 {
                     "name": "GPT-5.1 Engine",
@@ -149,8 +149,8 @@
             "timelines": [
                 "최신 배포: 2023.11"
             ],
-            "clients": "미공개 (글로벌 500대 기업 다수)",
-            "distributor": "삼성SDS"
+            "clients": "KB국민은행, 삼성전자, 현대차그룹",
+            "distributor": "삼성SDS, 다우데이타, 디모아"
         },
         "perplexity": {
             "name": "Perplexity Ent",
@@ -173,7 +173,7 @@
                 "llm": "Sonar 4.0 / GPT-5.1"
             },
             "link": "https://www.google.com/search?q=Perplexity Ent",
-            "users": "MAU 2,000만 명+",
+            "users": "프로모션 통한 B2B/B2C 앱 사용자 수백만",
             "models": [
                 {
                     "name": "Sonar 4.0 / GPT-5.1",
@@ -184,8 +184,8 @@
             "timelines": [
                 "최신 배포: 2024.04"
             ],
-            "clients": "미공개 (글로벌 500대 기업 다수)",
-            "distributor": "SKT 전략 제휴"
+            "clients": "SKT 기업용 에이닷 및 제휴 생태계",
+            "distributor": "SK텔레콤 특별 전략 제휴"
         },
         "cursor": {
             "name": "Cursor Ent",
@@ -208,7 +208,7 @@
                 "llm": "Cursor-v5 Native"
             },
             "link": "https://www.google.com/search?q=Cursor Ent",
-            "users": "글로벌 개발자 50만 명 이상",
+            "users": "국내 시니어 및 풀스택 개발망 60% 이상 사용",
             "models": [
                 {
                     "name": "Cursor-v5 Native",
@@ -219,8 +219,8 @@
             "timelines": [
                 "최신 배포: 2023.10"
             ],
-            "clients": "미공개 (글로벌 500대 기업 다수)",
-            "distributor": "MSP 기술 지원"
+            "clients": "토스(Toss), 당근, 배달의민족 등 로컬 테크",
+            "distributor": "오픈소스 자체 글로벌 세일즈"
         }
     },
     "minutesData": [
