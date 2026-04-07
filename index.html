@@ -357,8 +357,9 @@
                             <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 text-left">
                                 🔄 최신 업데이트</h4>
                             <p id="modal-update"
-                                class="text-indigo-900 text-sm leading-relaxed bg-indigo-50 p-4 rounded-xl border border-indigo-100 font-bold">
+                                class="text-indigo-900 text-sm leading-relaxed bg-indigo-50 p-4 rounded-xl border border-indigo-100 font-bold mb-1">
                             </p>
+                            <a id="modal-source" href="#" target="_blank" class="hidden text-xs text-indigo-600 underline float-right font-bold">📰 뉴스 출처 원문 보기 &rarr;</a>
                         </div>
                         <div id="modal-review-container" class="hidden">
                             <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 text-left">
@@ -509,6 +510,7 @@
             const color = colors[item.tier] || '#64748b';
             const mt = document.getElementById('modal-tier'); if (mt) { mt.innerText = item.tier; mt.style.backgroundColor = color; }
             safeSetText('modal-title', item.name); safeSetText('modal-provider', item.provider); safeSetText('modal-origin', item.origin); safeSetText('modal-strength', item.strength || item.summary); safeSetText('modal-update', item.update); safeSetText('modal-pricing', item.pricing || "별도 협의"); safeSetText('modal-rank', item.rank);
+            const ms = document.getElementById('modal-source'); if (ms) { if (item.source_url) { ms.href = item.source_url; ms.classList.remove('hidden'); } else { ms.classList.add('hidden'); } }
             const mlb = document.getElementById('modal-link-btn'); if (mlb) { mlb.href = item.link; mlb.style.backgroundColor = color; }
             const rc = document.getElementById('modal-review-container'); const re = document.getElementById('modal-review');
             if (item.review) { if (rc) rc.classList.remove('hidden'); if (re) re.innerText = `"${item.review}"`; } else { if (rc) rc.classList.add('hidden'); }
