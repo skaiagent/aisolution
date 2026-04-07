@@ -1,0 +1,36 @@
+name: Weekly AI Knowledge Update
+on:
+  schedule:
+    - cron: '0 0 * * 0' # Every Sunday at midnight (UTC)
+  workflow_dispatch: # Allow manual triggering button in GitHub
+
+permissions:
+  contents: write
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          
+      - name: Install dependencies
+        run: pip install requests google-generativeai tavily-python
+        
+      - name: Run Update Script
+        env:
+          TAVILY_API_KEY: ${{ secrets.TAVILY_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python .github/scripts/update_ai_data.py
+        
+      - name: Commit and Push Changes updates
+        run: |
+          git config --global user.name "AI Auto-Updater 🤖"
+          git config --global user.email "auto-updater@bot.com"
+          git add data.json
+          git commit -m "Auto-update AI Solutions Database from Tavily Web Search" || echo "No new updates found"
+          git push
