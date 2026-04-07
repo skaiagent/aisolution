@@ -815,6 +815,26 @@
             "integration": "YT",
             "review": "학습용 탁월",
             "link": "#"
+        },
+        {
+            "tier": "보안 특화",
+            "name": "티로(Tiro) AI 회의록",
+            "provider": "티로(Tiro)",
+            "origin": "국내",
+            "rank": "급상승 솔루션",
+            "llm": "Tiro LLM (자체 튜닝)",
+            "latency": "실시간/비실시간 (1.5s)",
+            "accuracy": 96,
+            "update": "기업망 완전 폐쇄형 모델 런칭 (2025.10)",
+            "strength": "망 분리 환경 최적화 및 유연한 커스텀 양식",
+            "genTime": "1~2분 내외",
+            "speakerSep": "다화자 성문/비전 분리",
+            "env": "모두 지원 (On-premise 최적)",
+            "postFunc": "사내 커스텀 양식 자동생성",
+            "deployment": "On-premise / Private Cloud",
+            "integration": "커스텀 그룹웨어",
+            "review": "폐쇄망 보안성과 유연한 커스텀 지원 훌륭",
+            "link": "https://www.google.com/search?q=티로+AI+회의록"
         }
     ],
     "builderData": [
