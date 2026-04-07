@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2026 엔터프라이즈 AI 통합 분석</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700;800;900&display=swap');
+
+        body {
+            font-family: 'Pretendard', sans-serif;
+            background-color: #F8F9FA;
+            color: #334155;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+
+        ::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(226, 232, 240, 0.8);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+        }
+
+        .card-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .card-transition:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+        }
+
+        .main-tab-btn {
+            position: relative;
+            padding: 0.5rem 1rem;
+            font-weight: 700;
+            font-size: 0.875rem;
+            color: #64748b;
+            transition: all 0.2s;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        .main-tab-btn.active {
+            color: #4F46E5;
+        }
+
+        .main-tab-btn.active::after {
+            content: '';
+            position: absolute;
+            bottom: -16px;
+            left: 0;
+            width: 100%;
+            height: 3px;
+            background: #4F46E5;
+            border-radius: 99px;
+        }
+
+        #modal-overlay,
+        #chat-overlay {
+            display: none;
+            backdrop-filter: blur(4px);
+        }
+
+        #modal-overlay.active,
+        #chat-overlay.active {
+            display: flex;
+        }
+
+        .chat-message {
+            max-width: 85%;
+            padding: 12px 16px;
+            border-radius: 18px;
+            font-size: 13px;
+            line-height: 1.5;
+            margin-bottom: 12px;
+            animation: slideUp 0.3s ease-out;
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .chat-user {
+            background: #4F46E5;
+            color: white;
+            align-self: flex-end;
+            border-bottom-right-radius: 4px;
+        }
+
+        .chat-ai {
+            background: #F1F5F9;
+            color: #1E293B;
+            align-self: flex-start;
+            border-bottom-left-radius: 4px;
+        }
+
+        .trend-box {
+            position: relative;
+            padding: 1.5rem 1.5rem 1.5rem 2.5rem;
+            background: #fff;
+            border-radius: 1.25rem;
+            border: 1px solid #f1f5f9;
+            transition: all 0.3s;
+            height: 100%;
+        }
+
+        .trend-box:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.05);
+        }
+
+        .trend-line-mark {
+            position: absolute;
+            left: 0;
+            top: 1.5rem;
+            bottom: 1.5rem;
+            width: 3px;
+            border-radius: 0 99px 99px 0;
+        }
+
+        .trend-dot-mark {
+            position: absolute;
+            left: -9px;
+            top: 1.5rem;
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            background: #fff;
+            border: 3px solid currentColor;
+            box-shadow: 0 0 0 2px #fff;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.4s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(5px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .filter-btn {
+            transition: all 0.2s;
+            cursor: pointer;
+            border: 1px solid #e2e8f0;
+            font-weight: 700;
+            background: #fff;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+    </style>
+</head>
+
+<body class="antialiased text-slate-800 text-left">
+    <header class="glass-panel sticky top-0 z-50 w-full border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-between h-16 items-center">
+            <div class="flex items-center gap-3">
+                <div
+                    class="w-8 h-8 bg-indigo-600 rounded-lg flex items-center justify-center text-white font-black text-lg">
+                    A</div>
+                <h1 class="text-lg font-bold text-gray-900 tracking-tight">AI 솔루션 2026</h1>
+            </div>
+            <nav class="hidden md:flex gap-4 lg:gap-8">
+                <div onclick="switchMainTab('enterprise')" id="nav-enterprise" class="main-tab-btn active">AI Enterprise
+                </div>
+                <div onclick="switchMainTab('minutes')" id="nav-minutes" class="main-tab-btn">AI 회의록</div>
+                <div onclick="switchMainTab('builder')" id="nav-builder" class="main-tab-btn">Agent Builder</div>
+                <div onclick="switchMainTab('report')" id="nav-report" class="main-tab-btn">AI Report/Slide</div>
+            </nav>
+            <button id="open-chat"
+                class="flex items-center gap-2 px-4 py-2 bg-slate-900 text-white rounded-full hover:bg-indigo-700 transition-all font-bold text-xs shadow-lg"><span>🔍</span>
+                <span>AI 검색</span></button>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 min-h-screen text-left">
+        <!-- AI Enterprise Section -->
+        <section id="section-enterprise" class="fade-in">
+            <div class="max-w-2xl mb-12 text-left">
+                <h2 class="text-3xl font-black text-gray-900 mb-2 tracking-tight">Enterprise AI <span
+                        class="text-indigo-600">핵심 트렌드</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 text-left">
+                <div class="trend-box text-indigo-600">
+                    <div class="trend-line-mark bg-indigo-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">에이전틱 워크플로우</h4>
+                    <p class="text-slate-500 text-xs text-justify">기업 과업을 스스로 계획하고 수행하는 자율 에이전트 역량 안착</p>
+                </div>
+                <div class="trend-box text-emerald-600">
+                    <div class="trend-line-mark bg-emerald-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">데이터 주권 확보</h4>
+                    <p class="text-slate-500 text-xs text-justify">학습 제외 보증 및 사내 리전 배포를 통해 기업 지식 자산을 보호</p>
+                </div>
+                <div class="trend-box text-amber-500">
+                    <div class="trend-line-mark bg-amber-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">실무 데이터 결합</h4>
+                    <p class="text-slate-500 text-xs text-justify">ERP, CRM 연동 기반 정량적 성과 도출 및 ROI 측정 기술 성숙</p>
+                </div>
+            </div>
+            <div id="entToolTabs" class="flex gap-2 mb-8 overflow-x-auto no-scrollbar"></div>
+            <div id="entToolContent" class="fade-in glass-panel rounded-3xl p-8 lg:p-10 border border-slate-200"></div>
+        </section>
+
+        <!-- Other Sections -->
+        <section id="section-minutes" class="hidden fade-in">
+            <div class="max-w-2xl mb-12 text-left">
+                <h2 class="text-3xl font-black text-gray-900 mb-2 tracking-tight">AI 회의록 <span
+                        class="text-indigo-600">핵심 트렌드</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 text-left">
+                <div class="trend-box text-indigo-600">
+                    <div class="trend-line-mark bg-indigo-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">초저지연 실시간 번역</h4>
+                    <p class="text-slate-500 text-xs text-justify">실시간 통역 및 다국어 자막 모델의 고도화로 글로벌 미팅 장벽 제거</p>
+                </div>
+                <div class="trend-box text-emerald-600">
+                    <div class="trend-line-mark bg-emerald-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">사내망 폐쇄 보안</h4>
+                    <p class="text-slate-500 text-xs text-justify">데이터 유출 없이 보안망 안에서 돌아가는 망분리 구축형 모델의 부상</p>
+                </div>
+                <div class="trend-box text-amber-500">
+                    <div class="trend-line-mark bg-amber-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">워크플로우 자동 연동</h4>
+                    <p class="text-slate-500 text-xs text-justify">단순 전사를 넘어 CRM, ERP 툴에 후속 조치 아이템을 직접 입력하는 체계</p>
+                </div>
+            </div>
+            <div id="filter-container-minutes" class="flex flex-wrap gap-2 mb-8"></div>
+            <div id="solution-grid-minutes" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
+
+        <section id="section-builder" class="hidden fade-in">
+            <div class="max-w-2xl mb-12 text-left">
+                <h2 class="text-3xl font-black text-gray-900 mb-2 tracking-tight">Agent Builder <span
+                        class="text-indigo-600">핵심 트렌드</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 text-left">
+                <div class="trend-box text-indigo-600">
+                    <div class="trend-line-mark bg-indigo-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">멀티 에이전트 협업</h4>
+                    <p class="text-slate-500 text-xs text-justify">단일 챗봇이 아닌, 여러 페르소나의 AI가 역할을 나누어 소통하며 복합 태스크 수행</p>
+                </div>
+                <div class="trend-box text-emerald-600">
+                    <div class="trend-line-mark bg-emerald-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">시각적 노드 워크플로우</h4>
+                    <p class="text-slate-500 text-xs text-justify">개발 지식 없이도 레고 블록처럼 LLM 파이프라인과 RAG를 잇는 도구의 대중화</p>
+                </div>
+                <div class="trend-box text-amber-500">
+                    <div class="trend-line-mark bg-amber-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">전체 코드베이스 인덱싱</h4>
+                    <p class="text-slate-500 text-xs text-justify">개발 IDE에 밀접히 연동되어 전체 코드 맥락을 읽고 에러 수정부터 기능 구현까지 자율 리팩토링
+                    </p>
+                </div>
+            </div>
+            <div id="filter-container-builder" class="flex flex-wrap gap-2 mb-8"></div>
+            <div id="solution-grid-builder" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
+
+        <section id="section-report" class="hidden fade-in">
+            <div class="max-w-2xl mb-12 text-left">
+                <h2 class="text-3xl font-black text-gray-900 mb-2 tracking-tight">AI Report/Slide <span
+                        class="text-indigo-600">핵심 트렌드</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 text-left">
+                <div class="trend-box text-indigo-600">
+                    <div class="trend-line-mark bg-indigo-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">실시간 리서치 증강</h4>
+                    <p class="text-slate-500 text-xs text-justify">단순 텍스트 생성을 넘어 외부 실시간 정보를 인용 문서화 하여 환각을 제거</p>
+                </div>
+                <div class="trend-box text-emerald-600">
+                    <div class="trend-line-mark bg-emerald-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">원샷(Oneshot) 시각화</h4>
+                    <p class="text-slate-500 text-xs text-justify">주제나 텍스트 한 줄만 던져주면 목차부터 PPT, 웹 레이아웃 디자인까지 동시 생성</p>
+                </div>
+                <div class="trend-box text-amber-500">
+                    <div class="trend-line-mark bg-amber-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">인터랙티브 데이터 리포팅</h4>
+                    <p class="text-slate-500 text-xs text-justify">수 백장 PDF 문서나 복잡한 엑셀(CSV) 파일을 던져주면 AI가 코드를 실행해 차트를 추출
+                    </p>
+                </div>
+            </div>
+            <div id="filter-container-report" class="flex flex-wrap gap-2 mb-8"></div>
+            <div id="solution-grid-report" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
+    </main>
+
+    <!-- Modal Layout -->
+    <div id="modal-overlay" class="fixed inset-0 z-[60] bg-slate-900/70 items-center justify-center p-4">
+        <div class="bg-white w-full max-w-6xl max-h-[90vh] rounded-3xl shadow-2xl overflow-hidden flex flex-col relative text-left"
+            id="modal-content">
+            <div class="px-8 py-6 border-b flex justify-between bg-slate-50/50 items-start">
+                <div class="text-left text-left"><span id="modal-tier"
+                        class="inline-block px-3 py-1 text-[10px] font-bold rounded-full mb-3 text-white uppercase tracking-wide"></span>
+                    <h3 id="modal-title" class="text-2xl font-black text-gray-900"></h3>
+                    <div class="flex items-center gap-3 mt-2 text-xs text-slate-500 font-bold"><span id="modal-provider"
+                            class="bg-white px-2 py-1 rounded border border-slate-200"></span><span id="modal-rank"
+                            class="bg-slate-900 text-white px-2 py-0.5 rounded"></span><span id="modal-origin"></span>
+                    </div>
+                </div>
+                <button onclick="closeModal()"
+                    class="text-slate-400 hover:text-slate-700 text-4xl font-black">&times;</button>
+            </div>
+            <div class="p-8 overflow-y-auto flex-grow bg-white text-left">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+                    <div class="lg:col-span-5 space-y-6">
+                        <div>
+                            <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 text-left">
+                                💎 핵심 특장점</h4>
+                            <p id="modal-strength"
+                                class="text-slate-800 text-sm font-medium leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-100">
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 text-left">
+                                🔄 최신 업데이트</h4>
+                            <p id="modal-update"
+                                class="text-indigo-900 text-sm leading-relaxed bg-indigo-50 p-4 rounded-xl border border-indigo-100 font-bold">
+                            </p>
+                        </div>
+                        <div id="modal-review-container" class="hidden">
+                            <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 text-left">
+                                💬 사용자 리뷰</h4>
+                            <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-left">
+                                <p id="modal-review" class="text-slate-600 text-xs italic leading-relaxed text-left">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-3 gap-3">
+                            <div
+                                class="bg-emerald-50 p-4 rounded-2xl border border-emerald-100 text-center flex flex-col justify-center min-h-[5rem]">
+                                <span class="block text-[10px] text-emerald-600 font-black mb-1 uppercase"
+                                    id="stat-label-1">지표1</span><span id="modal-stat-1"
+                                    class="text-emerald-700 font-black text-[14px]"></span>
+                            </div>
+                            <div
+                                class="bg-amber-50 p-4 rounded-2xl border border-amber-100 text-center flex flex-col justify-center min-h-[5rem] text-amber-500">
+                                <span class="block text-[10px] text-amber-600 font-black mb-1 uppercase"
+                                    id="stat-label-2">지표2</span><span id="modal-stat-2"
+                                    class="text-amber-700 font-black text-[14px]"></span>
+                            </div>
+                            <div
+                                class="bg-indigo-50 p-4 rounded-2xl border border-indigo-100 text-center flex flex-col justify-center min-h-[5rem]">
+                                <span class="block text-[10px] text-indigo-600 font-black mb-1 uppercase"
+                                    id="stat-label-3">지표3</span><span id="modal-stat-3"
+                                    class="text-indigo-700 font-black text-[14px]"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-7">
+                        <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4 text-left">🛠️
+                            상세 기술 사양</h4>
+                        <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
+                            <ul class="text-xs divide-y divide-gray-100" id="modal-spec-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-slate-50 px-8 py-5 border-t flex justify-between items-center">
+                <div class="flex items-center gap-3 bg-white px-4 py-2 rounded-xl border border-slate-200 shadow-sm">
+                    <span class="text-slate-400 text-[10px] uppercase font-black">가격 정책</span><span id="modal-pricing"
+                        class="font-black text-slate-800 text-xs"></span>
+                </div><a id="modal-link-btn" href="#" target="_blank"
+                    class="px-8 py-3 text-white text-xs font-black rounded-xl transition-all shadow-md">공식 사이트 ↗</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chat UI -->
+    <div id="chat-overlay" class="fixed inset-0 z-[100] bg-slate-900/40 justify-end items-stretch p-0 lg:p-4 text-left">
+        <div class="bg-white w-full max-w-sm shadow-2xl flex flex-col lg:rounded-2xl overflow-hidden transition-transform duration-300 translate-x-full text-left"
+            id="chat-container">
+            <div class="px-5 py-4 border-b bg-slate-900 text-white flex justify-between items-center">
+                <div class="flex items-center gap-2 text-left"><span class="text-lg">🤖</span>
+                    <div>
+                        <h3 class="font-bold text-xs">통합 AI 검색 엔진</h3>
+                    </div>
+                </div><button id="close-chat" class="text-white/60 text-2xl">&times;</button>
+            </div>
+            <div id="chat-history" class="flex-grow overflow-y-auto p-5 flex flex-col bg-slate-50/50 no-scrollbar">
+            </div>
+            <form id="chat-form" class="p-3 bg-white border-t border-slate-100 flex gap-2"><input type="text"
+                    id="chat-input" placeholder="분석 질문을 입력하세요..."
+                    class="flex-grow px-4 py-2.5 bg-slate-100 rounded-xl text-xs focus:ring-2 focus:ring-indigo-500 outline-none text-left"><button
+                    type="submit"
+                    class="bg-indigo-600 text-white w-10 h-10 flex items-center justify-center rounded-xl">✈</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // --- 1. 전역 유틸리티 및 데이터 ---
+        const safeSetText = (id, text) => { const el = document.getElementById(id); if (el) el.innerText = text || "N/A"; };
+        const colors = { '생태계 통합': '#4F46E5', '보안 특화': '#10B981', '실시간 번역': '#F59E0B', '분석 전문': '#8B5CF6', '엔터프라이즈 빌더': '#4F46E5', '시각적 노드 빌더': '#10B981', '코드 중심 빌더': '#F59E0B', 'IDE 및 자동화 빌더': '#8B5CF6', '리서치 및 보고서 전문': '#4F46E5', '슬라이드 및 시각화 전문': '#10B981', '데이터 분석 및 리포트 전문': '#F59E0B' };
+
+        let enterpriseTools = {};
+        let minutesData = [];
+        let builderData = [];
+        let reportSlideData = [];
+
+        async function loadData() {
+            try {
+                const response = await fetch('data.json');
+                const data = await response.json();
+                enterpriseTools = data.enterpriseTools;
+                minutesData = data.minutesData;
+                builderData = data.builderData;
+                reportSlideData = data.reportSlideData;
+
+                switchMainTab('enterprise');
+            } catch (error) {
+                console.error("데이터 로드 실패:", error);
+                switchMainTab('enterprise');
+            }
+        }
+
+        // --- 2. Core UI Logics ---
+        function switchMainTab(tab) {
+            ['enterprise', 'minutes', 'builder', 'report'].forEach(s => {
+                const el = document.getElementById(`section-${s}`);
+                if (el) el.classList.add('hidden');
+                const nav = document.getElementById(`nav-${s}`);
+                if (nav) nav.classList.remove('active');
+            });
+            const sectionEl = document.getElementById(`section-${tab}`);
+            const navEl = document.getElementById(`nav-${tab}`);
+            if (sectionEl) sectionEl.classList.remove('hidden');
+            if (navEl) navEl.classList.add('active');
+
+            if (tab === 'enterprise') renderEnterprise();
+            else if (tab === 'minutes') { renderGrid('minutes', minutesData); renderFilters('minutes'); renderMinutesChart(); }
+            else if (tab === 'builder') { renderGrid('builder', builderData); renderFilters('builder'); }
+            else if (tab === 'report') { renderGrid('report', reportSlideData); renderFilters('report'); }
+        }
+
+        function renderFilters(type) {
+            const container = document.getElementById(`filter-container-${type}`);
+            if (!container) return;
+            const filters = type === 'minutes' ? ['all', '생태계 통합', '보안 특화', '실시간 번역', '분석 전문'] :
+                (type === 'builder' ? ['all', '엔터프라이즈 빌더', '시각적 노드 빌더', '코드 중심 빌더', 'IDE 및 자동화 빌더'] :
+                    ['all', '리서치 및 보고서 전문', '슬라이드 및 시각화 전문', '데이터 분석 및 리포트 전문']);
+            container.innerHTML = filters.map(f => `<button class="filter-btn px-4 py-1.5 rounded-lg text-[11px]" onclick="handleFilter('${type}', '${f}', this)">${f === 'all' ? '전체' : f}</button>`).join('');
+        }
+
+        function handleFilter(type, val, btn) {
+            const activeColor = colors[val] || '#0f172a';
+            const buttons = btn.parentElement.querySelectorAll('button');
+            buttons.forEach(b => { b.style.backgroundColor = '#fff'; b.style.color = '#64748b'; });
+            btn.style.backgroundColor = activeColor; btn.style.color = '#fff';
+            const dataMap = { 'minutes': minutesData, 'builder': builderData, 'report': reportSlideData };
+            renderGrid(type, val === 'all' ? dataMap[type] : dataMap[type].filter(i => i.tier === val));
+        }
+
+        function renderGrid(type, data) {
+            const grid = document.getElementById(`solution-grid-${type}`);
+            if (!grid) return;
+            grid.innerHTML = data.map(item => {
+                const color = colors[item.tier] || '#64748b';
+                return `<div class="bg-white rounded-3xl p-6 card-transition border border-slate-200 flex flex-col cursor-pointer h-full" onclick='openUnifiedModal(${JSON.stringify(item)}, "${type}")'>
+                    <div class="flex justify-between items-center mb-5 text-[10px] font-bold uppercase"><span class="px-2.5 py-1 rounded-lg text-white" style="background:${color}">${item.tier.split(' ')[0]}</span><span class="text-slate-400 bg-slate-50 px-2 py-1 rounded">${item.origin}</span></div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-1">${item.name}</h4><p class="text-xs text-slate-400 mb-4 font-semibold uppercase">${item.provider}</p><p class="text-xs text-slate-600 line-clamp-2 bg-slate-50 p-3 rounded-xl border border-slate-100 mb-4">${item.strength || item.summary}</p>
+                    <div class="mt-auto pt-4 border-t flex justify-between items-center"><span class="text-sm font-extrabold text-slate-800">${(typeof item.accuracy === 'number') ? item.accuracy + '%' : item.accuracy}</span><span class="text-xs font-bold" style="color:${color}">분석 &rarr;</span></div></div>`;
+            }).join('');
+        }
+
+        function openUnifiedModal(item, type) {
+            const color = colors[item.tier] || '#64748b';
+            const mt = document.getElementById('modal-tier'); if (mt) { mt.innerText = item.tier; mt.style.backgroundColor = color; }
+            safeSetText('modal-title', item.name); safeSetText('modal-provider', item.provider); safeSetText('modal-origin', item.origin); safeSetText('modal-strength', item.strength || item.summary); safeSetText('modal-update', item.update); safeSetText('modal-pricing', item.pricing || "별도 협의"); safeSetText('modal-rank', item.rank);
+            const mlb = document.getElementById('modal-link-btn'); if (mlb) { mlb.href = item.link; mlb.style.backgroundColor = color; }
+            const rc = document.getElementById('modal-review-container'); const re = document.getElementById('modal-review');
+            if (item.review) { if (rc) rc.classList.remove('hidden'); if (re) re.innerText = `"${item.review}"`; } else { if (rc) rc.classList.add('hidden'); }
+
+            let labels = ["한국어 정확도", "변환방식", "생성시간 (1시간기준)"];
+            if (type === 'builder') labels = ["수행/추론성능", "빌더 유형", "배포 환경"];
+            else if (type === 'report') labels = ["추론/분석력", "리서치 방식", "제작 속도"];
+            safeSetText('stat-label-1', labels[0]); safeSetText('stat-label-2', labels[1]); safeSetText('stat-label-3', labels[2]);
+            safeSetText('modal-stat-1', typeof item.accuracy === 'number' ? item.accuracy + "%" : item.accuracy); safeSetText('modal-stat-2', item.latency); safeSetText('modal-stat-3', item.genTime);
+
+            const specList = document.getElementById('modal-spec-list');
+            if (specList) {
+                let specs = [];
+                if (type === 'minutes') {
+                    specs = [`LLM모델: ${item.llm || '-'}`, `핵심기술: ${item.speakerSep || '-'}`, `회의/사용환경: ${item.env || '-'}`, `후속/출력기능: ${item.postFunc || '-'}`, `배포/서비스: ${item.deployment || '-'}`, `외부연동: ${item.integration || '-'}`];
+                } else if (type === 'builder') {
+                    specs = [`핵심모델: ${item.llm || '-'}`, `파이프라인: ${item.speakerSep || '-'}`, `제공환경: ${item.deployment || '-'}`, `외부연동: ${item.integration || '-'}`];
+                } else {
+                    specs = [`분석엔진: ${item.llm || '-'}`, `포맷엔진: ${item.speakerSep || '-'}`, `구동환경: ${item.deployment || '-'}`, `외부연동: ${item.integration || '-'}`, `접근방식: 웹 클라우드`];
+                }
+                specList.innerHTML = specs.map(s => {
+                    const idx = s.indexOf(':');
+                    return `<li class="p-4 flex justify-between font-bold"><span>${s.substring(0, idx)}</span><span class="text-slate-800 text-right">${s.substring(idx + 1).trim()}</span></li>`;
+                }).join('');
+            }
+            document.getElementById('modal-overlay').classList.add('active');
+            setTimeout(() => { const mc = document.getElementById('modal-content'); if (mc) { mc.classList.replace('opacity-0', 'opacity-100'); mc.classList.replace('scale-95', 'scale-100'); } }, 10);
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() { document.getElementById('modal-overlay').classList.remove('active'); document.body.style.overflow = ''; }
+
+        function renderEnterprise() {
+            const container = document.getElementById('entToolTabs');
+            if (!container) return;
+            container.innerHTML = Object.keys(enterpriseTools).map(k => `<button class="filter-btn px-4 py-1.5 rounded-lg text-[11px]" onclick="renderEntDetail('${k}', this)">${enterpriseTools[k].name}</button>`).join('');
+            renderEntDetail('chatgpt', container.firstChild);
+        }
+
+        function renderEntDetail(key, btn) {
+            const tool = enterpriseTools[key]; if (!tool) return;
+            document.querySelectorAll('#entToolTabs button').forEach(b => { b.style.backgroundColor = '#fff'; b.style.color = '#64748b'; });
+            if (btn) { btn.style.backgroundColor = '#4F46E5'; btn.style.color = '#fff'; }
+            const feedback = (tool.feedback && tool.feedback.length > 0) ? tool.feedback[0] : "피드백 정보 없음";
+            document.getElementById('entToolContent').innerHTML = `<div class="grid grid-cols-1 lg:grid-cols-12 gap-10"><div class="lg:col-span-5 space-y-8"><div><span class="text-4xl mb-4 block">${tool.icon}</span><h3 class="text-3xl font-black text-slate-900">${tool.name}</h3><p class="text-lg font-bold text-slate-800 mb-2">${tool.summary}</p><span class="bg-indigo-50 text-indigo-600 text-[10px] font-black px-2 py-1 rounded uppercase">${tool.type}</span></div>
+                <div class="grid grid-cols-3 gap-3"><div class="bg-emerald-50 p-4 rounded-2xl border text-center flex flex-col justify-center min-h-[5rem]"><span class="text-[10px] text-emerald-600 font-black mb-1">출시일</span><span class="text-emerald-700 font-black text-[15px]">${tool.release}</span></div><div class="bg-amber-50 p-4 rounded-2xl border text-amber-500 text-center flex flex-col justify-center min-h-[5rem]"><span class="text-[10px] text-amber-600 font-black mb-1">모델</span><span class="text-amber-700 font-black text-[14px]">${tool.tech.llm.split(' / ')[0]}</span></div><div class="bg-indigo-50 p-4 rounded-2xl border text-center flex flex-col justify-center min-h-[5rem]"><span class="text-[10px] text-indigo-600 font-black mb-1">문맥</span><span class="text-indigo-700 font-black text-[15px]">${tool.context}</span></div></div>
+                <div class="bg-slate-50 p-4 rounded-2xl border"><h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">💬 피드백</h4><p class="text-xs text-slate-600 italic">"${feedback}"</p></div></div>
+                <div class="lg:col-span-7 space-y-8"><div><h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4">핵심 기능</h4><ul class="text-xs divide-y bg-white border rounded-2xl overflow-hidden">${tool.features.map(f => `<li class="p-4 font-bold text-left">${f}</li>`).join('')}<li class="p-4 bg-indigo-50/50 font-black text-indigo-800 text-sm">${tool.update}</li></ul></div>
+                <div class="flex justify-between items-center text-left"><div><span class="text-[10px] font-black text-indigo-400 uppercase block">Pricing</span><span class="text-sm font-black">${tool.pricing}</span></div><a href="${tool.link}" target="_blank" class="px-8 py-3 bg-indigo-600 text-white rounded-2xl font-black text-sm shadow-lg">공식 사이트 ↗</a></div></div></div>`;
+        }
+
+        function renderMinutesChart() {
+            const ctx = document.getElementById('tierChart').getContext('2d');
+            if (typeof minutesChartInstance !== 'undefined' && minutesChartInstance) minutesChartInstance.destroy();
+            minutesChartInstance = new Chart(ctx, { type: 'doughnut', data: { datasets: [{ data: [6, 6, 5, 8], backgroundColor: ['#4F46E5', '#10B981', '#F59E0B', '#8B5CF6'], borderWidth: 0 }] }, options: { cutout: '75%', plugins: { legend: { display: false } } } });
+            document.getElementById('chart-legend').innerHTML = ['생태계 통합', '보안 특화', '실시간 번역', '분석 전문'].map((t, i) => `<div class="flex items-center gap-2 p-2 bg-white rounded-lg border"><div class="w-2 h-2 rounded-full" style="background:${['#4F46E5', '#10B981', '#F59E0B', '#8B5CF6'][i]}"></div><span class="text-[11px] font-black">${t}</span></div>`).join('');
+            document.getElementById('tier-definitions-minutes').innerHTML = [{ t: '생태계 통합', c: '#4F46E5', d: '업무 환경 연동 자동화' }, { t: '보안 특화', c: '#10B981', d: 'On-prem 및 보안 최적화' }, { t: '실시간 번역', c: '#F59E0B', d: '초저지연 통역 및 자막' }, { t: '분석 전문', c: '#8B5CF6', d: '산업 리포트 기반 분석' }].map(d => `<div class="p-5 rounded-2xl border-l-4 glass-panel" style="border-left-color:${d.c}"><h5 class="font-bold text-sm" style="color:${d.c}">${d.t}</h5><p class="text-xs text-slate-500">${d.d}</p></div>`).join('');
+        }
+
+        // --- 3. Chat Logic ---
+        const openChatBtn = document.getElementById('open-chat');
+        const closeChatBtn = document.getElementById('close-chat');
+        const chatOverlay = document.getElementById('chat-overlay');
+        const chatContainer = document.getElementById('chat-container');
+        const chatForm = document.getElementById('chat-form');
+        const chatInput = document.getElementById('chat-input');
+        const chatHistory = document.getElementById('chat-history');
+
+        if (openChatBtn) {
+            openChatBtn.addEventListener('click', () => {
+                chatOverlay.classList.add('active');
+                setTimeout(() => chatContainer.classList.remove('translate-x-full'), 10);
+            });
+        }
+
+        if (closeChatBtn) {
+            closeChatBtn.addEventListener('click', () => {
+                chatContainer.classList.add('translate-x-full');
+                setTimeout(() => chatOverlay.classList.remove('active'), 300);
+            });
+        }
+
+        if (chatForm) {
+            chatForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                const text = chatInput.value.trim();
+                if (!text) return;
+
+                // Add User Message
+                const userDiv = document.createElement('div');
+                userDiv.className = 'chat-message chat-user';
+                userDiv.textContent = text;
+                chatHistory.appendChild(userDiv);
+
+                chatInput.value = '';
+                chatHistory.scrollTop = chatHistory.scrollHeight;
+
+                // Simulate AI Response
+                setTimeout(() => {
+                    const aiDiv = document.createElement('div');
+                    aiDiv.className = 'chat-message chat-ai';
+
+                    const lowerText = text.toLowerCase();
+                    // Basic NLP-like keyword extraction (strip Korean particles)
+                    const tokens = lowerText.split(/\s+/).map(t => t.replace(/[이가은는을를도에]+$/, '')).filter(t => t.length > 1);
+                    if (tokens.length === 0) tokens.push(lowerText);
+
+                    let results = [];
+                    const searchItem = (item, typeStr) => {
+                        const targetStr = [item.name, item.provider, item.strength, item.summary, item.tier].join(" ").toLowerCase();
+                        let score = 0;
+                        tokens.forEach(token => {
+                            if (targetStr.includes(token)) score++;
+                        });
+                        if (score > 0) {
+                            if (!results.find(r => r.item.name === item.name)) {
+                                results.push({ item: item, type: typeStr, score: score });
+                            }
+                        }
+                    };
+
+                    if (typeof enterpriseTools !== 'undefined' && enterpriseTools) Object.values(enterpriseTools).forEach(i => searchItem(i, "엔터프라이즈"));
+                    if (typeof minutesData !== 'undefined' && minutesData) minutesData.forEach(i => searchItem(i, "회의록"));
+                    if (typeof builderData !== 'undefined' && builderData) builderData.forEach(i => searchItem(i, "빌더"));
+                    if (typeof reportSlideData !== 'undefined' && reportSlideData) reportSlideData.forEach(i => searchItem(i, "리포트"));
+
+                    let response = "";
+                    if (results.length > 0) {
+                        results.sort((a, b) => b.score - a.score);
+                        const topResults = results.slice(0, 3);
+                        response = `💡 검색하신 내용에 대한 심층 분석 리포트입니다. (상위 ${topResults.length}건)\n\n`;
+                        topResults.forEach(r => {
+                            const it = r.item;
+                            let desc = it.strength || it.summary || "특장점 정보 부족";
+                            response += `📌 [${r.type}] ${it.name} ${it.provider ? `(${it.provider})` : ''}\n`;
+                            response += `   💡 핵심 강점: ${desc}\n`;
+                            if (it.llm) response += `   🤖 활용 엔진: ${it.llm} ${it.accuracy ? `(정확도: ${it.accuracy})` : ''}\n`;
+                            if (it.tech && it.tech.llm) response += `   🤖 핵심 기술: ${it.tech.llm}\n`;
+                            if (it.latency) response += `   ⏱ 생성 속도: ${it.genTime || '-'} (지연율: ${it.latency})\n`;
+                            if (it.integration) response += `   🔌 생태계 연동: ${it.integration} (배포: ${it.deployment || 'SaaS'})\n`;
+                            if (it.pricing) response += `   💰 가격 정책: ${it.pricing}\n`;
+                            if (it.review) response += `   💬 실사용자 평가: "${it.review}"\n`;
+                            response += `\n`;
+                        });
+                        if (results.length > 3) response += `...외 ${results.length - 3}건의 추가 솔루션이 발견되었습니다.`;
+                    } else if (lowerText.includes("번역") || lowerText.includes("회의")) {
+                        response = "회의록 분석에서는 'DeepL Voice Meeting'과 'ClovaNote'가 추천됩니다.";
+                    } else {
+                        response = `"${text}"에 대한 정확한 솔루션을 찾지 못했습니다. 키워드(예: 에이닷, 보안, 요약 등) 위주로 검색해보세요!`;
+                    }
+
+                    aiDiv.innerText = response;
+                    chatHistory.appendChild(aiDiv);
+                    chatHistory.scrollTop = chatHistory.scrollHeight;
+                }, 800);
+            });
+        }
+
+        window.onload = () => { loadData(); };
+    </script>
+</body>
+
+</html>
