@@ -45,7 +45,18 @@
                 "2026년 3월 27일: Box, Notion, Dropbox 등 주요 기업용 협업 도구와의 다이렉트 연동 업데이트"
             ],
             "clients": "아모레퍼시픽, 넥슨, LG전자 등 다수",
-            "distributor": "삼성SDS, LG CNS"
+            "distributor": "삼성SDS, LG CNS",
+            "sources": {
+                "summary": "https://openai.com/enterprise",
+                "pricing": "https://openai.com/pricing",
+                "models": "https://openai.com/index/openai-o1-preview/",
+                "context": "https://openai.com/enterprise",
+                "timelines": "https://en.wikipedia.org/wiki/ChatGPT",
+                "features": "https://openai.com/news",
+                "distributor": "https://www.samsungsds.com/kr/generative-ai/generative-ai.html",
+                "clients": "https://news.naver.com/",
+                "users": "https://bloomberg.com/"
+            }
         },
         "gemini": {
             "name": "Gemini Enterprise",
@@ -90,7 +101,13 @@
                 "2026년 3월 10일: 초거대 Gemini 3.5 아키텍처 상용화 및 생태계 자동 통합"
             ],
             "clients": "대한항공, 롯데쇼핑, 쿠팡",
-            "distributor": "메가존클라우드, 베스핀글로벌"
+            "distributor": "메가존클라우드, 베스핀글로벌",
+            "sources": {
+                "models": "https://gemini.google.com/advanced",
+                "context": "https://blog.google/technology/ai/google-gemini-next-generation-model-february-2024/",
+                "pricing": "https://workspace.google.com/pricing/",
+                "distributor": "https://www.megazone.com/partners-googlecloud/"
+            }
         },
         "claude": {
             "name": "Claude Enterprise",
@@ -135,7 +152,12 @@
                 "2026년 4월 2일: Claude 5.0 도입에 맞춘 전사 지식 캡슐화(Knowledge Capsule) 강화"
             ],
             "clients": "SK텔레콤, 쏘카, 패스트파이브, 엔씨소프트",
-            "distributor": "AWS 파트너스망 (메가존, 슬랙코리아)"
+            "distributor": "AWS 파트너스망 (메가존, 슬랙코리아)",
+            "sources": {
+                "models": "https://www.anthropic.com/news/claude-3-5-sonnet",
+                "timelines": "https://www.anthropic.com/enterprise",
+                "clients": "https://www.anthropic.com/news/claude-enterprise"
+            }
         },
         "copilot": {
             "name": "Microsoft Copilot for Microsoft 365",
@@ -180,7 +202,13 @@
                 "2026년 2월 25일: Windows 12 레벨 커널 통합 및 GPT-5.1 엔진 적용 완료"
             ],
             "clients": "KB국민은행, 삼성전자, 현대차그룹",
-            "distributor": "삼성SDS, 다우데이타, 디모아"
+            "distributor": "삼성SDS, 다우데이타, 디모아",
+            "sources": {
+                "features": "https://www.microsoft.com/en-us/microsoft-365/enterprise/copilot-for-microsoft-365",
+                "pricing": "https://www.microsoft.com/ko-kr/microsoft-365/enterprise/copilot-for-microsoft-365",
+                "clients": "https://www.samsungsds.com/kr/insights/ms_copilot.html",
+                "distributor": "https://news.microsoft.com/ko-kr/"
+            }
         },
         "perplexity": {
             "name": "Perplexity Enterprise Pro",
@@ -225,7 +253,11 @@
                 "2026년 3월 15일: Sonar 4.0 및 대규모 Deep Research 기능 전면 상용화 업데이트"
             ],
             "clients": "SKT 기업용 에이닷 및 제휴 생태계",
-            "distributor": "SK텔레콤 특별 전략 제휴"
+            "distributor": "SK텔레콤 특별 전략 제휴",
+            "sources": {
+                "distributor": "https://www.sktelecom.com/advertise/press_detail.do?page.page=1&idx=6000",
+                "pricing": "https://www.perplexity.ai/enterprise"
+            }
         },
         "cursor": {
             "name": "Cursor Enterprise",
@@ -270,7 +302,11 @@
                 "2026년 4월 1일: 개복잡한 레거시 코드를 스스로 리팩토링하는 완전 자율 개발 에이전트 모드 도입"
             ],
             "clients": "토스(Toss), 당근, 배달의민족 등 로컬 테크",
-            "distributor": "오픈소스 자체 글로벌 세일즈"
+            "distributor": "오픈소스 자체 글로벌 세일즈",
+            "sources": {
+                "models": "https://cursor.com/features",
+                "pricing": "https://cursor.com/pricing"
+            }
         }
     },
     "minutesData": [
