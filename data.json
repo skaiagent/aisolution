@@ -22,13 +22,14 @@
             "tech": {
                 "llm": "GPT-4o / o1-preview"
             },
-            "link": "#"
+            "link": "#",
+            "users": "주간 사용자(WAU) 2억 5천만 명+"
         },
         "gemini": {
             "name": "Gemini Ent",
             "icon": "✨",
             "summary": "초대형 문서 전수 분석 및 워크스페이스 통합임",
-            "update": "5M 토큰 분석 (2024.03.28)",
+            "update": "Gemini 1.5 Pro-002 모델 및 2M 토큰 분석 정식 고도화 (2024.09)",
             "features": [
                 "Vertex AI 튜닝",
                 "멀티모달 시각 검색"
@@ -42,15 +43,16 @@
             "context": "2M",
             "type": "Analysis",
             "tech": {
-                "llm": "Gemini 1.5 Pro/Ultra"
+                "llm": "Gemini 1.5 Pro / Flash"
             },
-            "link": "#"
+            "link": "#",
+            "users": "구글 생태계 누적 30억 명+"
         },
         "claude": {
             "name": "Claude Ent",
             "icon": "🧠",
             "summary": "정밀 논리 검증 및 환각 최소화 기반 업무 전문임",
-            "update": "Computer Use 고도화 (2024.02.20)",
+            "update": "Computer Use 혁신 최신 모델 (Claude 3.5 Sonnet) 출시 (2024.10)",
             "features": [
                 "Computer Use 앱 제어",
                 "금융/법률 논리 검증"
@@ -64,15 +66,16 @@
             "context": "200K",
             "type": "High-Fidelity",
             "tech": {
-                "llm": "Claude 3.5 Sonnet"
+                "llm": "Claude 3.5 Sonnet (New)"
             },
-            "link": "#"
+            "link": "#",
+            "users": "포춘 500대 기업 다수 도입"
         },
         "copilot": {
             "name": "Copilot (M365)",
             "icon": "💼",
             "summary": "전사 사무 생산성 극대화 및 오피스 생태계 통합임",
-            "update": "업무 병목 진단 (2024.04.02)",
+            "update": "Copilot Wave 2 및 Pages 협업 캔버스 대규모 도입 (2024.09)",
             "features": [
                 "Office 앱 자동 초안",
                 "MS Graph 사내 맥락"
@@ -86,15 +89,16 @@
             "context": "128K",
             "type": "Productivity",
             "tech": {
-                "llm": "GPT-4o Engine"
+                "llm": "GPT-4o Engine 기반"
             },
-            "link": "#"
+            "link": "#",
+            "users": "M365 유료 가입 상위 4억 명+"
         },
         "perplexity": {
             "name": "Perplexity Ent",
             "icon": "🔍",
             "summary": "실시간 정보 탐색 및 심층 리서치 보고서 자동화임",
-            "update": "리포트 자동화 (2024.03.10)",
+            "update": "Enterprise Pro 검색 엔진 도입 및 리서치 공간 개편 (2024.10)",
             "features": [
                 "Sonar 2.0 추론",
                 "출처 소스 매핑"
@@ -105,18 +109,19 @@
             "partners": "SKT 전략 제휴",
             "pricing": "월 $40",
             "release": "2024.04",
-            "context": "64K",
+            "context": "100K",
             "type": "Research",
             "tech": {
-                "llm": "Sonar 2.0 (Res.)"
+                "llm": "Llama 3.1 / GPT-4o 멀티"
             },
-            "link": "#"
+            "link": "#",
+            "users": "MAU 2,000만 명+"
         },
         "cursor": {
             "name": "Cursor Ent",
             "icon": "💻",
             "summary": "AI 네이티브 개발 환경 및 전사 코드 에이전트임",
-            "update": "보안 취약점 수정 (2024.03.25)",
+            "update": "Composer 기능 도입 (다중 파일 동시 수정) (2024.09)",
             "features": [
                 "통합 IDE 인덱싱",
                 "다중 파일 동시 수정"
@@ -127,12 +132,13 @@
             "partners": "MSP 기술 지원",
             "pricing": "월 $40",
             "release": "2023.10",
-            "context": "256K",
+            "context": "250K",
             "type": "Engineering",
             "tech": {
-                "llm": "Cursor-v5 Native"
+                "llm": "Claude 3.5 Sonnet / GPT-4o"
             },
-            "link": "#"
+            "link": "#",
+            "users": "글로벌 개발자 50만 명 이상"
         }
     },
     "minutesData": [
