@@ -1,9 +1,9 @@
 {
     "enterpriseTools": {
         "chatgpt": {
-            "name": "ChatGPT Ent",
+            "name": "ChatGPT Enterprise",
             "icon": "💬",
-            "summary": "다단계 추론 기반 복합 전략 수립 최적화 솔루션임",
+            "summary": "기업의 데이터 보안과 대규모 협업에 최적화된 최상위 플랜",
             "update": "GPT-5.4 (Thinking) 및 gpt-realtime 음성 통합 (2026.04)",
             "source_url": "https://openai.com/index/openai-o1-preview/",
             "features": [
@@ -22,8 +22,30 @@
             "tech": {
                 "llm": "GPT-5.4 Pro / o3 / Realtime"
             },
-            "link": "#",
-            "users": "주간 사용자(WAU) 2억 5천만 명+"
+            "link": "https://openai.com/enterprise",
+            "users": "주간 사용자(WAU) 2억 5천만 명+",
+            "models": [
+                {
+                    "name": "GPT-5.4 Pro",
+                    "desc": "가장 복잡한 추론과 대규모 데이터 분석이 가능한 최상위 모델"
+                },
+                {
+                    "name": "GPT-5.4 Thinking",
+                    "desc": "복잡한 프로젝트 및 코딩 전용 모델"
+                },
+                {
+                    "name": "GPT-5.4 Standard (Instant)",
+                    "desc": "빠른 응답 속도, 업무 지원 모델"
+                }
+            ],
+            "contextWindow": "대규모 문서 한번에 처리가능한 업계 최고 수준의 용량 지원 (정량적 숫자 128k 고정 지원)",
+            "timelines": [
+                "2023년 8월 28일: ChatGPT Enterprise 최초 출시 (보안 및 관리 기능 특화)",
+                "2026년 3월 5일: 통합 모델인 GPT-5.4 출시 및 Enterprise 플랜에 즉시 적용",
+                "2026년 3월 27일: Box, Notion, Dropbox 등 주요 기업용 협업 도구와의 다이렉트 연동(App Actions) 기능 업데이트"
+            ],
+            "clients": "현대차그룹, SKT, LG에너지솔루션 등 다수",
+            "distributor": "삼성SDS"
         },
         "gemini": {
             "name": "Gemini Ent",
@@ -45,8 +67,20 @@
             "tech": {
                 "llm": "Gemini 3.5 Ultra"
             },
-            "link": "#",
-            "users": "구글 생태계 누적 30억 명+"
+            "link": "https://www.google.com/search?q=Gemini Ent",
+            "users": "구글 생태계 누적 30억 명+",
+            "models": [
+                {
+                    "name": "Gemini 3.5 Ultra",
+                    "desc": "최신 공식 탑재 모델 사양"
+                }
+            ],
+            "contextWindow": "5M",
+            "timelines": [
+                "최신 배포: 2024.02"
+            ],
+            "clients": "미공개 (글로벌 500대 기업 다수)",
+            "distributor": "메가존"
         },
         "claude": {
             "name": "Claude Ent",
@@ -68,8 +102,20 @@
             "tech": {
                 "llm": "Claude 5.0 Opus"
             },
-            "link": "#",
-            "users": "포춘 500대 기업 다수 도입"
+            "link": "https://www.google.com/search?q=Claude Ent",
+            "users": "포춘 500대 기업 다수 도입",
+            "models": [
+                {
+                    "name": "Claude 5.0 Opus",
+                    "desc": "최신 공식 탑재 모델 사양"
+                }
+            ],
+            "contextWindow": "1M",
+            "timelines": [
+                "최신 배포: 2024.09"
+            ],
+            "clients": "미공개 (글로벌 500대 기업 다수)",
+            "distributor": "AWS Korea"
         },
         "copilot": {
             "name": "Copilot (M365)",
@@ -91,8 +137,20 @@
             "tech": {
                 "llm": "GPT-5.1 Engine"
             },
-            "link": "#",
-            "users": "M365 유료 가입 상위 4억 명+"
+            "link": "https://www.google.com/search?q=Copilot (M365)",
+            "users": "M365 유료 가입 상위 4억 명+",
+            "models": [
+                {
+                    "name": "GPT-5.1 Engine",
+                    "desc": "최신 공식 탑재 모델 사양"
+                }
+            ],
+            "contextWindow": "1M",
+            "timelines": [
+                "최신 배포: 2023.11"
+            ],
+            "clients": "미공개 (글로벌 500대 기업 다수)",
+            "distributor": "삼성SDS"
         },
         "perplexity": {
             "name": "Perplexity Ent",
@@ -114,8 +172,20 @@
             "tech": {
                 "llm": "Sonar 4.0 / GPT-5.1"
             },
-            "link": "#",
-            "users": "MAU 2,000만 명+"
+            "link": "https://www.google.com/search?q=Perplexity Ent",
+            "users": "MAU 2,000만 명+",
+            "models": [
+                {
+                    "name": "Sonar 4.0 / GPT-5.1",
+                    "desc": "최신 공식 탑재 모델 사양"
+                }
+            ],
+            "contextWindow": "200K",
+            "timelines": [
+                "최신 배포: 2024.04"
+            ],
+            "clients": "미공개 (글로벌 500대 기업 다수)",
+            "distributor": "SKT 전략 제휴"
         },
         "cursor": {
             "name": "Cursor Ent",
@@ -137,8 +207,20 @@
             "tech": {
                 "llm": "Cursor-v5 Native"
             },
-            "link": "#",
-            "users": "글로벌 개발자 50만 명 이상"
+            "link": "https://www.google.com/search?q=Cursor Ent",
+            "users": "글로벌 개발자 50만 명 이상",
+            "models": [
+                {
+                    "name": "Cursor-v5 Native",
+                    "desc": "최신 공식 탑재 모델 사양"
+                }
+            ],
+            "contextWindow": "1M",
+            "timelines": [
+                "최신 배포: 2023.10"
+            ],
+            "clients": "미공개 (글로벌 500대 기업 다수)",
+            "distributor": "MSP 기술 지원"
         }
     },
     "minutesData": [
