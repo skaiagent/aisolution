@@ -4,7 +4,7 @@
             "name": "ChatGPT Ent",
             "icon": "💬",
             "summary": "다단계 추론 기반 복합 전략 수립 최적화 솔루션임",
-            "update": "o1-preview (Reasoning) 도입 (2024.10)",
+            "update": "GPT-4.5 / o3 아키텍처 개편 및 추론 엔진(Reasoning) 상용화 (2025.04)",
             "source_url": "https://openai.com/index/openai-o1-preview/",
             "features": [
                 "o1-preview 추론 엔진",
@@ -17,10 +17,10 @@
             "partners": "삼성SDS",
             "pricing": "월 $30",
             "release": "2023.08",
-            "context": "128K",
+            "context": "512K",
             "type": "Reasoning",
             "tech": {
-                "llm": "GPT-4o / o1-preview"
+                "llm": "GPT-4.5 / o3-Pro"
             },
             "link": "#",
             "users": "주간 사용자(WAU) 2억 5천만 명+"
@@ -29,7 +29,7 @@
             "name": "Gemini Ent",
             "icon": "✨",
             "summary": "초대형 문서 전수 분석 및 워크스페이스 통합임",
-            "update": "Gemini 1.5 Pro-002 모델 및 2M 토큰 분석 정식 고도화 (2024.09)",
+            "update": "Gemini 2.0 / 2.5 Pro 모델의 전세계 배포 완료 빛 에이전트 결합 (2025.03)",
             "features": [
                 "Vertex AI 튜닝",
                 "멀티모달 시각 검색"
@@ -43,7 +43,7 @@
             "context": "2M",
             "type": "Analysis",
             "tech": {
-                "llm": "Gemini 1.5 Pro / Flash"
+                "llm": "Gemini 2.5 Pro"
             },
             "link": "#",
             "users": "구글 생태계 누적 30억 명+"
@@ -52,7 +52,7 @@
             "name": "Claude Ent",
             "icon": "🧠",
             "summary": "정밀 논리 검증 및 환각 최소화 기반 업무 전문임",
-            "update": "Computer Use 혁신 최신 모델 (Claude 3.5 Sonnet) 출시 (2024.10)",
+            "update": "Claude 3.7 / 4.0 수준의 코딩 및 완벽한 Computer Use 자율화 (2025.04)",
             "features": [
                 "Computer Use 앱 제어",
                 "금융/법률 논리 검증"
@@ -66,7 +66,7 @@
             "context": "200K",
             "type": "High-Fidelity",
             "tech": {
-                "llm": "Claude 3.5 Sonnet (New)"
+                "llm": "Claude 3.7 Sonnet"
             },
             "link": "#",
             "users": "포춘 500대 기업 다수 도입"
@@ -75,7 +75,7 @@
             "name": "Copilot (M365)",
             "icon": "💼",
             "summary": "전사 사무 생산성 극대화 및 오피스 생태계 통합임",
-            "update": "Copilot Wave 2 및 Pages 협업 캔버스 대규모 도입 (2024.09)",
+            "update": "M365 전면 결합 및 Windows 시스템 에이전트 자율 통합 (2025.03)",
             "features": [
                 "Office 앱 자동 초안",
                 "MS Graph 사내 맥락"
@@ -86,10 +86,10 @@
             "partners": "삼성SDS",
             "pricing": "월 $30",
             "release": "2023.11",
-            "context": "128K",
+            "context": "256K",
             "type": "Productivity",
             "tech": {
-                "llm": "GPT-4o Engine 기반"
+                "llm": "GPT-4.5 / 통합 엔진"
             },
             "link": "#",
             "users": "M365 유료 가입 상위 4억 명+"
@@ -98,7 +98,7 @@
             "name": "Perplexity Ent",
             "icon": "🔍",
             "summary": "실시간 정보 탐색 및 심층 리서치 보고서 자동화임",
-            "update": "Enterprise Pro 검색 엔진 도입 및 리서치 공간 개편 (2024.10)",
+            "update": "딥 리서치(Deep Research) 기능 정식 출범 및 심층 분석 강화 (2025.04)",
             "features": [
                 "Sonar 2.0 추론",
                 "출처 소스 매핑"
@@ -109,10 +109,10 @@
             "partners": "SKT 전략 제휴",
             "pricing": "월 $40",
             "release": "2024.04",
-            "context": "100K",
+            "context": "200K",
             "type": "Research",
             "tech": {
-                "llm": "Llama 3.1 / GPT-4o 멀티"
+                "llm": "Sonar 3 / Multi-LLM"
             },
             "link": "#",
             "users": "MAU 2,000만 명+"
@@ -121,7 +121,7 @@
             "name": "Cursor Ent",
             "icon": "💻",
             "summary": "AI 네이티브 개발 환경 및 전사 코드 에이전트임",
-            "update": "Composer 기능 도입 (다중 파일 동시 수정) (2024.09)",
+            "update": "오프라인 전사 코드베이스 자율 분석 에이전트 모드 추가 (2025.04)",
             "features": [
                 "통합 IDE 인덱싱",
                 "다중 파일 동시 수정"
@@ -132,10 +132,10 @@
             "partners": "MSP 기술 지원",
             "pricing": "월 $40",
             "release": "2023.10",
-            "context": "250K",
+            "context": "1M",
             "type": "Engineering",
             "tech": {
-                "llm": "Claude 3.5 Sonnet / GPT-4o"
+                "llm": "Claude 3.7 Sonnet / o3"
             },
             "link": "#",
             "users": "글로벌 개발자 50만 명 이상"
