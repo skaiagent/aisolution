@@ -4,9 +4,9 @@
             "name": "ChatGPT Ent",
             "icon": "💬",
             "summary": "다단계 추론 기반 복합 전략 수립 최적화 솔루션임",
-            "update": "추론 시각화 (2026.03.15)",
+            "update": "추론 시각화 (2024.03.15)",
             "features": [
-                "o4-Pro 추론 엔진",
+                "o1-preview 추론 엔진",
                 "Sora 영상 제작",
                 "전사 지식 연동"
             ],
@@ -16,10 +16,10 @@
             "partners": "삼성SDS",
             "pricing": "월 $30",
             "release": "2023.08",
-            "context": "512K",
+            "context": "128K",
             "type": "Reasoning",
             "tech": {
-                "llm": "GPT-5.5 / o4-Pro"
+                "llm": "GPT-4o / o1-preview"
             },
             "link": "#"
         },
@@ -27,7 +27,7 @@
             "name": "Gemini Ent",
             "icon": "✨",
             "summary": "초대형 문서 전수 분석 및 워크스페이스 통합임",
-            "update": "5M 토큰 분석 (2026.03.28)",
+            "update": "5M 토큰 분석 (2024.03.28)",
             "features": [
                 "Vertex AI 튜닝",
                 "멀티모달 시각 검색"
@@ -38,10 +38,10 @@
             "partners": "메가존",
             "pricing": "월 $24 ~ $40",
             "release": "2024.02",
-            "context": "5M",
+            "context": "2M",
             "type": "Analysis",
             "tech": {
-                "llm": "Gemini 3.5 Ultra"
+                "llm": "Gemini 1.5 Pro/Ultra"
             },
             "link": "#"
         },
@@ -49,7 +49,7 @@
             "name": "Claude Ent",
             "icon": "🧠",
             "summary": "정밀 논리 검증 및 환각 최소화 기반 업무 전문임",
-            "update": "Computer Use 고도화 (2026.02.20)",
+            "update": "Computer Use 고도화 (2024.02.20)",
             "features": [
                 "Computer Use 앱 제어",
                 "금융/법률 논리 검증"
@@ -60,10 +60,10 @@
             "partners": "AWS Korea",
             "pricing": "별도 협의",
             "release": "2024.09",
-            "context": "1M",
+            "context": "200K",
             "type": "High-Fidelity",
             "tech": {
-                "llm": "Claude 5.0 (Opus)"
+                "llm": "Claude 3.5 Sonnet"
             },
             "link": "#"
         },
@@ -71,7 +71,7 @@
             "name": "Copilot (M365)",
             "icon": "💼",
             "summary": "전사 사무 생산성 극대화 및 오피스 생태계 통합임",
-            "update": "업무 병목 진단 (2026.04.02)",
+            "update": "업무 병목 진단 (2024.04.02)",
             "features": [
                 "Office 앱 자동 초안",
                 "MS Graph 사내 맥락"
@@ -85,7 +85,7 @@
             "context": "128K",
             "type": "Productivity",
             "tech": {
-                "llm": "GPT-5.5 Engine"
+                "llm": "GPT-4o Engine"
             },
             "link": "#"
         },
@@ -93,7 +93,7 @@
             "name": "Perplexity Ent",
             "icon": "🔍",
             "summary": "실시간 정보 탐색 및 심층 리서치 보고서 자동화임",
-            "update": "리포트 자동화 (2026.03.10)",
+            "update": "리포트 자동화 (2024.03.10)",
             "features": [
                 "Sonar 2.0 추론",
                 "출처 소스 매핑"
@@ -115,7 +115,7 @@
             "name": "Cursor Ent",
             "icon": "💻",
             "summary": "AI 네이티브 개발 환경 및 전사 코드 에이전트임",
-            "update": "보안 취약점 수정 (2026.03.25)",
+            "update": "보안 취약점 수정 (2024.03.25)",
             "features": [
                 "통합 IDE 인덱싱",
                 "다중 파일 동시 수정"
@@ -141,10 +141,10 @@
             "provider": "Microsoft",
             "origin": "국외",
             "rank": "글로벌 1위",
-            "llm": "GPT-5 Engine",
+            "llm": "GPT-4o Engine",
             "latency": "실시간 (0.3s)",
             "accuracy": 96,
-            "update": "Loop 동기화 (2026.03)",
+            "update": "Loop 동기화 (2024.03)",
             "strength": "MS 오피스 생태계 완전 통합",
             "genTime": "1분 내외",
             "speakerSep": "성문인식",
@@ -161,10 +161,10 @@
             "provider": "Google",
             "origin": "국외",
             "rank": "글로벌 2위",
-            "llm": "Gemini 3 Pro",
+            "llm": "Gemini 1.5 Pro",
             "latency": "실시간 (0.8s)",
             "accuracy": 95,
-            "update": "검색 강화 (2026.04)",
+            "update": "검색 강화 (2024.04)",
             "strength": "NotebookLM 지식 베이스 연동",
             "genTime": "1분 내외",
             "speakerSep": "프로필 매칭",
@@ -184,7 +184,7 @@
             "llm": "Claude 3.5",
             "latency": "실시간 (1.5s)",
             "accuracy": 98,
-            "update": "감성 분석 추가 (2026.03)",
+            "update": "감성 분석 추가 (2024.03)",
             "strength": "통화 녹음 및 실시간 일정 동기화",
             "genTime": "2분 내외",
             "speakerSep": "성문인식(Adv)",
@@ -204,7 +204,7 @@
             "llm": "FabriX",
             "latency": "실시간 (1.0s)",
             "accuracy": 97,
-            "update": "ERP 연동 강화 (2026.01)",
+            "update": "ERP 연동 강화 (2024.01)",
             "strength": "보안 거버넌스 및 레거시 통합",
             "genTime": "1.5분 내외",
             "speakerSep": "성문인식+직급",
@@ -224,7 +224,7 @@
             "llm": "HyperCLOVA X",
             "latency": "비실시간 (5.0s)",
             "accuracy": 99,
-            "update": "보안 강화 (2026.03)",
+            "update": "보안 강화 (2024.03)",
             "strength": "한국어 인식률 독보적 우위",
             "genTime": "3분 내외",
             "speakerSep": "Voice ID",
@@ -244,7 +244,7 @@
             "llm": "Llama 3 Tuned",
             "latency": "비실시간 (10s)",
             "accuracy": 95,
-            "update": "비식별화 고도화 (2026.04)",
+            "update": "비식별화 고도화 (2024.04)",
             "strength": "금융/공공 망 분리 환경 보호",
             "genTime": "5분 내외",
             "speakerSep": "부서 매칭",
@@ -264,7 +264,7 @@
             "llm": "VITO LLM",
             "latency": "실시간 (0.8s)",
             "accuracy": 96,
-            "update": "오토 가이드 (2026.03)",
+            "update": "오토 가이드 (2024.03)",
             "strength": "초저지연 전사 기술 우수",
             "genTime": "2분 내외",
             "speakerSep": "성문분석",
@@ -284,7 +284,7 @@
             "llm": "Daglo LLM",
             "latency": "비실시간 (8.0s)",
             "accuracy": 96,
-            "update": "하이브리드 보안 (2026.02)",
+            "update": "하이브리드 보안 (2024.02)",
             "strength": "전용 하드웨어 연동 강점",
             "genTime": "4분 내외",
             "speakerSep": "음색 분리",
@@ -304,7 +304,7 @@
             "llm": "DeepL AI",
             "latency": "실시간 (0.3s)",
             "accuracy": 95,
-            "update": "지연율 단축 (2026.03)",
+            "update": "지연율 단축 (2024.03)",
             "strength": "세계 최고 실시간 통역 성능",
             "genTime": "1분 내외",
             "speakerSep": "채널 분리",
@@ -324,7 +324,7 @@
             "llm": "Zoom Prop.",
             "latency": "실시간 (1.0s)",
             "accuracy": 91,
-            "update": "질의응답 강화 (2026.04)",
+            "update": "질의응답 강화 (2024.04)",
             "strength": "화상회의 중 즉각적인 AI 도움",
             "genTime": "2분 내외",
             "speakerSep": "프로필 매칭",
@@ -344,7 +344,7 @@
             "llm": "Claude 3",
             "latency": "실시간 (1.5s)",
             "accuracy": 94,
-            "update": "Notion Meet (2026.02)",
+            "update": "Notion Meet (2024.02)",
             "strength": "기록과 지식 공유 단일화",
             "genTime": "2분 내외",
             "speakerSep": "프로필 매칭",
@@ -364,7 +364,7 @@
             "llm": "Fireflies LLM",
             "latency": "실시간 (2.0s)",
             "accuracy": 90,
-            "update": "정형 분석 강화 (2026.04)",
+            "update": "정형 분석 강화 (2024.04)",
             "strength": "검색 가능한 미팅 아카이브",
             "genTime": "3분 내외",
             "speakerSep": "음색 분석",
@@ -384,7 +384,7 @@
             "llm": "Otter AI",
             "latency": "실시간 (1.5s)",
             "accuracy": 91,
-            "update": "AI 챗 도입 (2026.03)",
+            "update": "AI 챗 도입 (2024.03)",
             "strength": "과거 대화 데이터 기반 답변",
             "genTime": "2분 내외",
             "speakerSep": "목소리프린트",
@@ -404,7 +404,7 @@
             "llm": "Lark LLM",
             "latency": "실시간 (2.0s)",
             "accuracy": 94,
-            "update": "다국어 전사 (2026.04)",
+            "update": "다국어 전사 (2024.04)",
             "strength": "프로젝트 도구 결합력",
             "genTime": "3분 내외",
             "speakerSep": "음색분석",
@@ -424,7 +424,7 @@
             "llm": "Read LLM",
             "latency": "실시간 (1.8s)",
             "accuracy": 93,
-            "update": "지식 그래프 (2026.02)",
+            "update": "지식 그래프 (2024.02)",
             "strength": "맥락 연결 워크플로우",
             "genTime": "2분 내외",
             "speakerSep": "프로파일",
@@ -444,7 +444,7 @@
             "llm": "Reporto LLM",
             "latency": "실시간 (2s)",
             "accuracy": 95,
-            "update": "원격 제어 통합 (2026.03)",
+            "update": "원격 제어 통합 (2024.03)",
             "strength": "실시간 자막 및 가상 비서",
             "genTime": "3분 내외",
             "speakerSep": "프로필",
@@ -464,7 +464,7 @@
             "llm": "Custom Llama",
             "latency": "비실시간 (15s)",
             "accuracy": 94,
-            "update": "용어 사전 (2026.01)",
+            "update": "용어 사전 (2024.01)",
             "strength": "제조 산업 전문 용어 인식",
             "genTime": "6분 내외",
             "speakerSep": "성문인식",
@@ -484,7 +484,7 @@
             "llm": "Webex AI",
             "latency": "실시간 (1s)",
             "accuracy": 92,
-            "update": "소음 제거 (2026.02)",
+            "update": "소음 제거 (2024.02)",
             "strength": "고품질 하드웨어 연동",
             "genTime": "2.5분 내외",
             "speakerSep": "하드웨어",
@@ -504,7 +504,7 @@
             "llm": "Tiro Engine",
             "latency": "실시간 (0.7s)",
             "accuracy": 95,
-            "update": "자막 엔진 (2026.03)",
+            "update": "자막 엔진 (2024.03)",
             "strength": "대형 행사장 QR 자막 공유",
             "genTime": "3분 내외",
             "speakerSep": "위치기반",
@@ -524,7 +524,7 @@
             "llm": "Switch LLM",
             "latency": "실시간 (1.5s)",
             "accuracy": 94,
-            "update": "모바일 강화 (2026.04)",
+            "update": "모바일 강화 (2024.04)",
             "strength": "전화 업무 연동성 최적화",
             "genTime": "3분 내외",
             "speakerSep": "번호매칭",
@@ -544,7 +544,7 @@
             "llm": "Continuum AI",
             "latency": "비실시간 (12s)",
             "accuracy": 95,
-            "update": "모델 튜닝 (2026.01)",
+            "update": "모델 튜닝 (2024.01)",
             "strength": "소버린 AI 및 커스텀 모델",
             "genTime": "5분 내외",
             "speakerSep": "성문인식",
@@ -564,7 +564,7 @@
             "llm": "GPT-4o Opt",
             "latency": "비실시간 (10s)",
             "accuracy": 94,
-            "update": "CRM 연동 (2026.03)",
+            "update": "CRM 연동 (2024.03)",
             "strength": "영업 딜 클로징 확률 분석",
             "genTime": "4분 내외",
             "speakerSep": "세일즈점수",
@@ -584,7 +584,7 @@
             "llm": "Avoma LLM",
             "latency": "실시간 (2s)",
             "accuracy": 90,
-            "update": "패턴 분석 (2026.04)",
+            "update": "패턴 분석 (2024.04)",
             "strength": "상담 코칭 자동화 솔루션",
             "genTime": "3분 내외",
             "speakerSep": "음색분석",
@@ -604,7 +604,7 @@
             "llm": "GPT-4",
             "latency": "실시간 (자막)",
             "accuracy": 91,
-            "update": "Extension (2026.02)",
+            "update": "Extension (2024.02)",
             "strength": "별도 봇 없는 클린 전사",
             "genTime": "1분 내외",
             "speakerSep": "데이터",
@@ -624,7 +624,7 @@
             "llm": "GPT-4o",
             "latency": "비실시간 (8s)",
             "accuracy": 92,
-            "update": "영상 요약 (2026.04)",
+            "update": "영상 요약 (2024.04)",
             "strength": "지능형 학습 노트 생성",
             "genTime": "4분 내외",
             "speakerSep": "음색분리",
@@ -654,7 +654,7 @@
             "link": "https://clovastudio.ncloud.com",
             "strength": "압도적인 한국어 특화 하이퍼클로바X 기반 맞춤형 튜닝",
             "summary": "네이버 클라우드 환경에서 노코드로 AI 앱 및 에이전트 구축",
-            "update": "GPT-4o 모델 정식 연동 (2026.04)",
+            "update": "GPT-4o 모델 정식 연동 (2024.04)",
             "rank": "탑 티어 추천"
         },
         {
@@ -674,7 +674,7 @@
             "link": "#",
             "strength": "망 분리 및 B2B 레거시(ERP/사내망)와의 강력한 직접 결합",
             "summary": "클라우드 및 온프레미스 혼합 환경의 기업 맞춤형 AI 빌더",
-            "update": "멀티모달 시각적 분석 노드 추가 (2026.03)",
+            "update": "멀티모달 시각적 분석 노드 추가 (2024.03)",
             "rank": "탑 티어 추천"
         },
         {
@@ -694,7 +694,7 @@
             "link": "https://cloud.google.com/vertex-ai",
             "strength": "구글 검색 연동(Grounding)과 생태계 내 방대한 데이터 통합 모델링",
             "summary": "엔터프라이즈급 AI 모델 튜닝 및 에이전트 런타임 플랫폼",
-            "update": "신규 워크플로우 템플릿 50종 배포 (2026.02)",
+            "update": "신규 워크플로우 템플릿 50종 배포 (2024.02)",
             "rank": "탑 티어 추천"
         },
         {
@@ -714,7 +714,7 @@
             "link": "https://chatgpt.com/gpts",
             "strength": "자연어 대화만으로 즉시 외부 API 액션을 수행하는 봇 생성",
             "summary": "개발 없이 자연어로 지시사항을 세팅하는 커스텀 GPT 생성 솔루션",
-            "update": "AWS 클라우드 모듈 업데이트 (2026.03)",
+            "update": "AWS 클라우드 모듈 업데이트 (2024.03)",
             "rank": "탑 티어 추천"
         },
         {
@@ -734,7 +734,7 @@
             "link": "https://microsft.com/copilot-studio",
             "strength": "MS Teams 및 M365 생태계와의 끊김 없는 통합 워크플로우",
             "summary": "마이크로소프트 애플리케이션 내에 삽입할 커스텀 코파일럿 제작",
-            "update": "로컬 LLM 양자화 지원 (2026.04)",
+            "update": "로컬 LLM 양자화 지원 (2024.04)",
             "rank": "탑 티어 추천"
         },
         {
@@ -754,7 +754,7 @@
             "link": "https://aws.amazon.com/bedrock",
             "strength": "기존 AWS 보안 정책 및 서비스(Lambda, S3)와 네이티브 연동",
             "summary": "보안과 프라이버시가 확보된 AWS 환경에서의 생성형 AI 에이전트 빌더",
-            "update": "에이전트 메모리 관리 개편 (2026.01)",
+            "update": "에이전트 메모리 관리 개편 (2024.01)",
             "rank": "주요 솔루션"
         },
         {
@@ -774,7 +774,7 @@
             "link": "https://wrtn.ai",
             "strength": "완전 한글화된 노코드 UI와 국내 실무 맞춤형 프롬프트 테스트 환경",
             "summary": "누구나 쉽게 생성형 AI 봇을 만들고 배포할 수 있는 국내 AI 포털 빌더",
-            "update": "API 문서 전면 개선 (2026.04)",
+            "update": "API 문서 전면 개선 (2024.04)",
             "rank": "주요 솔루션"
         },
         {
@@ -794,7 +794,7 @@
             "link": "https://langflow.org",
             "strength": "LangChain 생태계를 시각적 노드로 완벽히 매핑",
             "summary": "파이썬 기반 LangChain 구성을 위한 시각적 파이프라인 빌더",
-            "update": "파이썬 3.12 네이티브 호환 (2026.02)",
+            "update": "파이썬 3.12 네이티브 호환 (2024.02)",
             "rank": "주요 솔루션"
         },
         {
@@ -814,7 +814,7 @@
             "link": "https://dify.ai",
             "strength": "직관적인 노드 기반 시각적 워크플로우 편집기",
             "summary": "RAG 기반 대화형 및 텍스트 챗 에이전트를 시각적으로 쉽게 구축",
-            "update": "보안 무결성 검증 추가 (2026.04)",
+            "update": "보안 무결성 검증 추가 (2024.04)",
             "rank": "주요 솔루션"
         },
         {
@@ -834,7 +834,7 @@
             "link": "https://voiceflow.com",
             "strength": "복잡한 대화형 AI(음성/텍스트) 플로우를 시각적 캔버스로 완벽 제어",
             "summary": "고객지원 및 LLM 연동 대화형 챗봇/에이전트 UX 설계 디자인 빌더",
-            "update": "다중 에이전트 소통 프로토콜 V2 (2026.03)",
+            "update": "다중 에이전트 소통 프로토콜 V2 (2024.03)",
             "rank": "주요 솔루션"
         },
         {
@@ -854,7 +854,7 @@
             "link": "https://upstage.ai",
             "strength": "세계 최고 수준의 한국어 파운데이션 모델(Solar) 및 문서 정보 추출 기술",
             "summary": "기업 문서 특화 RAG 시스템 및 커스텀 LLM 에이전트 솔루션",
-            "update": "GPT-4o 모델 정식 연동 (2026.04)",
+            "update": "GPT-4o 모델 정식 연동 (2024.04)",
             "rank": "주요 솔루션"
         },
         {
@@ -874,7 +874,7 @@
             "link": "https://langchain.com",
             "strength": "전 세계 수천 개의 툴, DB, 모델과의 통합 모듈을 지원하는 기초 뼈대",
             "summary": "언어 모델을 활용한 애플리케이션 개발을 위한 가장 방대한 오픈소스 프레임워크",
-            "update": "멀티모달 시각적 분석 노드 추가 (2026.03)",
+            "update": "멀티모달 시각적 분석 노드 추가 (2024.03)",
             "rank": "주요 솔루션"
         },
         {
@@ -894,7 +894,7 @@
             "link": "https://crewai.com",
             "strength": "에이전트들에게 직업, 목표, 도구를 부여해 복합 작업을 알아서 분담 해결",
             "summary": "다수의 AI가 실무진 소규모 '팀'처럼 협업하도록 조율하는 프레임워크",
-            "update": "신규 워크플로우 템플릿 50종 배포 (2026.02)",
+            "update": "신규 워크플로우 템플릿 50종 배포 (2024.02)",
             "rank": "주요 솔루션"
         },
         {
@@ -914,7 +914,7 @@
             "link": "https://microsoft.github.io/autogen/",
             "strength": "대화형 시스템 내에서 코드를 스스로 실행 및 수정하며 답을 찾아내는 자율성",
             "summary": "다중 에이전트가 서로 대화하며 복잡한 문제를 해결하는 최첨단 라이브러리",
-            "update": "AWS 클라우드 모듈 업데이트 (2026.03)",
+            "update": "AWS 클라우드 모듈 업데이트 (2024.03)",
             "rank": "주요 솔루션"
         },
         {
@@ -934,7 +934,7 @@
             "link": "https://github.com/pydantic/pydantic-ai",
             "strength": "타입 힌트(Type Hints)를 강제하여 환각을 없애고 개발 환경의 무결성을 보장",
             "summary": "정확한 데이터 구조 처리를 위한 직관적인 파이썬 에이전트 설계 라이브러리",
-            "update": "로컬 LLM 양자화 지원 (2026.04)",
+            "update": "로컬 LLM 양자화 지원 (2024.04)",
             "rank": "주요 솔루션"
         },
         {
@@ -954,7 +954,7 @@
             "link": "https://cursor.com",
             "strength": "Command+K 한 번으로 수십 개의 연관 파일을 한 번에 탐색하고 코드를 새로 짜줌",
             "summary": "소프트웨어 에이전트 빌딩을 위한 개발 특화 AI IDE",
-            "update": "에이전트 메모리 관리 개편 (2026.01)",
+            "update": "에이전트 메모리 관리 개편 (2024.01)",
             "rank": "주요 솔루션"
         },
         {
@@ -974,7 +974,7 @@
             "link": "https://replit.com",
             "strength": "개발 환경 세팅 없이 브라우저 상에서 AI가 코드를 짜고 실시간 호스팅(Hosting)",
             "summary": "완전한 코딩 클라우드 환경에서 스스로 설정하는 프론트/백엔드 원격 에이전트",
-            "update": "API 문서 전면 개선 (2026.04)",
+            "update": "API 문서 전면 개선 (2024.04)",
             "rank": "주요 솔루션"
         },
         {
@@ -994,7 +994,7 @@
             "link": "https://allganize.ai",
             "strength": "사내 문서를 활용한 자연어 인지능력과 On-Premise 보안 강점 플랫폼",
             "summary": "기업 사내 데이터를 지식으로 자동 인덱싱하는 노코드 맞춤형 에이전트 플랫폼",
-            "update": "파이썬 3.12 네이티브 호환 (2026.02)",
+            "update": "파이썬 3.12 네이티브 호환 (2024.02)",
             "rank": "주요 솔루션"
         },
         {
@@ -1014,7 +1014,7 @@
             "link": "https://n8n.io",
             "strength": "에이전트가 만든 판단을 수 천 개의 SaaS와 결합해 백그라운드 자동화로 수행",
             "summary": "개별 AI 모델들을 실무 자동화 시스템으로 연결해 주는 노드 기반 트리거 환경",
-            "update": "보안 무결성 검증 추가 (2026.04)",
+            "update": "보안 무결성 검증 추가 (2024.04)",
             "rank": "주요 솔루션"
         },
         {
@@ -1034,7 +1034,7 @@
             "link": "https://zapier.com/central",
             "strength": "가장 방대한 웹 앱 생태계를 등에 업은 직관적인 자연어 기반 백그라운드 어시스턴트",
             "summary": "자연어 명령만으로 앱 간 행동을 지시하고 관리할 수 있는 전천후 비서 구축망",
-            "update": "다중 에이전트 소통 프로토콜 V2 (2026.03)",
+            "update": "다중 에이전트 소통 프로토콜 V2 (2024.03)",
             "rank": "주요 솔루션"
         }
     ],
@@ -1056,7 +1056,7 @@
             "link": "https://www.beautiful.ai",
             "strength": "인공지능이 텍스트 양에 맞춰 도형/차트의 레이아웃을 스스로 100% 완벽히 보정 유지 (스마트 템플릿)",
             "summary": "어떻게 작성해도 아름답게 유지되는 프레젠테이션 디자인 최적화 인공지능 (DesignerBot)",
-            "update": "커스텀 기업 브랜드 킷 가이드 자동화 (2026.02)",
+            "update": "커스텀 기업 브랜드 킷 가이드 자동화 (2024.02)",
             "rank": "디자인 상위 도구"
         },
         {
@@ -1076,7 +1076,7 @@
             "link": "https://skywork.ai",
             "strength": "대규모 지식 베이스 사전 학습 및 전문 도메인 기반의 리서치 결과물 도출",
             "summary": "다양한 소스 정보로부터 지식을 파싱하고 전문가 수준의 텍스트 리포트를 제공하는 아시아권 유력 AI",
-            "update": "다국어 생성 파이프라인 최적화 (2026.04)",
+            "update": "다국어 생성 파이프라인 최적화 (2024.04)",
             "rank": "주요 추천"
         },
         {
@@ -1096,7 +1096,7 @@
             "link": "https://genspark.ai",
             "strength": "하나의 프롬프트로 다수의 AI 에이전트(Swarm)가 편향성을 검증하며 백과사전 형태의 보고서를 집필",
             "summary": "일반적인 검색과 챗봇을 뛰어넘어 하나의 완성된 지식 정보 웹 리포트를 자동 발행하는 혁신 엔진",
-            "update": "병렬 리서치 엔진 V2 도입 (2026.03)",
+            "update": "병렬 리서치 엔진 V2 도입 (2024.03)",
             "rank": "최근 급상승"
         },
         {
@@ -1116,7 +1116,7 @@
             "link": "https://perplexity.ai",
             "strength": "실시간 외부 웹 기반 출처 명시와 깊이 있는 리서치 보고서 생성",
             "summary": "온라인 정보 탐색부터 문서 포매팅까지 끝내는 리서치 전문 보고서 도구",
-            "update": "실시간 데이터 패칭 기능 정식 오픈 (2026.04)",
+            "update": "실시간 데이터 패칭 기능 정식 오픈 (2024.04)",
             "rank": "글로벌 상위"
         },
         {
@@ -1136,7 +1136,7 @@
             "link": "https://notebooklm.google.com",
             "strength": "방대한 PDF, 문서 자료를 요약하고 2인 팟캐스트 대화형 오디오로 변환",
             "summary": "구글 제미나이 기반의 초거대 컨텍스트 처리형 개인 지식 AI 노트",
-            "update": "템플릿 라이브러리 30종 업데이트 (2026.03)",
+            "update": "템플릿 라이브러리 30종 업데이트 (2024.03)",
             "rank": "글로벌 상위"
         },
         {
@@ -1156,7 +1156,7 @@
             "link": "https://gamma.app",
             "strength": "노션(Notion)처럼 쓰면 시각적 프레젠테이션(PPT)으로 자동 변환해주는 극한의 속도",
             "summary": "텍스트 한 줄로 디자인된 프레젠테이션/문서/웹페이지를 뚝딱 생성",
-            "update": "PPTX 익스포트 호환성 100% 개선 (2026.02)",
+            "update": "PPTX 익스포트 호환성 100% 개선 (2024.02)",
             "rank": "글로벌 상위"
         },
         {
@@ -1176,7 +1176,7 @@
             "link": "https://miricanvas.com",
             "strength": "압도적인 국내 맞춤형 템플릿 퀄리티와 생성형 AI 에셋 통합",
             "summary": "디자인 문외한도 AI로 텍스트와 에셋을 만들어 전문적인 제안서/광고물 제작",
-            "update": "구글 드라이브 통합 저장소 백업 (2026.04)",
+            "update": "구글 드라이브 통합 저장소 백업 (2024.04)",
             "rank": "인기 도구"
         },
         {
@@ -1196,7 +1196,7 @@
             "link": "https://julius.ai",
             "strength": "엑셀/CSV 데이터만 업로드하면 파이썬 코드를 백그라운드에서 실행해 고급 통계 및 차트를 생성",
             "summary": "데이터 시각화, 통계 및 모델링을 위한 AI 데이터 애널리스트 에이전트",
-            "update": "RAG 전용 벡터 엔진 튜닝 (2026.01)",
+            "update": "RAG 전용 벡터 엔진 튜닝 (2024.01)",
             "rank": "인기 도구"
         },
         {
@@ -1216,7 +1216,7 @@
             "link": "https://tome.app",
             "strength": "프롬프트를 서사적(Storytelling) 슬라이드로 구성하며 네이티브 AI 이미지 결합",
             "summary": "생성형 AI를 이용해 목차부터 내용, 이미지까지 구축하는 스토리텔링형 프레젠테이션 빌더",
-            "update": "다크모드 및 시각화 차트 개선 (2026.03)",
+            "update": "다크모드 및 시각화 차트 개선 (2024.03)",
             "rank": "인기 도구"
         }
     ]
