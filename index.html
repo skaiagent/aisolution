@@ -532,22 +532,38 @@
                 return `<div class="bg-white rounded-3xl p-6 card-transition border border-slate-200 flex flex-col cursor-pointer h-full" onclick='openUnifiedModal(${JSON.stringify(item)}, "${type}")'>
                     <div class="flex justify-between items-center mb-5 text-[10px] font-bold uppercase"><span class="px-2.5 py-1 rounded-lg text-white" style="background:${color}">${item.tier.split(' ')[0]}</span><span class="text-slate-400 bg-slate-50 px-2 py-1 rounded">${item.origin}</span></div>
                     <h4 class="font-bold text-slate-900 text-lg mb-1">${item.name}</h4><p class="text-xs text-slate-400 mb-4 font-semibold uppercase">${item.provider}</p><p class="text-xs text-slate-600 line-clamp-2 bg-slate-50 p-3 rounded-xl border border-slate-100 mb-4">${item.strength || item.summary}</p>
-                    <div class="mt-auto pt-4 border-t flex justify-between items-center"><span class="text-sm font-extrabold text-slate-800">${(typeof item.accuracy === 'number') ? item.accuracy + '%' : item.accuracy}</span><span class="text-xs font-bold" style="color:${color}">분석 &rarr;</span></div></div>`;
+                    <div class="mt-auto pt-4 border-t flex justify-between items-center"><span class="text-sm font-extrabold text-slate-800">${(typeof item.accuracy === 'number') ? (type === 'minutes' ? "한국어 정확도 " : "") + item.accuracy + '%' : item.accuracy}</span><span class="text-xs font-bold" style="color:${color}">분석 &rarr;</span></div></div>`;
             }).join('');
         }
 
         function openUnifiedModal(item, type) {
             const color = colors[item.tier] || '#64748b';
             const mt = document.getElementById('modal-tier'); if (mt) { mt.innerText = item.tier; mt.style.backgroundColor = color; }
-            safeSetText('modal-title', item.name); safeSetText('modal-provider', item.provider); safeSetText('modal-origin', item.origin); safeSetText('modal-strength', item.strength || item.summary); safeSetText('modal-update', item.update); safeSetText('modal-pricing', item.pricing || "별도 협의"); safeSetText('modal-rank', item.rank);
+            
+            const getSrcIcon = (srcKey) => (item.sources && item.sources[srcKey]) ? `<a href="${item.sources[srcKey]}" target="_blank" class="inline-flex items-center justify-center mx-1 text-emerald-500 hover:text-emerald-700 transition-colors" title="출처 데이터 확인"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></a>` : '';
+
+            safeSetText('modal-title', item.name); 
+            safeSetText('modal-provider', item.provider); 
+            safeSetText('modal-origin', item.origin); 
+            
+            const strengthEl = document.getElementById('modal-strength');
+            if (strengthEl) strengthEl.innerHTML = (item.strength || item.summary) + getSrcIcon('summary');
+            
+            const updateEl = document.getElementById('modal-update');
+            if (updateEl) updateEl.innerHTML = item.update + getSrcIcon('models');
+
+            safeSetText('modal-pricing', item.pricing || "별도 협의"); 
+            safeSetText('modal-rank', item.rank);
+            
             const ms = document.getElementById('modal-source'); if (ms) { if (item.source_url) { ms.href = item.source_url; ms.classList.remove('hidden'); } else { ms.classList.add('hidden'); } }
             const mlb = document.getElementById('modal-link-btn'); if (mlb) { mlb.href = item.link; mlb.style.backgroundColor = color; }
             const rc = document.getElementById('modal-review-container'); const re = document.getElementById('modal-review');
             if (item.review) { if (rc) rc.classList.remove('hidden'); if (re) re.innerText = `"${item.review}"`; } else { if (rc) rc.classList.add('hidden'); }
 
-            let labels = ["한국어 정확도", "변환방식", "생성시간 (1시간기준)"];
+            let labels = [type === 'minutes' ? "한국어 정확도" : "추론/분석력", "변환방식", "생성시간 (1시간기준)"];
             if (type === 'builder') labels = ["수행/추론성능", "빌더 유형", "배포 환경"];
             else if (type === 'report') labels = ["추론/분석력", "리서치 방식", "제작 속도"];
+            
             safeSetText('stat-label-1', labels[0]); safeSetText('stat-label-2', labels[1]); safeSetText('stat-label-3', labels[2]);
             safeSetText('modal-stat-1', typeof item.accuracy === 'number' ? item.accuracy + "%" : item.accuracy); safeSetText('modal-stat-2', item.latency); safeSetText('modal-stat-3', item.genTime);
 
