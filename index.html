@@ -529,7 +529,9 @@
             if (!grid) return;
             grid.innerHTML = data.map(item => {
                 const color = colors[item.tier] || '#64748b';
-                return `<div class="bg-white rounded-3xl p-6 card-transition border border-slate-200 flex flex-col cursor-pointer h-full" onclick='openUnifiedModal(${JSON.stringify(item)}, "${type}")'>
+                // Escape single quotes to prevent breaking the onclick attribute
+                const safeItem = JSON.stringify(item).replace(/'/g, "&#39;");
+                return `<div class="bg-white rounded-3xl p-6 card-transition border border-slate-200 flex flex-col cursor-pointer h-full" onclick='openUnifiedModal(${safeItem}, "${type}")'>
                     <div class="flex justify-between items-center mb-5 text-[10px] font-bold uppercase"><span class="px-2.5 py-1 rounded-lg text-white" style="background:${color}">${item.tier.split(' ')[0]}</span><span class="text-slate-400 bg-slate-50 px-2 py-1 rounded">${item.origin}</span></div>
                     <h4 class="font-bold text-slate-900 text-lg mb-1">${item.name}</h4><p class="text-xs text-slate-400 mb-4 font-semibold uppercase">${item.provider}</p><p class="text-xs text-slate-600 line-clamp-2 bg-slate-50 p-3 rounded-xl border border-slate-100 mb-4">${item.strength || item.summary}</p>
                     <div class="mt-auto pt-4 border-t flex justify-between items-center"><span class="text-sm font-extrabold text-slate-800">${(typeof item.accuracy === 'number') ? (type === 'minutes' ? "한국어 정확도 " : "") + item.accuracy + '%' : item.accuracy}</span><span class="text-xs font-bold" style="color:${color}">분석 &rarr;</span></div></div>`;
