@@ -561,13 +561,14 @@
                 </div>
             </div>
             <!-- Suggested Questions -->
-            <div id="chat-suggestions" class="px-4 pt-3 pb-2 bg-slate-50 border-b border-slate-100 flex flex-wrap gap-1">
-                <span class="text-[10px] font-black text-slate-400 uppercase w-full mb-1 tracking-widest">💡 추천 질문</span>
-                <button class="chat-suggestion-btn" onclick="askSuggestion('가장 강력한 AI 도구를 추천해줘')">가장 강력한 AI 도구</button>
-                <button class="chat-suggestion-btn" onclick="askSuggestion('보안이 중요한 환경에서는 어떤 도구가 좋아?')">보안 특화 도구</button>
-                <button class="chat-suggestion-btn" onclick="askSuggestion('MS 생태계를 쓰는 회사에 맞는 도구 비교해줘')">생태계 비교</button>
-                <button class="chat-suggestion-btn" onclick="askSuggestion('한국어 인식이 뛰어난 회의록 도구는?')">한국어 회의록</button>
-                <button class="chat-suggestion-btn" onclick="askSuggestion('노코드로 에이전트 만들 수 있는 빌더 추천')">노코드 빌더</button>
+            <div id="chat-suggestions" class="px-4 pt-3 pb-2 bg-slate-50 border-b border-slate-100 flex flex-wrap gap-1 justify-between items-end">
+                <div class="flex flex-wrap gap-1 flex-grow">
+                    <span class="text-[10px] font-black text-slate-400 uppercase w-full mb-1 tracking-widest">💡 추천 질문</span>
+                    <button class="chat-suggestion-btn" onclick="askSuggestion('가장 강력한 AI 도구')">최강 도구</button>
+                    <button class="chat-suggestion-btn" onclick="askSuggestion('보안 특화 도구')">보안 특화</button>
+                    <button class="chat-suggestion-btn" onclick="askSuggestion('생태계 비교')">생태계 비교</button>
+                </div>
+                <button id="health-check-btn" onclick="checkSourcesHealth()" class="text-[9px] font-black text-indigo-500 bg-white border border-indigo-200 px-2 py-1.5 rounded-lg hover:bg-indigo-50 transition-all shadow-sm mb-0.5">🌐 출처 점검</button>
             </div>
             <!-- Chat History -->
             <div id="chat-history" class="flex-grow overflow-y-auto p-4 flex flex-col bg-slate-50/30 no-scrollbar gap-1">
@@ -586,6 +587,40 @@
         // --- 1. 전역 유틸리티 및 데이터 ---
         const safeSetText = (id, text) => { const el = document.getElementById(id); if (el) el.innerText = text || "N/A"; };
         const colors = { '생태계 통합': '#4F46E5', '보안 특화': '#10B981', '실시간 번역': '#F59E0B', '분석 전문': '#8B5CF6', '엔터프라이즈 빌더': '#4F46E5', '시각적 노드 빌더': '#10B981', '코드 중심 빌더': '#F59E0B', 'IDE 및 자동화 빌더': '#8B5CF6', '리서치 및 보고서 전문': '#4F46E5', '슬라이드 및 시각화 전문': '#10B981', '데이터 분석 및 리포트 전문': '#F59E0B' };
+
+        let urlHealthMap = {}; 
+        function srcIcon(key, item, label = "") {
+            const url = (item.sources && item.sources[key]) ? item.sources[key] : "";
+            if (!url) return "";
+            const status = urlHealthMap[url];
+            let indicator = "";
+            if (status === 'ok') indicator = '<span class="w-1.5 h-1.5 bg-emerald-500 rounded-full inline-block ml-0.5 animate-pulse"></span>';
+            else if (status === 'err') indicator = '<span class="w-1.5 h-1.5 bg-rose-500 rounded-full inline-block ml-0.5"></span>';
+            else if (status === 'checking') indicator = '<span class="w-1.5 h-1.5 bg-amber-400 rounded-full inline-block ml-0.5 animate-spin"></span>';
+
+            return `<a href="${url}" target="_blank" class="inline-flex items-center justify-center ml-1 text-indigo-400 hover:text-indigo-600 transition-colors" title="${label || '출처 데이터 확인'}">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>${indicator}</a>`;
+        }
+
+        async function checkSourcesHealth() {
+            const btn = document.getElementById('health-check-btn');
+            if (btn) { btn.disabled = true; btn.innerHTML = '<span class="animate-spin mr-1 inline-block">⏳</span>검사 중'; }
+            const urls = new Set();
+            const collect = (list) => { (Array.isArray(list) ? list : Object.values(list)).forEach(i => i.sources && Object.values(i.sources).forEach(u => urls.add(u))); };
+            collect(enterpriseTools); collect(minutesData); collect(builderData); collect(reportSlideData);
+            for (let url of urls) {
+                urlHealthMap[url] = 'checking'; 
+                try { await fetch(url, { method: 'HEAD', mode: 'no-cors' }); urlHealthMap[url] = 'ok'; } 
+                catch (e) { urlHealthMap[url] = 'err'; }
+            }
+            if (btn) { btn.disabled = false; btn.innerHTML = '🌐 점검 완료'; }
+            updateAllUI();
+        }
+
+        function updateAllUI() {
+            const activeNav = document.querySelector('.nav-item.active');
+            if (activeNav) activeNav.click(); // 현재 활성 탭 강제 리렌더링
+        }
 
         let enterpriseTools = {};
         let minutesData = [];
@@ -652,12 +687,12 @@
             if (!grid) return;
             grid.innerHTML = data.map(item => {
                 const color = colors[item.tier] || '#64748b';
-                // Escape single quotes to prevent breaking the onclick attribute
                 const safeItem = JSON.stringify(item).replace(/'/g, "&#39;");
                 return `<div class="bg-white rounded-3xl p-6 card-transition border border-slate-200 flex flex-col cursor-pointer h-full" onclick='openUnifiedModal(${safeItem}, "${type}")'>
-                    <div class="flex justify-between items-center mb-5 text-[10px] font-bold uppercase"><span class="px-2.5 py-1 rounded-lg text-white" style="background:${color}">${item.tier.split(' ')[0]}</span><span class="text-slate-400 bg-slate-50 px-2 py-1 rounded">${item.origin}</span></div>
-                    <h4 class="font-bold text-slate-900 text-lg mb-1">${item.name}</h4><p class="text-xs text-slate-400 mb-4 font-semibold uppercase">${item.provider}</p><p class="text-xs text-slate-600 line-clamp-2 bg-slate-50 p-3 rounded-xl border border-slate-100 mb-4">${item.strength || item.summary}</p>
-                    <div class="mt-auto pt-4 border-t flex justify-between items-center"><span class="text-sm font-extrabold text-slate-800">${(typeof item.accuracy === 'number') ? (type === 'minutes' ? "한국어 정확도 " : "") + item.accuracy + '%' : item.accuracy}</span><span class="text-xs font-bold" style="color:${color}">분석 &rarr;</span></div></div>`;
+                    <div class="flex justify-between items-center mb-5 text-[10px] font-bold uppercase"><span class="px-2.5 py-1 rounded-lg text-white" style="background:${color}">${item.tier.split(' ')[0]}</span><span class="text-slate-400 bg-slate-50 px-2 py-1 rounded flex items-center">${item.origin}${srcIcon('summary', item)}</span></div>
+                    <h4 class="font-bold text-slate-900 text-lg mb-1">${item.name}</h4><p class="text-xs text-slate-400 mb-4 font-semibold uppercase">${item.provider}</p>
+                    <p class="text-xs text-slate-600 line-clamp-2 bg-slate-50 p-3 rounded-xl border border-slate-100 mb-4">${item.strength || item.summary}</p>
+                    <div class="mt-auto pt-4 border-t flex justify-between items-center"><span class="text-sm font-extrabold text-slate-800 flex items-center">${(typeof item.accuracy === 'number') ? (type === 'minutes' ? "한국어 정확도 " : "") + item.accuracy + '%' : item.accuracy}${srcIcon('models', item)}</span><span class="text-xs font-bold" style="color:${color}">분석 &rarr;</span></div></div>`;
             }).join('');
         }
 
@@ -665,19 +700,18 @@
             const color = colors[item.tier] || '#64748b';
             const mt = document.getElementById('modal-tier'); if (mt) { mt.innerText = item.tier; mt.style.backgroundColor = color; }
             
-            const getSrcIcon = (srcKey) => (item.sources && item.sources[srcKey]) ? `<a href="${item.sources[srcKey]}" target="_blank" class="inline-flex items-center justify-center mx-1 text-emerald-500 hover:text-emerald-700 transition-colors" title="출처 데이터 확인"><svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></a>` : '';
-
             safeSetText('modal-title', item.name); 
             safeSetText('modal-provider', item.provider); 
             safeSetText('modal-origin', item.origin); 
             
             const strengthEl = document.getElementById('modal-strength');
-            if (strengthEl) strengthEl.innerHTML = (item.strength || item.summary) + getSrcIcon('summary');
+            if (strengthEl) strengthEl.innerHTML = (item.strength || item.summary) + srcIcon('summary', item);
             
             const updateEl = document.getElementById('modal-update');
-            if (updateEl) updateEl.innerHTML = item.update + getSrcIcon('models');
+            if (updateEl) updateEl.innerHTML = item.update + srcIcon('models', item);
 
             safeSetText('modal-pricing', item.pricing || "별도 협의"); 
+            const pricingEl = document.getElementById('modal-pricing'); if (pricingEl) pricingEl.innerHTML += srcIcon('pricing', item);
             safeSetText('modal-rank', item.rank);
             
             const ms = document.getElementById('modal-source'); if (ms) { if (item.source_url) { ms.href = item.source_url; ms.classList.remove('hidden'); } else { ms.classList.add('hidden'); } }
@@ -704,7 +738,11 @@
                 }
                 specList.innerHTML = specs.map(s => {
                     const idx = s.indexOf(':');
-                    return `<li class="p-4 flex justify-between font-bold"><span>${s.substring(0, idx)}</span><span class="text-slate-800 text-right">${s.substring(idx + 1).trim()}</span></li>`;
+                    const key = s.toLowerCase().includes('업데이트') ? 'timelines' : (s.toLowerCase().includes('모델') || s.toLowerCase().includes('엔진') ? 'models' : 'summary');
+                    return `<li class="p-4 flex justify-between font-bold border-b border-slate-50">
+                        <span class="text-slate-400 flex items-center">${s.substring(0, idx)}${srcIcon(key, item)}</span>
+                        <span class="text-slate-800 text-right">${s.substring(idx + 1).trim()}</span>
+                    </li>`;
                 }).join('');
             }
             document.getElementById('modal-overlay').classList.add('active');
