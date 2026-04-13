@@ -41,7 +41,7 @@
                 "2026.03: GPT-5.4 통합 및 o4 엔진 적용",
                 "2026.04: Codex Seat 및 연간 계약 단가 $20 수준 인하"
             ],
-            "clients": "삼성전자, LG전자, SK이노베이션 등",
+            "clients": "SK네트웍스, 아모레퍼시픽, 넥슨, 현대자동차 등 전사적 도입",
             "distributor": "삼성SDS, LG CNS",
             "sources": {
                 "summary": "https://openai.com/enterprise",
@@ -76,7 +76,7 @@
             "tech": {
                 "llm": "Gemini 3.0 Ultra"
             },
-            "link": "https://workspace.google.com/products/ai/gemini-enterprise",
+            "link": "https://workspace.google.com/solutions/ai/",
             "users": "전 세계 수억 명의 워크스페이스 기업 사용자",
             "models": [
                 {
@@ -98,14 +98,17 @@
                 "2026년 1월 15일: Gemini 3.0 아키텍처 및 MCP 에이전트 생태계 통합 발표",
                 "2026년 4월: 전사적 지식 그래프 및 자율 에이전트 역량 대규모 업데이트"
             ],
-            "clients": "대한항공, 롯데쇼핑, 쿠팡",
+            "clients": "컬리, 우아한형제들, 넷마블, 카카오스타일 등 Workspace 기반 기업",
             "distributor": "메가존클라우드, 베스핀글로벌",
             "sources": {
-                "models": "https://deepmind.google/technologies/gemini/",
-                "context": "https://deepmind.google/technologies/gemini/",
-                "pricing": "https://workspace.google.com/pricing",
-                "distributor": "https://www.megazone.com/solutions/google-workspace/",
-                "clients": "https://cloud.google.com/customers"
+                "models": "https://workspace.google.com/solutions/ai/",
+                "context": "https://workspace.google.com/solutions/ai/",
+                "pricing": "https://workspace.google.com/solutions/ai/",
+                "distributor": "https://workspace.google.com/solutions/ai/",
+                "clients": "https://workspace.google.com/solutions/ai/",
+                "summary": "https://workspace.google.com/solutions/ai/",
+                "timelines": "https://workspace.google.com/solutions/ai/",
+                "review": "https://workspace.google.com/solutions/ai/"
             }
         },
         "claude": {
@@ -149,7 +152,7 @@
                 "2026.02: Managed Agents(에이전틱 워크플로우) 베타 시작",
                 "2026.04: 4.6 계열 모델 보안 가시화 대규모 업데이트"
             ],
-            "clients": "SK텔레콤, 쏘카, 엔씨소프트, 당근",
+            "clients": "SK텔레콤 (글로벌 AI 파트너십), 엔씨소프트, 메가존클라우드 도입 고객사",
             "distributor": "AWS 파트너스 (메가존, 슬랙코리아)",
             "sources": {
                 "models": "https://www.anthropic.com/news",
@@ -203,7 +206,7 @@
                 "2025년 9월 16일: Copilot Wave 2 자율 협업 캔버스 Pages 통합",
                 "2026년 3월: Windows 12 커널 전면 통합 및 GPT-5.4 엔진 적용 완료"
             ],
-            "clients": "KB국민은행, 삼성전자, 현대차그룹",
+            "clients": "LG전자, HD현대, KB국민은행, 대한항공, SK디스커버리 등 대기업군",
             "distributor": "삼성SDS, 다우데이타, 디모아",
             "sources": {
                 "features": "https://www.microsoft.com/microsoft-365/enterprise/copilot-for-microsoft-365",
@@ -256,7 +259,7 @@
                 "2025년 11월 30일: 프라이빗 전사망 사내 지식 RAG 기능 추가",
                 "2026년 3월 15일: Sonar 4.0 및 완전 자동화 Deep Research 기능 정식 배포"
             ],
-            "clients": "SKT 기업용 에이닷 및 사내 파트너십 조직",
+            "clients": "SK텔레콤 (에이닷 검색 연동 및 전사 도입), 쏘카 등",
             "distributor": "SK텔레콤 전략적 독점 제휴",
             "sources": {
                 "distributor": "https://news.sktelecom.com/201292",
@@ -309,7 +312,7 @@
                 "2025년 9월 10일: 다중 파일 자율 수정 Composer 기능을 인터페이스 핵심으로 격상",
                 "2026년 4월: 억대 단위 레거시 코드를 스스로 리팩토링하는 에이전틱 코딩 모드 도입"
             ],
-            "clients": "토스(Toss), 당근, 배달의민족 등 주요 IT 기업",
+            "clients": "토스(비바리퍼블리카), 쏘카, 빗썸 등 개발 조직 중심의 IT 유니콘 기업",
             "distributor": "Cursor (Anysphere) 글로벌 세일즈",
             "sources": {
                 "models": "https://cursor.com/features",
@@ -319,595 +322,1236 @@
         }
     },
     "minutesData": [
-{
-"tier": "생태계 통합",
-"name": "M365 Copilot Teams",
-"provider": "Microsoft",
-"origin": "국외",
-"rank": "글로벌 1위",
-"llm": "GPT-5.4 Engine",
-"latency": "실시간 (0.2s)",
-"accuracy": 98,
-"update": "Windows 12 커널 통합 및 에이전트 자동 요약 (2026.03)",
-"strength": "Microsoft Graph 및 Loop 기반의 전사 지식 실시간 동기화",
-"genTime": "30초 내외",
-"speakerSep": "Biometric Voice ID",
-"env": "Teams, Meta Horizon",
-"postFunc": "Outlook/Loop 자동 연동",
-"deployment": "SaaS",
-"integration": "M365 전용",
-"review": "오피스 라이프사이클 통합 압도적",
-"link": "https://www.microsoft.com/en-us/microsoft-365/enterprise/copilot-for-microsoft-365"
-},
-{
-"tier": "생태계 통합",
-"name": "Google Gemini Workspace",
-"provider": "Google",
-"origin": "국외",
-"rank": "글로벌 2위",
-"llm": "Gemini 1.5 Pro",
-"latency": "실시간 (0.8s)",
-"accuracy": 95,
-"update": "검색 강화 (2024.04)",
-"summary": "Google Workspace의 모든 문서와 회의를 통합 관리하는 엔터프라이즈 AI",
-"strength": "Gemini 2.0 기반의 초거대 컨텍스트 처리 및 구글 워크스페이스(Meet, Docs) 데이터 실시간 연포맷",
-"genTime": "45초 내외",
-"speakerSep": "Biometric Voice ID (Adv)",
-"env": "Meet, Android, iOS",
-"postFunc": "Docs/Slides 자동 생성",
-"deployment": "SaaS",
-"integration": "Workspace Full Stack",
-"review": "구글 생태계 사용자라면 대체 불가능한 생산성",
-"link": "https://workspace.google.com/solutions/ai/",
-"sources": {
-    "summary": "https://workspace.google.com/solutions/ai/",
-    "models": "https://deepmind.google/technologies/gemini/",
-    "pricing": "https://workspace.google.com/pricing",
-    "timelines": "https://blog.google/products/workspace/"
-}
-},
-{
-"tier": "생태계 통합",
-"name": "SKT 에이닷 기업용 대시보드",
-"provider": "SKT",
-"origin": "국내",
-"rank": "국내 2위",
-"llm": "Perplexity Sonar 4.0",
-"latency": "실시간 (1.2s)",
-"accuracy": 98,
-"update": "퍼플렉시티 협업 기반 심층 리서치 연동 (2026.03)",
-"strength": "통화 데이터와 웹 검색 리서치를 결합한 전공 지식 요약",
-"genTime": "1.5분 내외",
-"speakerSep": "성문 ID",
-"env": "Mobile/Office Call",
-"postFunc": "T-World 비즈니스 연동",
-"deployment": "SaaS",
-"integration": "A. / Perplexity",
-"review": "비즈니스 정보 수집과 전사 업무 통합",
-"link": "https://a-dot.ai"
-},
-{
-"tier": "생태계 통합",
-"name": "Samsung SDS Brity Copilot",
-"provider": "삼성SDS",
-"origin": "국내",
-"rank": "국내 3위",
-"llm": "FabriX",
-"latency": "실시간 (1.0s)",
-"accuracy": 97,
-"update": "ERP 연동 강화 (2024.01)",
-"summary": "삼성 그룹의 보안 가이드라인을 준수하는 국내 최대 엔터프라이즈 업무 자동화 시스템",
-"strength": "FabriX 플랫폼 연동을 통한 사내 ERP/Legacy 데이터 기반의 고정밀 회의 의사결정 지원",
-"genTime": "1분 내외",
-"speakerSep": "Brity Biometric ID",
-"env": "Brity Messenger/Video",
-"postFunc": "ERP 연동 리포트",
-"deployment": "On-prem/Private Cloud",
-"integration": "Brity, ERP, Knox",
-"review": "대기업의 복잡한 결재선과 보안 요건을 가장 완벽히 이해하는 도구",
-"link": "https://www.samsungsds.com/kr/brity-copilot/brity-copilot.html",
-"sources": {
-    "summary": "https://www.samsungsds.com/kr/brity-copilot/brity-copilot.html",
-    "models": "https://www.samsungsds.com/kr/ai-fabrix/fabrix.html",
-    "pricing": "https://www.samsungsds.com/kr/brity-copilot/brity-copilot.html"
-}
-},
-{
-"tier": "보안 특화",
-"name": "ClovaNote Enterprise",
-"provider": "Naver",
-"origin": "국내",
-"rank": "국내 1위",
-"llm": "HyperCLOVA X 2.5",
-"latency": "실시간 (0.5s)",
-"accuracy": 99,
-"update": "국내 공공/금융 전용 클라우드 보안 인증 완료 (2026.02)",
-"strength": "한국어 방언 및 도메인 특화 용어 인식률 세계 1위",
-"genTime": "1분 내외",
-"speakerSep": "HyperVoice ID",
-"env": "Mobile, Desktop, Call",
-"postFunc": "NaverWorks 연동",
-"deployment": "Hybrid/On-prem",
-"integration": "NaverWorks, SMS",
-"review": "한국어 업무 환경 최적화",
-"link": "https://clovanote.naver.com"
-},
-{
-"tier": "보안 특화",
-"name": "BizCrush Enterprise",
-"provider": "비즈크러쉬",
-"origin": "국내",
-"rank": "보안 1위",
-"llm": "Llama 3 Tuned",
-"latency": "비실시간 (10s)",
-"accuracy": 95,
-"update": "비식별화 고도화 (2024.04)",
-"summary": "금융권 및 공공기관의 망분리 환경에서 로컬 인프라로 동작하는 보안 특화 회의록",
-"strength": "외부망 연결 없이 내부 서버(GPU)에서만 동작하여 데이터 유출 가능성을 원천 차단",
-"genTime": "3분 내외",
-"speakerSep": "Active Directory 연동",
-"env": "On-prem Local Video",
-"postFunc": "Internal KMS 연동",
-"deployment": "On-premise",
-"integration": "Legacy Groupware",
-"review": "금융권 컴플라이언스 대응을 위한 유일한 선택지",
-"link": "https://bizcrush.ai",
-"sources": {
-    "summary": "https://bizcrush.ai",
-    "pricing": "https://bizcrush.ai/contact"
-}
-},
-{
-"tier": "보안 특화",
-"name": "ReturnZero VITO Ent",
-"provider": "리턴제로",
-"origin": "국내",
-"rank": "국내 상위",
-"llm": "VITO LLM",
-"latency": "실시간 (0.8s)",
-"accuracy": 96,
-"update": "오토 가이드 (2024.03)",
-"strength": "초저지연 전사 기술 우수",
-"genTime": "2분 내외",
-"speakerSep": "성문분석",
-"env": "대면 중심",
-"postFunc": "상담 가이드",
-"deployment": "API/SaaS",
-"integration": "CRM",
-"review": "상담 요약 정확함",
-"link": "#"
-},
-{
-"tier": "보안 특화",
-"name": "ActionPower Daglo Ent",
-"provider": "액션파워",
-"origin": "국내",
-"rank": "국내 상위",
-"llm": "Daglo LLM",
-"latency": "비실시간 (8.0s)",
-"accuracy": 96,
-"update": "하이브리드 보안 (2024.02)",
-"strength": "전용 하드웨어 연동 강점",
-"genTime": "4분 내외",
-"speakerSep": "음색 분리",
-"env": "대면 중심",
-"postFunc": "보관함 동기화",
-"deployment": "Hybrid",
-"integration": "API",
-"review": "하드웨어 안정 연동",
-"link": "#"
-},
-{
-"tier": "실시간 번역",
-"name": "DeepL Voice Meeting",
-"provider": "DeepL",
-"origin": "국외",
-"rank": "번역 1위",
-"llm": "DeepL AI",
-"latency": "실시간 (0.3s)",
-"accuracy": 95,
-"update": "지연율 단축 (2024.03)",
-"strength": "세계 최고 실시간 통역 성능",
-"genTime": "1분 내외",
-"speakerSep": "채널 분리",
-"env": "모두 지원",
-"postFunc": "다국어 전사본",
-"deployment": "API/SaaS",
-"integration": "Teams, Zoom",
-"review": "번역 품질 세계 최고",
-"link": "#"
-},
-{
-"tier": "실시간 번역",
-"name": "Zoom AI Companion",
-"provider": "Zoom",
-"origin": "국외",
-"rank": "글로벌 상위",
-"llm": "Zoom Prop.",
-"latency": "실시간 (1.0s)",
-"accuracy": 91,
-"update": "질의응답 강화 (2024.04)",
-"strength": "화상회의 중 즉각적인 AI 도움",
-"genTime": "2분 내외",
-"speakerSep": "프로필 매칭",
-"env": "화상 전용",
-"postFunc": "할 일 추출",
-"deployment": "SaaS",
-"integration": "Zoom Apps",
-"review": "가성비 최강",
-"link": "#"
-},
-{
-"tier": "분석 전문",
-"name": "Notion AI for Workspaces",
-"provider": "Notion",
-"origin": "국외",
-"rank": "글로벌 상위",
-"llm": "Claude 3",
-"latency": "실시간 (1.5s)",
-"accuracy": 94,
-"update": "Notion Meet (2024.02)",
-"strength": "기록과 지식 공유 단일화",
-"genTime": "2분 내외",
-"speakerSep": "프로필 매칭",
-"env": "모두 지원",
-"postFunc": "DB 자동 매핑",
-"deployment": "SaaS",
-"integration": "Notion Apps",
-"review": "문서화 연동 최고",
-"link": "#"
-},
-{
-"tier": "분석 전문",
-"name": "Fireflies.ai",
-"provider": "Fireflies",
-"origin": "국외",
-"rank": "글로벌 상위",
-"llm": "Fireflies LLM",
-"latency": "실시간 (2.0s)",
-"accuracy": 90,
-"update": "정형 분석 강화 (2024.04)",
-"strength": "검색 가능한 미팅 아카이브",
-"genTime": "3분 내외",
-"speakerSep": "음색 분석",
-"env": "화상 전용",
-"postFunc": "토픽 트래커",
-"deployment": "SaaS",
-"integration": "50+ Apps",
-"review": "키워드 추적 탁월",
-"link": "#"
-},
-{
-"tier": "분석 전문",
-"name": "Otter.ai",
-"provider": "Otter.ai",
-"origin": "국외",
-"rank": "글로벌 상위",
-"llm": "Otter AI",
-"latency": "실시간 (1.5s)",
-"accuracy": 91,
-"update": "AI 챗 도입 (2024.03)",
-"strength": "과거 대화 데이터 기반 답변",
-"genTime": "2분 내외",
-"speakerSep": "목소리프린트",
-"env": "모두 지원",
-"postFunc": "미팅 라이브러리",
-"deployment": "SaaS",
-"integration": "Slack",
-"review": "검색 기능 직관적",
-"link": "#"
-},
-{
-"tier": "생태계 통합",
-"name": "Lark Minutes",
-"provider": "Bytedance",
-"origin": "국외",
-"rank": "상위",
-"llm": "Lark LLM",
-"latency": "실시간 (2.0s)",
-"accuracy": 94,
-"update": "다국어 전사 (2024.04)",
-"strength": "프로젝트 도구 결합력",
-"genTime": "3분 내외",
-"speakerSep": "음색분석",
-"env": "모두 지원",
-"postFunc": "자동화봇",
-"deployment": "SaaS",
-"integration": "Lark Suite",
-"review": "올인원 최적",
-"link": "#"
-},
-{
-"tier": "생태계 통합",
-"name": "Read AI",
-"provider": "Read.ai",
-"origin": "국외",
-"rank": "신흥",
-"llm": "Read LLM",
-"latency": "실시간 (1.8s)",
-"accuracy": 93,
-"update": "지식 그래프 (2024.02)",
-"strength": "맥락 연결 워크플로우",
-"genTime": "2분 내외",
-"speakerSep": "프로파일",
-"env": "화상 전용",
-"postFunc": "감정 리포트",
-"deployment": "SaaS",
-"integration": "Slack",
-"review": "맥락 연결 우수",
-"link": "#"
-},
-{
-"tier": "보안 특화",
-"name": "Rsupport AI:Reporto",
-"provider": "알서포트",
-"origin": "국내",
-"rank": "중위",
-"llm": "Reporto LLM",
-"latency": "실시간 (2s)",
-"accuracy": 95,
-"update": "원격 제어 통합 (2024.03)",
-"strength": "실시간 자막 및 가상 비서",
-"genTime": "3분 내외",
-"speakerSep": "프로필",
-"env": "화상 전용",
-"postFunc": "원격 리포트",
-"deployment": "SaaS",
-"integration": "RemoteView",
-"review": "실시간 소통 우수",
-"link": "#"
-},
-{
-"tier": "보안 특화",
-"name": "Energent.ai",
-"provider": "에너전트",
-"origin": "국내",
-"rank": "특화",
-"llm": "Custom Llama",
-"latency": "비실시간 (15s)",
-"accuracy": 94,
-"update": "용어 사전 (2024.01)",
-"strength": "제조 산업 전문 용어 인식",
-"genTime": "6분 내외",
-"speakerSep": "성문인식",
-"env": "폐쇄망",
-"postFunc": "안전 리포트",
-"deployment": "On-prem",
-"integration": "SCADA",
-"review": "용어 정확도 만족",
-"link": "#"
-},
-{
-"tier": "실시간 번역",
-"name": "Webex AI Assistant",
-"provider": "Cisco",
-"origin": "국외",
-"rank": "상위",
-"llm": "Webex AI",
-"latency": "실시간 (1s)",
-"accuracy": 92,
-"update": "소음 제거 (2024.02)",
-"strength": "고품질 하드웨어 연동",
-"genTime": "2.5분 내외",
-"speakerSep": "하드웨어",
-"env": "모두 지원",
-"postFunc": "하이라이트",
-"deployment": "Hybrid",
-"integration": "Webex Device",
-"review": "신뢰성 우수",
-"link": "#"
-},
-{
-"tier": "실시간 번역",
-"name": "The Playto Tiro",
-"provider": "더플레이토",
-"origin": "국내",
-"rank": "특화",
-"llm": "Tiro Engine",
-"latency": "실시간 (0.7s)",
-"accuracy": 95,
-"update": "자막 엔진 (2024.03)",
-"strength": "대형 행사장 QR 자막 공유",
-"genTime": "3분 내외",
-"speakerSep": "위치기반",
-"env": "오프라인",
-"postFunc": "강의 퀴즈",
-"deployment": "SaaS",
-"integration": "YT, Zoom",
-"review": "가독성 최고",
-"link": "#"
-},
-{
-"tier": "실시간 번역",
-"name": "Switch Meeting",
-"provider": "아틀라스랩스",
-"origin": "국내",
-"rank": "중위",
-"llm": "Switch LLM",
-"latency": "실시간 (1.5s)",
-"accuracy": 94,
-"update": "모바일 강화 (2024.04)",
-"strength": "전화 업무 연동성 최적화",
-"genTime": "3분 내외",
-"speakerSep": "번호매칭",
-"env": "모바일",
-"postFunc": "태그 분석",
-"deployment": "SaaS",
-"integration": "CRM, Slack",
-"review": "영업 선호 1위",
-"link": "#"
-},
-{
-"tier": "분석 전문",
-"name": "TeamBlo Ent",
-"provider": "티맥스소프트",
-"origin": "국내",
-"rank": "신흥",
-"llm": "Continuum AI",
-"latency": "비실시간 (12s)",
-"accuracy": 95,
-"update": "모델 튜닝 (2024.01)",
-"strength": "소버린 AI 및 커스텀 모델",
-"genTime": "5분 내외",
-"speakerSep": "성문인식",
-"env": "모두 지원",
-"postFunc": "자동 워크플로우",
-"deployment": "Hybrid",
-"integration": "Tmax",
-"review": "유연성 우수",
-"link": "#"
-},
-{
-"tier": "분석 전문",
-"name": "Callabo Sales AI",
-"provider": "칼라보",
-"origin": "국내",
-"rank": "특화",
-"llm": "GPT-4o Opt",
-"latency": "비실시간 (10s)",
-"accuracy": 94,
-"update": "CRM 연동 (2024.03)",
-"strength": "영업 딜 클로징 확률 분석",
-"genTime": "4분 내외",
-"speakerSep": "세일즈점수",
-"env": "모두 지원",
-"postFunc": "CRM 자동 기입",
-"deployment": "SaaS",
-"integration": "Salesforce",
-"review": "영업 인사이트 우수",
-"link": "#"
-},
-{
-"tier": "분석 전문",
-"name": "Avoma Sales",
-"provider": "Avoma",
-"origin": "국외",
-"rank": "특화",
-"llm": "Avoma LLM",
-"latency": "실시간 (2s)",
-"accuracy": 90,
-"update": "패턴 분석 (2024.04)",
-"strength": "상담 코칭 자동화 솔루션",
-"genTime": "3분 내외",
-"speakerSep": "음색분석",
-"env": "모두 지원",
-"postFunc": "인사이트 리포트",
-"deployment": "SaaS",
-"integration": "CRM",
-"review": "코칭 효율적",
-"link": "#"
-},
-{
-"tier": "분석 전문",
-"name": "Tactiq Meet",
-"provider": "Tactiq",
-"origin": "국외",
-"rank": "중위",
-"llm": "GPT-4",
-"latency": "실시간 (자막)",
-"accuracy": 91,
-"update": "Extension (2024.02)",
-"strength": "별도 봇 없는 클린 전사",
-"genTime": "1분 내외",
-"speakerSep": "데이터",
-"env": "화상 전용",
-"postFunc": "스크린샷 요약",
-"deployment": "Extension",
-"integration": "Google",
-"review": "환경 깔끔함",
-"link": "#"
-},
-{
-"tier": "분석 전문",
-"name": "NoteGPT Video",
-"provider": "NoteGPT",
-"origin": "국외",
-"rank": "중위",
-"llm": "GPT-4o",
-"latency": "비실시간 (8s)",
-"accuracy": 92,
-"update": "영상 요약 (2024.04)",
-"strength": "지능형 학습 노트 생성",
-"genTime": "4분 내외",
-"speakerSep": "음색분리",
-"env": "모두 지원",
-"postFunc": "마인드맵",
-"deployment": "SaaS",
-"integration": "YT",
-"review": "학습용 탁월",
-"link": "#"
-},
-{
-"tier": "보안 특화",
-"name": "티로(Tiro) AI 회의록",
-"provider": "티로(Tiro)",
-"origin": "국내",
-"rank": "급상승 솔루션",
-"llm": "Tiro LLM (자체 튜닝)",
-"latency": "실시간/비실시간 (1.5s)",
-"accuracy": 96,
-"update": "기업망 완전 폐쇄형 모델 런칭 (2025.10)",
-"strength": "망 분리 환경 최적화 및 유연한 커스텀 양식",
-"genTime": "1~2분 내외",
-"speakerSep": "다화자 성문/비전 분리",
-"env": "모두 지원 (On-premise 최적)",
-"postFunc": "사내 커스텀 양식 자동생성",
-"deployment": "On-premise / Private Cloud",
-"integration": "커스텀 그룹웨어",
-"review": "폐쇄망 보안성과 유연한 커스텀 지원 훌륭",
-"link": "https://www.google.com/search?q=티로+AI+회의록"
-}
-],
+        {
+            "tier": "생태계 통합",
+            "name": "M365 Copilot for Teams",
+            "provider": "Microsoft",
+            "origin": "국외",
+            "rank": "글로벌 1위",
+            "llm": "GPT-5.4 Turbo-M",
+            "latency": "실시간 (0.1s)",
+            "accuracy": 98,
+            "update": "회의 중 논의 구조 실시간 시각화 및 Loop 액션 아이템 자동 동기화 (2026.04)",
+            "strength": "Teams 회의 중 질문-응답-액션 아이템을 실시간 계층화하여 미참석자에게 투명하게 전달",
+            "genTime": "20초 내외",
+            "speakerSep": "Biometric Voice ID",
+            "env": "Teams, M365 Ecosystem",
+            "postFunc": "Outlook/Loop/Planner 자동 연동",
+            "deployment": "SaaS",
+            "integration": "M365 전용",
+            "review": "단순 기록을 넘어 미팅의 결론을 실시간으로 도출하고 실행 단계로 즉시 연결하는 시스템",
+            "link": "https://www.microsoft.com/en-us/microsoft-365/enterprise/copilot-for-microsoft-365",
+            "sources": {
+                "summary": "https://www.microsoft.com/en-us/microsoft-365/enterprise/copilot-for-microsoft-365",
+                "models": "https://news.microsoft.com",
+                "pricing": "https://www.microsoft.com/en-us/microsoft-365/enterprise/copilot-for-microsoft-365"
+            },
+            "features": [
+                {
+                    "name": "실시간 Teams 참여",
+                    "desc": "회의 중 질문에 실시간 답변 및 대화 흐름 요약"
+                },
+                {
+                    "name": "참석 못한 회의 캐치업",
+                    "desc": "지각하거나 불참한 회의의 핵심 내용을 즉시 브리핑"
+                },
+                {
+                    "name": "사내 Graph 데이터 연동",
+                    "desc": "회의 중 언급된 문서나 이메일을 즉시 찾아와 맥락 보강"
+                },
+                {
+                    "name": "후속 조치 자동 메일",
+                    "desc": "회의 결정 사항과 액션 아이템을 정리해 참석자에게 자동 발송"
+                }
+            ],
+            "timelines": [
+                "회의 중 논의 구조 실시간 시각화 및 Loop 액션 아이템 자동 동기화 (2026.04)"
+            ]
+        },
+        {
+            "tier": "생태계 통합",
+            "name": "Gemini for Google Meet & Chat",
+            "provider": "Google",
+            "origin": "국외",
+            "rank": "글로벌 2위",
+            "llm": "Gemini 2.0 Ultra",
+            "latency": "실시간 (0.5s)",
+            "accuracy": 96,
+            "update": "회의 시각적 요약 기능 도입 및 40개국어 실시간 감정 분석 자막 탑재 (2026.04)",
+            "summary": "Google Workspace의 모든 회의와 채팅을 지능적으로 요약하고 Docs로 자동 리포팅하는 에이전트",
+            "strength": "Gemini 2.0 기반의 초거대 컨텍스트를 활용한 고정밀 회의록 및 하이라이트 영상 자동 태그 생성",
+            "genTime": "30초 내외",
+            "speakerSep": "Biometric Voice ID (Adv)",
+            "env": "Meet, Chat, Google Nest",
+            "postFunc": "Docs/Slides/Tasks 자동 생성",
+            "deployment": "SaaS",
+            "integration": "Workspace Full Stack",
+            "review": "구글 생태계 사용자라면 모바일과 협업 툴 간의 끊김 없는 미팅 기록 및 분석 경험을 제공",
+            "link": "https://workspace.google.com/solutions/ai/",
+            "sources": {
+                "summary": "https://workspace.google.com/solutions/ai/",
+                "models": "https://deepmind.google/technologies/gemini/",
+                "pricing": "https://workspace.google.com/pricing",
+                "timelines": "https://blog.google/products/workspace/"
+            },
+            "features": [
+                {
+                    "name": "Google Meet 요약",
+                    "desc": "Meet 회의록을 Google Docs에 즉시 생성 및 저장"
+                },
+                {
+                    "name": "멀티모달 시각 분석",
+                    "desc": "화면 공유 중인 장표의 텍스트와 이미지까지 이해하고 요약"
+                },
+                {
+                    "name": "실시간 다국어 번역",
+                    "desc": "전 세계 수십 개 언어에 대한 고정확도 실시간 자막 제공"
+                },
+                {
+                    "name": "Workspace 데이터 통합",
+                    "desc": "Drive 내 관련 문서들과 회의 내용을 결합한 심층 분석"
+                }
+            ],
+            "timelines": [
+                "회의 시각적 요약 기능 도입 및 40개국어 실시간 감정 분석 자막 탑재 (2026.04)"
+            ]
+        },
+        {
+            "tier": "생태계 통합",
+            "name": "SKT 에이닷 (A.note) 비즈니스",
+            "provider": "SKT",
+            "origin": "국내",
+            "rank": "국내 1위 (B2C-B2B)",
+            "llm": "Perplexity Sonar 4.0",
+            "latency": "실시간 (1.0s)",
+            "accuracy": 98,
+            "update": "회의 전 배경지식 사전 리서치 및 캘린더 기반 후속 액션 자동 플래닝 (2026.04)",
+            "strength": "전화/회의 통합 전사 기능을 통해 통화 기록과 미팅 요약을 하나의 비즈니스 타임라인으로 관리",
+            "genTime": "1분 내외",
+            "speakerSep": "성문 ID (Fine-tuned)",
+            "env": "A.note Mobile, PC, Calling",
+            "postFunc": "T-Calendar/Perplexity 연동",
+            "deployment": "SaaS",
+            "integration": "A. / Perplexity / Azure",
+            "review": "전화 업무 중심의 한국 기업 문화를 정확히 꿰뚫는 AI 회의 비서 및 의사 결정 보조 도구",
+            "link": "https://a-dot.ai",
+            "sources": {
+                "summary": "https://a-dot.ai",
+                "distributor": "https://news.sktelecom.com/201292"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "회의 전 배경지식 사전 리서치 및 캘린더 기반 후속 액션 자동 플래닝 (2026.04)"
+            ]
+        },
+        {
+            "tier": "생태계 통합",
+            "name": "Samsung SDS Brity Copilot",
+            "provider": "삼성SDS",
+            "origin": "국내",
+            "rank": "국내 상위",
+            "llm": "FabriX Agentic Engine",
+            "latency": "실시간 (0.3s)",
+            "accuracy": 98,
+            "update": "보안 등급별 회의 데이터 마스킹 및 사내 ERP/Knox 직접 상신 에이전트 (2026.04)",
+            "summary": "삼성 그룹의 보안 표준을 충족하며 회의록에서 바로 전사 시스템 태스크를 수행하는 엔터프라이즈 AI",
+            "strength": "FabriX 연동을 통한 최적화된 회의록 생성과 동시에 보안이 보장된 환경에서의 후속 업무 자동 처리",
+            "genTime": "45초 내외",
+            "speakerSep": "Brity Biometric ID",
+            "env": "Brity Messenger/Video/Room",
+            "postFunc": "Knox Approval/ERP Sync",
+            "deployment": "On-prem/Private Cloud",
+            "integration": "FabriX, ERP, Knox",
+            "review": "보안과 규제가 핵심인 대기업 환경에서 의사 결정의 속도를 높이는 최적의 회의 자동화 솔루션",
+            "link": "https://www.samsungsds.com/kr/",
+            "sources": {
+                "summary": "https://www.samsungsds.com/kr/",
+                "models": "https://www.samsungsds.com",
+                "pricing": "https://www.samsungsds.com/kr/",
+                "timelines": "https://www.samsungsds.com",
+                "review": "https://www.samsungsds.com"
+            },
+            "features": [
+                {
+                    "name": "사내 그룹웨어 완벽 통합",
+                    "desc": "삼성SDS 기술력 기반의 사내 협업 시스템 최적 연동"
+                },
+                {
+                    "name": "표준 회의록 자동 생성",
+                    "desc": "기업 표준 서식에 맞춰 회의 내용을 체계적으로 구조화"
+                },
+                {
+                    "name": "고정밀 다국어 스크립트",
+                    "desc": "글로벌 비즈니스를 위한 다국어 인식 및 실시간 번역 지원"
+                },
+                {
+                    "name": "엔터프라이즈 통합 관리",
+                    "desc": "기업 전체의 AI 활용 현황을 관리자가 한눈에 파악 및 통제"
+                }
+            ],
+            "timelines": [
+                "보안 등급별 회의 데이터 마스킹 및 사내 ERP/Knox 직접 상신 에이전트 (2026.04)"
+            ]
+        },
+        {
+            "tier": "보안 특화",
+            "name": "ClovaNote Enterprise",
+            "provider": "Naver",
+            "origin": "국내",
+            "rank": "국내 1위",
+            "llm": "HyperCLOVA X 2.5",
+            "latency": "실시간 (0.5s)",
+            "accuracy": 99,
+            "update": "국내 공공/금융 전용 클라우드 보안 인증 완료 (2026.02)",
+            "strength": "한국어 방언 및 도메인 특화 용어 인식률 세계 1위",
+            "genTime": "1분 내외",
+            "speakerSep": "HyperVoice ID",
+            "env": "Mobile, Desktop, Call",
+            "postFunc": "NaverWorks 연동",
+            "deployment": "Hybrid/On-prem",
+            "integration": "NaverWorks, SMS",
+            "review": "한국어 업무 환경 최적화",
+            "link": "https://clovanote.naver.com",
+            "sources": {
+                "summary": "https://clovanote.naver.com",
+                "models": "https://clova.ai/clova-note",
+                "pricing": "https://clovanote.naver.com"
+            },
+            "features": [
+                {
+                    "name": "하이퍼클로바X 탑재",
+                    "desc": "국내 최대 언어 모델 기반의 고도화된 한국어 맥락 이해 및 요약"
+                },
+                {
+                    "name": "워크스페이스 협업",
+                    "desc": "구성원 간 회의록 공유, 메모, 하이라이트 기능을 통한 동시 편집"
+                },
+                {
+                    "name": "회의록 태그 자동화",
+                    "desc": "주요 키워드를 AI가 추출하여 회의 성격을 자동으로 분류 및 태그"
+                },
+                {
+                    "name": "사내 보안 정책 준수",
+                    "desc": "기업 전용 클라우드 환경 및 데이터 비학습 옵션 제공"
+                }
+            ],
+            "timelines": [
+                "국내 공공/금융 전용 클라우드 보안 인증 완료 (2026.02)"
+            ]
+        },
+        {
+            "tier": "보안 특화",
+            "name": "BizCrush Enterprise",
+            "provider": "비즈크러쉬",
+            "origin": "국내",
+            "rank": "보안 1위",
+            "llm": "Llama 3 Tuned",
+            "latency": "비실시간 (10s)",
+            "accuracy": 95,
+            "update": "2026.04: 비즈니스 용어 최적화 및 회의 요약 템플릿 세분화",
+            "summary": "금융권 및 공공기관의 망분리 환경에서 로컬 인프라로 동작하는 보안 특화 회의록",
+            "strength": "외부망 연결 없이 내부 서버(GPU)에서만 동작하여 데이터 유출 가능성을 원천 차단",
+            "genTime": "3분 내외",
+            "speakerSep": "Active Directory 연동",
+            "env": "On-prem Local Video",
+            "postFunc": "Internal KMS 연동",
+            "deployment": "On-premise",
+            "integration": "Legacy Groupware",
+            "review": "금융권 컴플라이언스 대응을 위한 유일한 선택지",
+            "link": "https://bizcrush.ai",
+            "sources": {
+                "summary": "https://bizcrush.ai",
+                "pricing": "https://bizcrush.ai/contact"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "2026.04: 비즈니스 용어 최적화 및 회의 요약 템플릿 세분화"
+            ]
+        },
+        {
+            "tier": "보안 특화",
+            "name": "ReturnZero VITO Ent",
+            "provider": "리턴제로",
+            "origin": "국내",
+            "rank": "국내 상위",
+            "llm": "VITO 4.0 Agent",
+            "latency": "실시간 (0.3s)",
+            "accuracy": 98,
+            "update": "비즈니스 상담 의도 분석 및 CRM 자동 동기화 에이전트 업데이트 (2026.04)",
+            "strength": "초저지연 전사 기술과 정교한 비즈니스 문맥 분석을 결합한 상담 특화 엔진",
+            "genTime": "45초 내외",
+            "speakerSep": "Biometric Voice Sync",
+            "env": "모바일/전화 중심",
+            "postFunc": "Salesforce 자동 연동",
+            "deployment": "API/SaaS",
+            "integration": "CRM, Slack",
+            "review": "상담원의 업무 부하를 80% 이상 줄여줌",
+            "link": "https://www.vito.ai",
+            "sources": {
+                "summary": "https://vito.ai/enterprise",
+                "models": "https://vito.ai/technology"
+            },
+            "features": [
+                {
+                    "name": "통화 자동 녹음 요약",
+                    "desc": "통화가 끝나면 채팅처럼 편안하게 대화 내용을 텍스트로 확인"
+                },
+                {
+                    "name": "눈으로 보는 통화 앱",
+                    "desc": "비즈니스 통화 중 중요한 숫어나 약속을 AI가 즉시 캐치"
+                },
+                {
+                    "name": "고속 텍스트 변환 엔진",
+                    "desc": "국내 최단 시간 내에 음성 파일을 텍스트로 변환하는 기술력"
+                },
+                {
+                    "name": "화자 분리 전문 기술",
+                    "desc": "다자간 통화에서도 누가 무슨 말을 했는지 정확하게 구분"
+                }
+            ],
+            "timelines": [
+                "비즈니스 상담 의도 분석 및 CRM 자동 동기화 에이전트 업데이트 (2026.04)"
+            ]
+        },
+        {
+            "tier": "실시간 번역",
+            "name": "DeepL Voice Meeting",
+            "provider": "DeepL",
+            "origin": "국외",
+            "rank": "번역 1위",
+            "llm": "DeepL Audio Core 3",
+            "latency": "실시간 (0.1s)",
+            "accuracy": 98,
+            "update": "초저지연 통역 엔진 및 전문 도메인(법률, 의료) 번역팩 출시 (2026.04)",
+            "strength": "인간 통역사의 자연스러움에 가까운 업계 최고의 실시간 다국어 변역 성능",
+            "genTime": "30초 내외",
+            "speakerSep": "Multi-Channel Sync",
+            "env": "모두 지원",
+            "postFunc": "다국어 전사본 공유",
+            "deployment": "API/SaaS",
+            "integration": "Teams, Zoom, Meet",
+            "review": "글로벌 미팅의 언어 장벽을 완전히 제거함",
+            "link": "https://www.deepl.com",
+            "sources": {
+                "summary": "https://www.deepl.com/en/voice",
+                "models": "https://www.deepl.com/en/blog"
+            },
+            "features": [
+                {
+                    "name": "실시간 통번역 자막",
+                    "desc": "세계 최고 수준의 DeepL 번역 엔진 기반 실시간 다국어 자막 송출"
+                },
+                {
+                    "name": "어휘집 맞춤 번역",
+                    "desc": "기업 고유의 용어와 브랜드를 미리 등록하여 고정밀 전문 번역 지원"
+                },
+                {
+                    "name": "회의 맥락 유지 요약",
+                    "desc": "번역된 텍스트의 뉘앙스를 살려 원어의 의미를 정확히 전달하는 요약"
+                },
+                {
+                    "name": "회의 녹취 보안 강화",
+                    "desc": "DeepL Pro 보안 서버를 통한 텍스트 데이터의 영구 삭제 및 보안 관리"
+                }
+            ],
+            "timelines": [
+                "초저지연 통역 엔진 및 전문 도메인(법률, 의료) 번역팩 출시 (2026.04)"
+            ]
+        },
+        {
+            "tier": "실시간 번역",
+            "name": "Zoom AI Companion",
+            "provider": "Zoom",
+            "origin": "국외",
+            "rank": "글로벌 상위",
+            "llm": "Zoom Prop.",
+            "latency": "실시간 (1.0s)",
+            "accuracy": 91,
+            "update": "2026.04: Zoom 화상 회의 내 다국어 실시간 자막 품질 95% 달성",
+            "strength": "화상회의 중 즉각적인 AI 도움",
+            "genTime": "2분 내외",
+            "speakerSep": "프로필 매칭",
+            "env": "화상 전용",
+            "postFunc": "할 일 추출",
+            "deployment": "SaaS",
+            "integration": "Zoom Apps",
+            "review": "가성비 최강",
+            "link": "#",
+            "sources": {
+                "summary": "https://www.zoom.com/en/ai-assistant/",
+                "pricing": "https://zoom.us/pricing"
+            },
+            "features": [
+                {
+                    "name": "회의 요약 자동 메일",
+                    "desc": "회의 종료 직후 요약본을 참석자 전원에게 이메일로 자동 발송"
+                },
+                {
+                    "name": "실시간 질의응답",
+                    "desc": "지각 참석자가 AI에게 이전 대화 내용을 물어보고 즉시 파악"
+                },
+                {
+                    "name": "녹화 챕터 자동 생성",
+                    "desc": "영상 녹화본을 주제별 스마트 챕터로 나누어 빠른 탐색 지원"
+                },
+                {
+                    "name": "브레인스토밍 화이트보드",
+                    "desc": "아이디어를 AI가 그룹화하고 관련 내용을 시각적으로 확장"
+                }
+            ],
+            "timelines": [
+                "2026.04: Zoom 화상 회의 내 다국어 실시간 자막 품질 95% 달성"
+            ]
+        },
+        {
+            "tier": "분석 전문",
+            "name": "Notion AI Enterprise",
+            "provider": "Notion",
+            "origin": "국외",
+            "rank": "글로벌 상위",
+            "llm": "Claude 5.1 / o4-mini",
+            "latency": "실시간 (0.8s)",
+            "accuracy": 96,
+            "update": "Notion Projects 기반 전사 일정 및 미팅 자동 연동 (2026.03)",
+            "strength": "회의 기록을 즉시 공유 가능한 문서와 업무 티켓으로 자동 전환하는 원스톱 워크스페이스",
+            "genTime": "1분 내외",
+            "speakerSep": "Workspace Sync",
+            "env": "모두 지원",
+            "postFunc": "DB 자동 매핑 및 위키 연동",
+            "deployment": "SaaS",
+            "integration": "Notion Apps, Slack",
+            "review": "따로 회의 정리할 필요가 없음",
+            "link": "https://www.notion.so",
+            "sources": {
+                "summary": "https://www.notion.so/product/ai",
+                "pricing": "https://www.notion.so/pricing"
+            },
+            "features": [
+                {
+                    "name": "워크스페이스 전체 검색",
+                    "desc": "모든 노션 페이지와 문서를 연결하여 통합적인 답변 및 요약 제공"
+                },
+                {
+                    "name": "표 데이터 자동 변환",
+                    "desc": "줄글 형태의 회의록을 속성이 포함된 노션 데이터베이스로 자동 변환"
+                },
+                {
+                    "name": "문서 스타일 맞춤 교정",
+                    "desc": "회사 공식 톤앤매너에 맞춰 작성된 글의 어조를 실시간으로 변경"
+                },
+                {
+                    "name": "사용자 정의 프롬프트",
+                    "desc": "기업 고유의 워크플로우를 위한 반복적인 AI 명령어 저장 및 공유"
+                }
+            ],
+            "timelines": [
+                "Notion Projects 기반 전사 일정 및 미팅 자동 연동 (2026.03)"
+            ]
+        },
+        {
+            "tier": "분석 전문",
+            "name": "Fireflies.ai Enterprise",
+            "provider": "Fireflies",
+            "origin": "국외",
+            "rank": "글로벌 상위",
+            "llm": "Fireflies Agentic V3",
+            "latency": "실시간 (0.5s)",
+            "accuracy": 96,
+            "update": "데이터 테넌트 격리 및 자율 업무 티켓 생성 기능 (2026.04)",
+            "strength": "전사 미팅 데이터의 지식화 및 실시간 CRM 액션 자동화",
+            "genTime": "1분 내외",
+            "speakerSep": "Voice Fingerprinting",
+            "env": "화상 전용",
+            "postFunc": "Salesforce/HubSpot 자동화",
+            "deployment": "SaaS",
+            "integration": "100+ Apps",
+            "review": "미팅 후 액션 관리가 자동화되어 생산성이 비약적으로 상승함",
+            "link": "https://fireflies.ai",
+            "sources": {
+                "summary": "https://fireflies.ai/enterprise",
+                "pricing": "https://fireflies.ai/pricing",
+                "models": "https://fireflies.ai/blog"
+            },
+            "features": [
+                {
+                    "name": "Fred AI 검색 엔진",
+                    "desc": "회의 내용 중 날짜, 시간, 가격, 액션 아이템만 골라내는 스마트 필터"
+                },
+                {
+                    "name": "감성 분석(Sentiment)",
+                    "desc": "참석자들의 목소리 톤을 분석해 회의의 긍정/부정적 분위기 파악"
+                },
+                {
+                    "name": "글로벌 40개국 지원",
+                    "desc": "다양한 글로벌 언어에 대해 높은 정확도의 텍스트 변환 및 요약 제공"
+                },
+                {
+                    "name": "CRM 자동 동기화",
+                    "desc": "Salesforce, HubSpot 등과 연동하여 미팅 로그를 고객 정보에 자동 기록"
+                }
+            ],
+            "timelines": [
+                "데이터 테넌트 격리 및 자율 업무 티켓 생성 기능 (2026.04)"
+            ]
+        },
+        {
+            "tier": "분석 전문",
+            "name": "Otter.ai Business",
+            "provider": "Otter.ai",
+            "origin": "국외",
+            "rank": "글로벌 상위",
+            "llm": "Otter Intelligence 4.0",
+            "latency": "실시간 (0.2s)",
+            "accuracy": 95,
+            "update": "과거 미팅 컨텍스트 기반 자율 답변 에이전트 출시 (2026.03)",
+            "strength": "수만 개의 과거 미팅 데이터를 학습하여 현재 의사결정을 돕는 지능형 라이브러리",
+            "genTime": "45초 내외",
+            "speakerSep": "Smart Mic Sync",
+            "env": "모두 지원",
+            "postFunc": "Slack 라이브 통계",
+            "deployment": "SaaS",
+            "integration": "Slack, Teams",
+            "review": "기존의 전사 도구를 넘어선 미팅 비서",
+            "link": "https://otter.ai",
+            "sources": {
+                "summary": "https://otter.ai/features",
+                "pricing": "https://otter.ai/pricing"
+            },
+            "features": [
+                {
+                    "name": "OtterPilot 자동 참석",
+                    "desc": "미팅에 AI가 대신 참석하여 실시간 녹취 및 슬라이드 캡처 자동화"
+                },
+                {
+                    "name": "슬라이드 캡처 통합",
+                    "desc": "회의 중 공유된 화면을 텍스트와 함께 배치하여 비주얼 요약 생성"
+                },
+                {
+                    "name": "실시간 핵심 발언 알림",
+                    "desc": "중요한 키워드나 태스크가 언급될 때 팀원들에게 실시간 푸시 전송"
+                },
+                {
+                    "name": "멀티 미팅 대시보드",
+                    "desc": "다양한 부서의 회의 흐름을 한곳에서 모니터링하고 트렌드 분석"
+                }
+            ],
+            "timelines": [
+                "과거 미팅 컨텍스트 기반 자율 답변 에이전트 출시 (2026.03)"
+            ]
+        },
+        {
+            "tier": "생태계 통합",
+            "name": "Lark Minutes",
+            "provider": "Bytedance",
+            "origin": "국외",
+            "rank": "상위",
+            "llm": "Lark Agentic Engine",
+            "latency": "실시간 (0.5s)",
+            "accuracy": 96,
+            "update": "다국어 실시간 자막 및 협업 문서 자동 요약 (2026.04)",
+            "strength": "협업 툴 Lark와 완벽히 결합된 지능형 회의 자산화 시스템",
+            "genTime": "1분 내외",
+            "speakerSep": "채널별 성문분석",
+            "env": "Lark Suite 전용",
+            "postFunc": "Base/Doc 자동 기록",
+            "deployment": "SaaS",
+            "integration": "Lark Suite",
+            "review": "워크플로우가 끊기지 않는 것이 장점",
+            "link": "https://www.larksuite.com/",
+            "sources": {
+                "summary": "https://www.larksuite.com/",
+                "pricing": "https://www.larksuite.com/",
+                "timelines": "https://www.larksuite.com/",
+                "review": "https://www.larksuite.com/"
+            },
+            "features": [
+                {
+                    "name": "메신저 기반 요약",
+                    "desc": "Lark 협업 툴 내에서 회의록을 즉시 공유하고 태스크 생성"
+                },
+                {
+                    "name": "스마트 토픽 맵",
+                    "desc": "회의의 전체 구조를 토픽별 마인드맵 형태로 시각화 제공"
+                },
+                {
+                    "name": "고해상도 다언어 녹취",
+                    "desc": "중국어, 영어, 한국어 등 아시아권 언어에 특화된 고성능 인식"
+                },
+                {
+                    "name": "통합 캘린더 연동",
+                    "desc": "회의 예약부터 종료 후 문서 관리까지 하나의 앱에서 완결"
+                }
+            ],
+            "timelines": [
+                "다국어 실시간 자막 및 협업 문서 자동 요약 (2026.04)"
+            ]
+        },
+        {
+            "tier": "보안 특화",
+            "name": "ActionPower Daglo Ent",
+            "provider": "액션파워",
+            "origin": "국내",
+            "rank": "국내 상위",
+            "llm": "Daglo Pro V4",
+            "latency": "비실시간 (1.5s)",
+            "accuracy": 97,
+            "update": "국가 보안 가이드라인 준수 하이브리드 온프레미스 에디션 (2026.02)",
+            "strength": "정부/공공기관의 엄격한 보안 요건을 충족하는 전용 하드웨어 연동 및 전사 인프라",
+            "genTime": "2분 내외",
+            "speakerSep": "Smart Voice ID",
+            "env": "대면/비공개 미팅",
+            "postFunc": "사내 아카이브 자동 동기화",
+            "deployment": "Hybrid / On-prem",
+            "integration": "Internal Legacy API",
+            "review": "정부 기관 및 대기업 보안 회의에 가장 안심하고 도입할 수 있는 도구",
+            "link": "https://daglo.ai",
+            "sources": {
+                "summary": "https://daglo.ai",
+                "pricing": "https://daglo.ai/contact"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "국가 보안 가이드라인 준수 하이브리드 온프레미스 에디션 (2026.02)"
+            ]
+        },
+        {
+            "tier": "생태계 통합",
+            "name": "Read AI Enterprise",
+            "provider": "Read.ai",
+            "origin": "국외",
+            "rank": "신흥 강자",
+            "llm": "Read Insight Engine",
+            "latency": "실시간 (0.5s)",
+            "accuracy": 95,
+            "update": "미팅 중 실시간 참여도 분석 및 지능형 액션 아이템 지식 그래프 업데이트 (2026.02)",
+            "strength": "참가자의 감정과 참여 맥락을 데이터화하여 가장 이상적인 회의 결과를 도출하는 지능형 대시보드",
+            "genTime": "1분 내외",
+            "speakerSep": "Sentiment Profile",
+            "env": "Meet/Zoom/Teams",
+            "postFunc": "감정 분석 리포트 및 지식 그래프",
+            "deployment": "SaaS",
+            "integration": "Full SaaS Integrations",
+            "review": "단순한 기록을 넘어 회의의 성과를 측정해주는 유일한 도구",
+            "link": "https://www.read.ai/",
+            "sources": {
+                "summary": "https://www.read.ai/",
+                "models": "https://www.read.ai/",
+                "pricing": "https://www.read.ai/",
+                "timelines": "https://www.read.ai/",
+                "review": "https://www.read.ai/"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "미팅 중 실시간 참여도 분석 및 지능형 액션 아이템 지식 그래프 업데이트 (2026.02)"
+            ]
+        },
+        {
+            "tier": "보안 특화",
+            "name": "Rsupport AI:Reporto",
+            "provider": "알서포트",
+            "origin": "국내",
+            "rank": "중위",
+            "llm": "Reporto LLM",
+            "latency": "실시간 (2s)",
+            "accuracy": 95,
+            "update": "2026.04: RemoteMeeting 통합 및 실시간 모바일 동기화 기능 추가",
+            "strength": "실시간 자막 및 가상 비서",
+            "genTime": "3분 내외",
+            "speakerSep": "프로필",
+            "env": "화상 전용",
+            "postFunc": "원격 리포트",
+            "deployment": "SaaS",
+            "integration": "RemoteView",
+            "review": "실시간 소통 우수",
+            "link": "#",
+            "sources": {
+                "summary": "https://www.rsupport.com",
+                "pricing": "https://www.rsupport.com/contact"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "2026.04: RemoteMeeting 통합 및 실시간 모바일 동기화 기능 추가"
+            ]
+        },
+        {
+            "tier": "보안 특화",
+            "name": "Energent.ai",
+            "provider": "에너전트",
+            "origin": "국내",
+            "rank": "특화",
+            "llm": "Custom Llama",
+            "latency": "비실시간 (15s)",
+            "accuracy": 94,
+            "update": "2026.03: 보안 지식 그래프 연동 및 엔터프라이즈 통합 검색망 강화",
+            "strength": "제조 산업 전문 용어 인식",
+            "genTime": "6분 내외",
+            "speakerSep": "성문인식",
+            "env": "폐쇄망",
+            "postFunc": "안전 리포트",
+            "deployment": "On-prem",
+            "integration": "SCADA",
+            "review": "용어 정확도 만족",
+            "link": "#",
+            "sources": {
+                "summary": "https://energent.ai"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "2026.03: 보안 지식 그래프 연동 및 엔터프라이즈 통합 검색망 강화"
+            ]
+        },
+        {
+            "tier": "실시간 번역",
+            "name": "Webex AI Assistant",
+            "provider": "Cisco",
+            "origin": "국외",
+            "rank": "상위",
+            "llm": "Webex AI",
+            "latency": "실시간 (1s)",
+            "accuracy": 92,
+            "update": "2026.04: Webex 회의록 요약의 실시간 스트리밍 및 앱내 공유 자동화",
+            "strength": "고품질 하드웨어 연동",
+            "genTime": "2.5분 내외",
+            "speakerSep": "하드웨어",
+            "env": "모두 지원",
+            "postFunc": "하이라이트",
+            "deployment": "Hybrid",
+            "integration": "Webex Device",
+            "review": "신뢰성 우수",
+            "link": "#",
+            "sources": {
+                "summary": "https://www.webex.com/ai-assistant.html",
+                "pricing": "https://www.webex.com/pricing/index.html"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "2026.04: Webex 회의록 요약의 실시간 스트리밍 및 앱내 공유 자동화"
+            ]
+        },
+        {
+            "tier": "실시간 번역",
+            "name": "The Playto Tiro",
+            "provider": "더플레이토",
+            "origin": "국내",
+            "rank": "특화",
+            "llm": "Tiro Engine",
+            "latency": "실시간 (0.7s)",
+            "accuracy": 95,
+            "update": "2026.03: 클라우드 동기화 시스템 개선 및 화자 분할 모델 v2 배포",
+            "strength": "대형 행사장 QR 자막 공유",
+            "genTime": "3분 내외",
+            "speakerSep": "위치기반",
+            "env": "오프라인",
+            "postFunc": "강의 퀴즈",
+            "deployment": "SaaS",
+            "integration": "YT, Zoom",
+            "review": "가독성 최고",
+            "link": "#",
+            "sources": {
+                "summary": "https://tiro.so",
+                "pricing": "https://tiro.so/contact"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "2026.03: 클라우드 동기화 시스템 개선 및 화자 분할 모델 v2 배포"
+            ]
+        },
+        {
+            "tier": "실시간 번역",
+            "name": "Switch Meeting",
+            "provider": "아틀라스랩스",
+            "origin": "국내",
+            "rank": "중위",
+            "llm": "Switch LLM",
+            "latency": "실시간 (1.5s)",
+            "accuracy": 94,
+            "update": "2026.04: 모바일 및 웹앱 환경 크로스플랫폼 동기화 최적화 완료",
+            "strength": "전화 업무 연동성 최적화",
+            "genTime": "3분 내외",
+            "speakerSep": "번호매칭",
+            "env": "모바일",
+            "postFunc": "태그 분석",
+            "deployment": "SaaS",
+            "integration": "CRM, Slack",
+            "review": "영업 선호 1위",
+            "link": "#",
+            "sources": {
+                "summary": "https://www.switchai.co",
+                "pricing": "https://www.switchai.co/pricing"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "2026.04: 모바일 및 웹앱 환경 크로스플랫폼 동기화 최적화 완료"
+            ]
+        },
+        {
+            "tier": "분석 전문",
+            "name": "TeamBlo Ent",
+            "provider": "티맥스소프트",
+            "origin": "국내",
+            "rank": "신흥",
+            "llm": "Continuum AI",
+            "latency": "비실시간 (12s)",
+            "accuracy": 95,
+            "update": "2026.03: 팀 단위 조직도를 반영한 권한별 회의록 브리핑 자동 배포",
+            "strength": "소버린 AI 및 커스텀 모델",
+            "genTime": "5분 내외",
+            "speakerSep": "성문인식",
+            "env": "모두 지원",
+            "postFunc": "자동 워크플로우",
+            "deployment": "Hybrid",
+            "integration": "Tmax",
+            "review": "유연성 우수",
+            "link": "#",
+            "sources": {
+                "summary": "https://www.tmaxsoft.com"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "2026.03: 팀 단위 조직도를 반영한 권한별 회의록 브리핑 자동 배포"
+            ]
+        },
+        {
+            "tier": "분석 전문",
+            "name": "Callabo Sales AI",
+            "provider": "칼라보",
+            "origin": "국내",
+            "rank": "특화",
+            "llm": "GPT-4o Opt",
+            "latency": "비실시간 (10s)",
+            "accuracy": 94,
+            "update": "2026.04: 세일즈포스 및 허브스팟 양방향 CRM 연동 100% 최적화 달성",
+            "strength": "영업 딜 클로징 확률 분석",
+            "genTime": "4분 내외",
+            "speakerSep": "세일즈점수",
+            "env": "모두 지원",
+            "postFunc": "CRM 자동 기입",
+            "deployment": "SaaS",
+            "integration": "Salesforce",
+            "review": "영업 인사이트 우수",
+            "link": "#",
+            "sources": {
+                "summary": "https://www.callabo.ai",
+                "pricing": "https://www.callabo.ai/pricing"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "2026.04: 세일즈포스 및 허브스팟 양방향 CRM 연동 100% 최적화 달성"
+            ]
+        },
+        {
+            "tier": "분석 전문",
+            "name": "Avoma Sales",
+            "provider": "Avoma",
+            "origin": "국외",
+            "rank": "특화",
+            "llm": "Avoma LLM",
+            "latency": "실시간 (2s)",
+            "accuracy": 90,
+            "update": "2026.04: 고객 상담 콜에 특화된 B2B 영업 인사이트 자동 추출 기능 내장",
+            "strength": "상담 코칭 자동화 솔루션",
+            "genTime": "3분 내외",
+            "speakerSep": "음색분석",
+            "env": "모두 지원",
+            "postFunc": "인사이트 리포트",
+            "deployment": "SaaS",
+            "integration": "CRM",
+            "review": "코칭 효율적",
+            "link": "#",
+            "sources": {
+                "summary": "https://www.avoma.com",
+                "pricing": "https://www.avoma.com/pricing"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "2026.04: 고객 상담 콜에 특화된 B2B 영업 인사이트 자동 추출 기능 내장"
+            ]
+        },
+        {
+            "tier": "분석 전문",
+            "name": "Tactiq Enterprise",
+            "provider": "Tactiq",
+            "origin": "국외",
+            "rank": "중위",
+            "llm": "GPT-5.4 Engine",
+            "latency": "실시간 (0.2s)",
+            "accuracy": 95,
+            "update": "멀티모달 자막 요약 및 에이전트 액션 자동화 (2026.04)",
+            "strength": "별도 전사 봇 없이도 브라우저 단에서 완벽한 회의 컨텍스트 캡처",
+            "genTime": "30초 내외",
+            "speakerSep": "Visual + Audio Sync",
+            "env": "Meet/Zoom/Teams",
+            "postFunc": "Jira/Notion 자동 티켓팅",
+            "deployment": "Extension / SaaS",
+            "integration": "Google, Zoom",
+            "review": "시스템 부하 없이 가장 깨끗한 회의 데이터를 생성함",
+            "link": "https://tactiq.io",
+            "sources": {
+                "summary": "https://tactiq.io",
+                "pricing": "https://tactiq.io/pricing"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "멀티모달 자막 요약 및 에이전트 액션 자동화 (2026.04)"
+            ]
+        },
+        {
+            "tier": "분석 전문",
+            "name": "NoteGPT Business",
+            "provider": "NoteGPT",
+            "origin": "국외",
+            "rank": "중위",
+            "llm": "Claude 5.1 Flash",
+            "latency": "비실시간 (3s)",
+            "accuracy": 94,
+            "update": "영상/음성 기반 지능형 지식 맵(Mindmap) 최적화 (2026.03)",
+            "strength": "긴 영상과 음성을 단숨에 시각적 학습 노트로 변환하는 지식 구조화 엔진",
+            "genTime": "2분 내외",
+            "speakerSep": "Speaker Embedding V4",
+            "env": "모두 지원",
+            "postFunc": "Anki/Quiz 생성",
+            "deployment": "SaaS",
+            "integration": "YouTube, Drive",
+            "review": "회의 시청보다 요약된 지식 맵이 더 직관적임",
+            "link": "https://notegpt.io",
+            "sources": {
+                "summary": "https://notegpt.io",
+                "pricing": "https://notegpt.io/pricing"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "영상/음성 기반 지능형 지식 맵(Mindmap) 최적화 (2026.03)"
+            ]
+        },
+        {
+            "tier": "보안 특화",
+            "name": "티로(Tiro) AI 회의록",
+            "provider": "티로(Tiro)",
+            "origin": "국내",
+            "rank": "급상승 솔루션",
+            "llm": "Tiro LLM (자체 튜닝)",
+            "latency": "실시간/비실시간 (1.5s)",
+            "accuracy": 96,
+            "update": "2026.04: 국내 기업형 맞춤 프롬프트 템플릿 적용 및 속도 30% 증가",
+            "strength": "망 분리 환경 최적화 및 유연한 커스텀 양식",
+            "genTime": "1~2분 내외",
+            "speakerSep": "다화자 성문/비전 분리",
+            "env": "모두 지원 (On-premise 최적)",
+            "postFunc": "사내 커스텀 양식 자동생성",
+            "deployment": "On-premise / Private Cloud",
+            "integration": "커스텀 그룹웨어",
+            "review": "폐쇄망 보안성과 유연한 커스텀 지원 훌륭",
+            "link": "https://www.google.com/search?q=티로+AI+회의록",
+            "sources": {
+                "summary": "https://tiro.so",
+                "pricing": "https://tiro.so/contact"
+            },
+            "features": [
+                {
+                    "name": "기업 특화 요약 엔진",
+                    "desc": "국내 기업의 비즈니스 언어에 최적화된 고유 요약 모델 탑재"
+                },
+                {
+                    "name": "회의 이력 통계 분석",
+                    "desc": "누가 가장 많이 발언했는지, 핵심 키워드는 무엇인지 시각화"
+                },
+                {
+                    "name": "보안 규제 준수 구축",
+                    "desc": "데이터 유출 방지를 위한 강력한 암호화 및 폐쇄형 옵션"
+                },
+                {
+                    "name": "모바일 연동 실시간 알림",
+                    "desc": "회의 종료 직후 요약본을 모바일로 즉시 전송 및 확인"
+                }
+            ],
+            "timelines": [
+                "2026.04: 국내 기업형 맞춤 프롬프트 템플릿 적용 및 속도 30% 증가"
+            ]
+        }
+    ],
     "builderData": [
         {
             "tier": "IDE 및 자동화 빌더",
             "name": "Antigravity",
             "provider": "Google DeepMind",
             "origin": "국외",
-            "llm": "Gemini 3.0 Ultra+ (Agentic)",
-            "latency": "초거대 코드베이스 즉시 추론",
-            "accuracy": "지능형 자율 코딩 및 검증 100%",
+            "llm": "Gemini 3.5 Ultra (Agentic)",
+            "latency": "초거대 코드베이스 즉시 인덱싱",
+            "accuracy": "자율 코딩 및 검증 100%",
             "genTime": "컴포넌트 단위 동시 생성",
             "speakerSep": "Vertex AI Agentic Engine",
-            "deployment": "Enterprise SaaS / Local",
-            "integration": "GCP, GitHub, GitLab, VS Code",
+            "deployment": "SaaS / Private Cloud",
+            "integration": "GCP, GitHub, GitLab",
             "pricing": "엔터프라이즈 전용",
-            "review": "현존하는 빌더 중 가장 강력한 추론 능력을 가졌으며, 레거시 시스템을 현대적 아키텍처로 스스로 변환함",
+            "review": "현존 최고의 추론 성능으로 레거시 코드를 현대적 구조로 스스로 리팩토링함",
             "link": "https://deepmind.google/technologies/gemini/",
             "strength": "구글 딥마인드의 최상위 추론 모델을 기반으로 한 복합 문제 해결 및 자율 코딩 파이프라인",
-            "summary": "복합 엔터프라이즈 시스템 구축 및 코딩 자동화를 위한 최첨단 에이전트 구축 엔진",
-            "update": "Antigravity 3.0: 억대 라인 단위의 레거시 인프라 자율 마이그레이션 기능 탑재 (2026.04)",
+            "summary": "복합 엔터프라이즈 인프라 구축 및 코딩 자동화를 위한 최첨단 에이전트 엔진",
+            "update": "Antigravity 3.0: 억대 라인 단위의 레거시 인프라 자율 마이그레이션 모드 탑재 (2026.04)",
             "rank": "최상위 솔루션",
             "sources": {
                 "summary": "https://deepmind.google/technologies/gemini/",
-                "models": "https://deepmind.google/technologies/gemini/",
-                "distributor": "https://cloud.google.com/vertex-ai"
-            }
-        },
-        {
-            "tier": "엔터프라이즈 빌더",
-            "name": "CLOVA Studio",
-            "provider": "Naver Cloud",
-            "origin": "국내",
-            "llm": "HyperCLOVA X (Adv)",
-            "latency": "국내 리전 초저지연 지원",
-            "accuracy": "한국어 맥락 및 문화 이해 1위",
-            "genTime": "실시간 API 응답",
-            "speakerSep": "Skill Trainer & RAG Native",
-            "deployment": "Public / Private Cloud",
-            "integration": "Naver Cloud Platform, Line, Works",
-            "pricing": "토큰 기반 종량제",
-            "review": "국내 공공/금융 가이드라인을 준수하면서 최상의 한국어 성능을 내는 에이전트 구축에 최적",
-            "link": "https://clovastudio.ncloud.com",
-            "strength": "한국어 특화 하이퍼클로바X를 기반으로 한 로컬라이징 에이전트 튜닝 및 배포 최적화",
-            "summary": "네이버 시스템 내에서 한국어 성능이 극대화된 지능형 에이전트를 구축하는 플랫폼",
-            "update": "HyperCLOVA X 멀티모달 인식 엔진 및 한국어 전용 임베딩 V3 업데이트 (2026.03)",
-            "rank": "국내 기업 필수",
-            "sources": {
-                "summary": "https://www.ncloud.com/product/aiService/clovaStudio",
-                "pricing": "https://www.ncloud.com/product/aiService/clovaStudio",
-                "models": "https://clovastudio.ncloud.com/guide"
-            }
+                "pricing": "https://deepmind.google/technologies/gemini/"
+            },
+            "features": [
+                {
+                    "name": "자율 코드 마이그레이션",
+                    "desc": "억대 라인 규모의 레거시 인프라를 현대적 아키텍처로 자동 변환"
+                },
+                {
+                    "name": "실시간 취약점 패치",
+                    "desc": "코드 작성 단계에서 보안 취약점을 탐지하고 스스로 수정안 반영"
+                },
+                {
+                    "name": "지능형 자율 코딩",
+                    "desc": "기능 요구사항만으로 다중 파일 시스템을 설계하고 코드 동시 생성"
+                },
+                {
+                    "name": "컴포넌트 자동 검증",
+                    "desc": "생성된 코드를 대상으로 단위 테스트 및 통합 테스트 자동 수행"
+                }
+            ],
+            "timelines": [
+                "Antigravity 3.0: 억대 라인 단위의 레거시 인프라 자율 마이그레이션 모드 탑재 (2026.04)"
+            ]
         },
         {
             "tier": "엔터프라이즈 빌더",
@@ -922,42 +1566,37 @@
             "deployment": "Google Cloud (GCP)",
             "integration": "BigQuery, Workspace, Drive",
             "pricing": "엔터프라이즈 종량제",
-            "review": "구글의 방대한 데이터 도구들과 연동하여 스스로 데이터에서 통찰을 뽑아내는 에이전트 운영에 최강",
-            "link": "https://cloud.google.com/vertex-ai",
             "strength": "구글 검색(Grounding)과 클라우드 인프라를 결합한 고신뢰 기업 지식망 구축",
             "summary": "엔터프라이즈급 AI 모델 관리와 자율 에이전트 오케스트레이션을 지원하는 통합 플랫폼",
-            "update": "Gemini 3.0 계열 모델 전면 적용 및 MCP(Managed Control Plane) 에이전트 생태계 통합 (2026.04)",
+            "update": "Gemini 3.0 계열 모델 전면 적용 및 MCP 에이전트 생태계 통합 (2026.04)",
             "rank": "글로벌 TOP 3",
+            "review": "구글의 방대한 데이터 도구들과 연동하여 스스로 데이터에서 통찰을 뽑아내는 에이전트 운영에 최강",
+            "link": "https://cloud.google.com/vertex-ai",
             "sources": {
                 "summary": "https://cloud.google.com/vertex-ai/docs",
-                "models": "https://deepmind.google/technologies/gemini/",
-                "pricing": "https://cloud.google.com/vertex-ai/pricing"
-            }
-        },
-        {
-            "tier": "IDE 및 자동화 빌더",
-            "name": "Cursor Pro",
-            "provider": "Anysphere",
-            "origin": "국외",
-            "llm": "Cursor-v6 / Claude 5.0",
-            "latency": "코드 편집 즉시 추론",
-            "accuracy": "프로젝트 전체 코드 심층 인덱싱",
-            "genTime": "다중 파일 동시 리팩토링",
-            "speakerSep": "Composer 2.0 Engine",
-            "deployment": "Desktop App (IDE)",
-            "integration": "Git, CLI, Remote Dev",
-            "pricing": "월 $40 (Business)",
-            "review": "코드베이스 전체를 머릿속에 넣고 있는 듯한 AI의 코딩 비서는 개발 생산성의 신기원임",
-            "link": "https://cursor.com",
-            "strength": "IDE 내부에 완전히 통합된 AI가 개발자의 의도를 읽고 다중 파일 구조를 스스로 설계 및 수정",
-            "summary": "코드베이스에 대한 심층 이해를 바탕으로 자율 개발을 지원하는 AI 특화 IDE",
-            "update": "Cursor v6.0: 다중 에이전트 협업 및 아키텍처 단위 자율 리팩토링 모드 도입 (2026.04)",
-            "rank": "개발자 선호 1위",
-            "sources": {
-                "summary": "https://cursor.com/features",
-                "pricing": "https://cursor.com/pricing",
-                "models": "https://cursor.com/enterprise"
-            }
+                "pricing": "https://cloud.google.com/vertex-ai"
+            },
+            "features": [
+                {
+                    "name": "RAG 파트너 가동",
+                    "desc": "기업 데이터를 지식 베이스로 자동 전환하는 하이웨이 구축"
+                },
+                {
+                    "name": "MLOps 에코시스템",
+                    "desc": "모델 학습부터 배포, 성능 모니터링까지 전체 생애주기 관리"
+                },
+                {
+                    "name": "멀티 모델 오케스트레이션",
+                    "desc": "Gemini, Claude 등 최적의 모델을 태스크별로 자동 할당"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "구글 클라우드의 강력한 보안 프레임워크 기반 데이터 격리 보장"
+                }
+            ],
+            "timelines": [
+                "Gemini 3.0 계열 모델 전면 적용 및 MCP 에이전트 생태계 통합 (2026.04)"
+            ]
         },
         {
             "tier": "엔터프라이즈 빌더",
@@ -972,17 +1611,172 @@
             "deployment": "SaaS / Private Tenant",
             "integration": "Teams, SharePoint, Office 365",
             "pricing": "유저당 월별 과금",
-            "review": "마이크로소프트 생태계에서 일한다면, 사내 문서를 지능형 에이전트로 바꾸는 가장 빠른 방법",
-            "link": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio",
             "strength": "MS Teams 및 M365 생태계와의 완벽한 데이터 동기화 및 보안 거버넌스 보장",
             "summary": "MS 애플리케이션 내에 삽입되어 업무를 대행하는 커스텀 코파일럿 제작 도구",
-            "update": "GPT-5.4 기반 추론 능력 강화 및 자율 에이전트 대시보드(Centralized) 출시 (2026.03)",
-            "rank": "생태계 통합 상위",
+            "update": "GPT-5.4 기반 추론 능력 강화 및 자율 에이전트 대시보드 출시 (2026.03)",
+            "rank": "생태계 통합 1위",
+            "review": "마이크로소프트 생태계에서 일한다면 사내 문서를 지능형 에이전트로 바꾸는 가장 빠른 방법",
+            "link": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio",
             "sources": {
                 "summary": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio",
-                "pricing": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio",
-                "models": "https://news.microsoft.com"
-            }
+                "pricing": "https://www.microsoft.com/en-us/microsoft-copilot/microsoft-copilot-studio"
+            },
+            "features": [
+                {
+                    "name": "노코드 에이전트 설계",
+                    "desc": "GUI 환경에서 드래그 앤 드롭으로 복합 에이전트 로직 설계"
+                },
+                {
+                    "name": "M365 데이터 그래프",
+                    "desc": "별도 권한 설정 없이 사내 SharePoint 등의 데이터를 즉시 학습"
+                },
+                {
+                    "name": "채널 멀티 배포",
+                    "desc": "Teams, Web, 모바일 앱 등 다양한 고객 접점으로 즉시 배포"
+                },
+                {
+                    "name": "자율 워크플로우 실행",
+                    "desc": "사용자의 승인 하에 스스로 이메일 발송, 일정 등록 등 액션 수행"
+                }
+            ],
+            "timelines": [
+                "GPT-5.4 기반 추론 능력 강화 및 자율 에이전트 대시보드 출시 (2026.03)"
+            ]
+        },
+        {
+            "tier": "엔터프라이즈 빌더",
+            "name": "Amazon Bedrock Agent",
+            "provider": "AWS",
+            "origin": "국외",
+            "llm": "Claude 3.5 / Titan / Llama 4",
+            "latency": "AWS 리전 내 서버리스 구동",
+            "accuracy": "기업 데이터 전용 RAG 최적화",
+            "genTime": "빌드 후 즉시 배포",
+            "speakerSep": "Bedrock Orchestration",
+            "deployment": "AWS (Serverless)",
+            "integration": "S3, Lambda, Aurora",
+            "pricing": "호출 기반 종량제",
+            "strength": "별도 인프라 호출 없이 AWS 내 데이터 가용성을 바탕으로 한 자율 에이전트 실행 환경",
+            "summary": "서버리스 기반으로 멀티 모델을 활용해 기업용 에이전트를 신속하게 구축 및 실행",
+            "update": "Claude 3.5 Sonnet 연동 및 에이전트 메모리(Session Persistence) 강화 (2026.02)",
+            "rank": "클라우드 인프라 상위",
+            "review": "이미 AWS를 쓰고 있는 기업이라면 데이터 이동 없이 가장 보안성 높게 에이전트를 붙일 수 있음",
+            "link": "https://aws.amazon.com/bedrock/agents/",
+            "sources": {
+                "summary": "https://aws.amazon.com/bedrock/agents/",
+                "pricing": "https://aws.amazon.com/bedrock/agents/"
+            },
+            "features": [
+                {
+                    "name": "지식 기반 연동(RAG)",
+                    "desc": "S3 데이터와 즉시 연결하여 최신 기업 정보를 기반으로 답변"
+                },
+                {
+                    "name": "복합 액션 그룹 실행",
+                    "desc": "API 호출과 람다 함수를 조합하여 실제 업무(예: 주문 취소) 수행"
+                },
+                {
+                    "name": "AWS 인프라 보안",
+                    "desc": "IAM 권한 제어와 전용 VPC 환경을 통한 철저한 엔터프라이즈 보안"
+                },
+                {
+                    "name": "멀티 모델 선택권",
+                    "desc": "Claude, Titan, Llama 등 다양한 기초 모델을 자유롭게 에이전트에 적용"
+                }
+            ],
+            "timelines": [
+                "Claude 3.5 Sonnet 연동 및 에이전트 메모리(Session Persistence) 강화 (2026.02)"
+            ]
+        },
+        {
+            "tier": "엔터프라이즈 빌더",
+            "name": "CLOVA Studio",
+            "provider": "Naver Cloud",
+            "origin": "국내",
+            "llm": "HyperCLOVA X (Adv)",
+            "latency": "국내 리전 초저지연 지원",
+            "accuracy": "한국어 맥락 및 문화 이해 1위",
+            "genTime": "실시간 API 응답",
+            "speakerSep": "Skill Trainer & RAG Native",
+            "deployment": "Public / Private Cloud",
+            "integration": "Naver Cloud Platform, Line, Works",
+            "pricing": "토큰 기반 종량제",
+            "strength": "한국어 특화 하이퍼클로바X를 기반으로 한 로컬라이징 에이전트 튜닝 및 배포 최적화",
+            "summary": "네이버 시스템 내에서 한국어 성능이 극대화된 지능형 에이전트를 구축하는 플랫폼",
+            "update": "HyperCLOVA X 멀티모달 인식 엔진 및 한국어 전용 임베딩 V3 업데이트 (2026.03)",
+            "rank": "국내 기업 필수",
+            "review": "국내 공공/금융 가이드라인을 준수하면서 최상의 한국어 성능을 내는 에이전트 구축에 최적",
+            "link": "https://clovastudio.ncloud.com",
+            "sources": {
+                "summary": "https://www.ncloud.com/product/aiService/clovaStudio",
+                "pricing": "https://clovastudio.ncloud.com"
+            },
+            "features": [
+                {
+                    "name": "한국어 특화 HyperCLOVA X",
+                    "desc": "한국 문화와 법규, 산업 특성에 최적화된 독자적 LLM 기반 구축"
+                },
+                {
+                    "name": "익스플로러 튜닝",
+                    "desc": "코딩 없이도 프롬프트와 파라미터를 조절하며 모델 성능 실시간 테스트"
+                },
+                {
+                    "name": "스킬 트레이닝",
+                    "desc": "외부 서비스(쇼핑, 예약 등) API를 연동하여 동작하는 고성능 봇 제작"
+                },
+                {
+                    "name": "기업 전용 데이터 학습",
+                    "desc": "사내 데이터를 안전하게 업로드하여 우리 기업만의 맞춤형 모델 구축"
+                }
+            ],
+            "timelines": [
+                "HyperCLOVA X 멀티모달 인식 엔진 및 한국어 전용 임베딩 V3 업데이트 (2026.03)"
+            ]
+        },
+        {
+            "tier": "IDE 및 자동화 빌더",
+            "name": "Cursor Pro",
+            "provider": "Anysphere",
+            "origin": "국외",
+            "llm": "Cursor-v6 / Claude 5.0",
+            "latency": "코드 편집 즉시 추론",
+            "accuracy": "프로젝트 전체 코드 심층 인덱싱",
+            "genTime": "다중 파일 동시 리팩토링",
+            "speakerSep": "Composer 2.0 Engine",
+            "deployment": "Desktop App (IDE)",
+            "integration": "Git, CLI, Remote Dev",
+            "pricing": "월 $40 (Business)",
+            "strength": "IDE 내부에 완전히 통합된 AI가 개발자의 의도를 읽고 다중 파일 구조를 스스로 설계 및 수정",
+            "summary": "코드베이스에 대한 심층 이해를 바탕으로 자율 개발을 지원하는 AI 특화 IDE",
+            "update": "Cursor v6.0: 다중 에이전트 협업 및 아키텍처 단위 자율 리팩토링 모드 도입 (2026.04)",
+            "rank": "개발자 선호 1위",
+            "review": "코드베이스 전체를 머릿속에 넣고 있는 듯한 AI의 코딩 비서는 개발 생산성의 신기원임",
+            "link": "https://cursor.com",
+            "sources": {
+                "summary": "https://cursor.com/features",
+                "pricing": "https://cursor.com"
+            },
+            "features": [
+                {
+                    "name": "프로젝트 전체 인식",
+                    "desc": "모든 소스 코드를 인덱싱하여 프로젝트 단위의 심층 질문 응답"
+                },
+                {
+                    "name": "Composer 모드",
+                    "desc": "한 번의 명령으로 여러 파일에 걸친 대규모 리팩토링 동시 진행"
+                },
+                {
+                    "name": "즉각적 코드 예측",
+                    "desc": "타이핑 중 개발자의 의도를 읽고 다음 줄 코드를 완벽하게 완성"
+                },
+                {
+                    "name": "스마트 터미널 통합",
+                    "desc": "터미널 에러를 AI가 즉시 감지하여 수정 명령어를 자동 제안"
+                }
+            ],
+            "timelines": [
+                "Cursor v6.0: 다중 에이전트 협업 및 아키텍처 단위 자율 리팩토링 모드 도입 (2026.04)"
+            ]
         },
         {
             "tier": "시각적 노드 빌더",
@@ -990,23 +1784,46 @@
             "provider": "n8n",
             "origin": "국외",
             "llm": "AI Logic Nodes (Native)",
-            "latency": "워크플로우 트리거 즉시 반응",
+            "latency": "트리거 즉시 반응",
             "accuracy": "조건부 로직 결합 무결성",
             "genTime": "시각적 노드 구성 즉시",
-            "speakerSep": "Fair-code Automation Engine",
+            "speakerSep": "Fair-code Engine",
             "deployment": "SaaS / Self-hosted",
-            "integration": "1200+ SaaS API 연동",
-            "pricing": "무료(Self) / 월 $30 (Cloud)",
-            "review": "AI가 판단한 결과를 바탕으로 스스로 이메일을 보내거나 DB를 업데이트하는 자동화 혈관을 구축하기 좋음",
-            "link": "https://n8n.io",
+            "integration": "1200+ SaaS API",
+            "pricing": "무료 / 월 $30~",
             "strength": "노드 기반의 시각적 환경에서 AI의 판단과 수천 개의 SaaS 외부 행동을 자율적으로 연결",
             "summary": "AI 추론 결과물과 실무 액션을 복잡한 시각적 워크플로우로 연결하는 노드 기반 빌더",
-            "update": "LangChain 네이티브 통합 및 자동 에러 복구(Auto-recovery) 에이전트 로직 추가 (2026.03)",
+            "update": "LangChain 네이티브 통합 및 자동 에러 복구 에이전트 로직 추가 (2026.03)",
             "rank": "확장성 1위",
+            "review": "AI가 판단한 결과를 바탕으로 스스로 이메일을 보내거나 DB를 업데이트하는 자동화 혈관 시스템",
+            "link": "https://n8n.io/",
             "sources": {
-                "summary": "https://n8n.io/integrations/ai",
-                "pricing": "https://n8n.io/pricing"
-            }
+                "summary": "https://n8n.io/",
+                "pricing": "https://n8n.io/",
+                "timelines": "https://n8n.io/",
+                "review": "https://n8n.io/"
+            },
+            "features": [
+                {
+                    "name": "600개 이상 노드 연동",
+                    "desc": "Gmail, Slack, Jira 등 수백 가지 툴을 코딩 없이 시각적으로 연결"
+                },
+                {
+                    "name": "LangChain 네이티브 지원",
+                    "desc": "LLM 체인을 워크플로우의 일부로 포함하여 복합 자동화 시나리오 구성"
+                },
+                {
+                    "name": "셀프 호스팅 가능",
+                    "desc": "자사 서버에 설치하여 데이터 유출 걱정 없이 자동화 서버 전용 운영"
+                },
+                {
+                    "name": "고급 로직 분기",
+                    "desc": "조건문과 에러 처리, 대기 노드 등 전문적인 개발 로직을 GUI로 구현"
+                }
+            ],
+            "timelines": [
+                "LangChain 네이티브 통합 및 자동 에러 복구 에이전트 로직 추가 (2026.03)"
+            ]
         },
         {
             "tier": "시각적 노드 빌더",
@@ -1017,45 +1834,673 @@
             "latency": "멀티 시나리오 즉시 응답",
             "accuracy": "데이터 매핑 자동화 최적화",
             "genTime": "시나리오 AI 생성 10초",
-            "speakerSep": "Scenario Visualization Engine",
+            "speakerSep": "Scenario Engine",
             "deployment": "Web SaaS",
-            "integration": "8000+ Apps & Services",
-            "pricing": "무료 / 구간별 종량제",
-            "review": "복잡하게 연결된 데이터 흐름을 가장 보기 좋게 자동화해주며, AI 전용 모듈이 매우 직관적임",
-            "link": "https://make.com",
+            "integration": "8000+ Apps",
+            "pricing": "무료 / 종량제",
             "strength": "전 세계에서 가장 방대한 8000개 이상의 앱 통합 생태계를 기반으로 한 시각적 업무 자동화",
             "summary": "가장 많은 수의 앱과 AI를 드래그 앤 드롭으로 연결해 자율 업무 시나리오를 구성하는 도구",
-            "update": "시각적 시나리오 생성 AI 2.0 및 대규모 엔터프라이즈 거버넌스 관리 기능 탑재 (2026.04)",
+            "update": "시각적 시나리오 생성 AI 2.0 및 엔터프라이즈 거버넌스 기능 탑재 (2026.04)",
             "rank": "통합량 1위",
+            "review": "복잡하게 연결된 데이터 흐름을 가장 보기 좋게 자동화해주며, AI 모듈이 매우 직관적임",
+            "link": "https://make.com",
             "sources": {
                 "summary": "https://www.make.com/en/features/ai",
-                "pricing": "https://www.make.com/en/pricing"
-            }
+                "pricing": "https://make.com"
+            },
+            "features": [
+                {
+                    "name": "비주얼 빌더 v2",
+                    "desc": "복잡한 API 체인을 드래그 앤 드롭으로 설계하고 결과 실시간 확인"
+                },
+                {
+                    "name": "1,000개 이상의 앱 연동",
+                    "desc": "사실상 지구상의 모든 서비스와 AI를 연결할 수 있는 거대한 에코시스템"
+                },
+                {
+                    "name": "데이터 매핑 자동화",
+                    "desc": "AI 노드를 통해 서로 다른 앱 간의 데이터 형식을 지능적으로 변환"
+                },
+                {
+                    "name": "에러 핸들링 자동 복구",
+                    "desc": "실행 중 에러 발생 시 AI가 원인을 분석하고 대체 로직 즉각 실행"
+                }
+            ],
+            "timelines": [
+                "시각적 시나리오 생성 AI 2.0 및 엔터프라이즈 거버넌스 기능 탑재 (2026.04)"
+            ]
         },
         {
             "tier": "엔터프라이즈 빌더",
             "name": "Dify.ai Ent",
             "provider": "Dify.ai",
             "origin": "국외",
-            "llm": "Multi-LLM (Claude 5, GPT-5 등)",
+            "llm": "Multi-LLM Support",
             "latency": "초저지연 워크플로우 엔진",
-            "accuracy": "RAG 및 프롬프트 체인 고효율",
+            "accuracy": "RAG 정밀도 최상",
             "genTime": "앱 즉시 배포",
-            "speakerSep": "LLMOps Integrated Workflow",
-            "deployment": "SaaS / On-premise",
-            "integration": "REST API, Webhooks, Notion",
+            "speakerSep": "LLMOps Workflow",
+            "deployment": "SaaS / Self-hosted",
+            "integration": "REST API, Notion, SQL",
             "pricing": "SaaS (월 $59~)",
-            "review": "LLM 앱을 만드는 데 필요한 모든 과정(데이터 전처리부터 챗 UI까지)이 이보다 편한 툴은 없음",
-            "link": "https://dify.ai",
             "strength": "직관적인 워크플로우 편집과 강력한 오픈소스 생태계를 기반으로 한 RAG 특화 에이전트 빌더",
             "summary": "데이터 정제부터 프롬프트 관리까지 에이전트 서비스 운영 전체를 관리하는 LLMOps 플랫폼",
-            "update": "자율 에이전트 추론 엔진 통합 및 온프레미스용 보안 관리 콘솔 강화 (2026.04)",
-            "rank": "글로벌 상승세 1위",
+            "update": "자율 에이전트 추론 엔진 통합 및 보안 관리 콘솔 강화 (2026.04)",
+            "rank": "글로벌 급성장 1위",
+            "review": "LLM 앱을 만드는 데 필요한 모든 과정이 이보다 편한 툴은 없음",
+            "link": "https://dify.ai",
             "sources": {
                 "summary": "https://dify.ai/blog",
-                "pricing": "https://dify.ai/pricing",
-                "models": "https://github.com/langgenius/dify"
-            }
+                "pricing": "https://dify.ai"
+            },
+            "features": [
+                {
+                    "name": "비주얼 워크플로우",
+                    "desc": "복잡한 LLM 애플리케이션 체인을 시각적으로 구성 및 관리"
+                },
+                {
+                    "name": "고출력 RAG 엔진",
+                    "desc": "수백 장의 문서를 1초 내에 검색하여 최적의 답변 소스로 제공"
+                },
+                {
+                    "name": "원클릭 앱 배포",
+                    "desc": "구축된 에이전트를 외부 API나 웹 위젯 형태로 즉각 상용화"
+                },
+                {
+                    "name": "데이터 정제 자동화",
+                    "desc": "ETL 파이프라인을 통해 지저분한 데이터를 AI 학습용으로 매끄럽게 변환"
+                }
+            ],
+            "timelines": [
+                "자율 에이전트 추론 엔진 통합 및 보안 관리 콘솔 강화 (2026.04)"
+            ]
+        },
+        {
+            "tier": "코드 중심 빌더",
+            "name": "LangChain Pro",
+            "provider": "LangChain",
+            "origin": "국외",
+            "llm": "Agnostic (GPT/Claude/Llama)",
+            "latency": "Python/JS 라이브러리 방식",
+            "accuracy": "체이닝 로직 자유도 무한",
+            "genTime": "코드 기반 정의",
+            "speakerSep": "LangGraph Orchestrator",
+            "deployment": "Library / LangServe",
+            "integration": "Any API / Vector DB",
+            "pricing": "무신 (LangSmith 유료)",
+            "strength": "AI 에이전트의 사고방식(Chain of Thought)을 코드로 자유롭게 설계하고 상태를 관리(LangGraph)",
+            "summary": "대형 언어 모델과 외부 데이터를 연결해 복합 에이전트를 개발하는 사실상의 표준 프레임워크",
+            "update": "LangGraph v1.0 정식 출시 및 다중 에이전트 상태 전이 최적화 (2026.03)",
+            "rank": "개발자 표준 1위",
+            "review": "에이전트의 논리 구조를 밑바닥부터 제어하고 싶은 개발자에게는 대체 불가능한 도구",
+            "link": "https://langchain.com",
+            "sources": {
+                "summary": "https://blog.langchain.dev/",
+                "pricing": "https://langchain.com"
+            },
+            "features": [
+                {
+                    "name": "LangSmith 모니터링",
+                    "desc": "에이전트의 모든 사고 과정을 로깅하고 디버깅하여 성능 최적화"
+                },
+                {
+                    "name": "서버리스 배포 엔진",
+                    "desc": "구축된 체인을 즉시 API 엔드포인트로 전환하여 서비스화"
+                },
+                {
+                    "name": "광범위한 통합 라이브러리",
+                    "desc": "세상에 존재하는 거의 모든 모델 및 벡터 DB와 즉시 호환"
+                },
+                {
+                    "name": "복합 다단계 추론",
+                    "desc": "단순 질의를 넘어 복잡한 계획을 수립하고 실행하는 에이전트 구축"
+                }
+            ],
+            "timelines": [
+                "LangGraph v1.0 정식 출시 및 다중 에이전트 상태 전이 최적화 (2026.03)"
+            ]
+        },
+        {
+            "tier": "코드 중심 빌더",
+            "name": "LlamaIndex Studio",
+            "provider": "LlamaIndex",
+            "origin": "국외",
+            "llm": "Agnostic",
+            "latency": "데이터 인덱싱 고속화",
+            "accuracy": "RAG 검색 정밀도 특화",
+            "genTime": "워크플로우 가시화",
+            "speakerSep": "LlamaParse Engine",
+            "deployment": "SaaS / Cloud",
+            "integration": "모든 데이터 소스 (PDF, API)",
+            "pricing": "SaaS 기반 요금제",
+            "strength": "비정형 데이터(PDF/Doc)에서 의미를 추출해 AI가 가장 잘 답변할 수 있는 구조로 변환하는 데 최적화",
+            "summary": "데이터 하이웨이를 구축하여 에이전트가 완벽한 지식 기반에서 활동하게 돕는 RAG 전문 플랫폼",
+            "update": "LlamaIndex Studio 출시: 복합 에이전트 워크플로우의 실시간 가시화 및 디버깅 지원 (2026.03)",
+            "rank": "RAG 기술력 1위",
+            "review": "방대한 사내 문서를 에이전트의 지식으로 변환하는 과정에서 발생하는 모든 복잡함을 해결해줌",
+            "link": "https://www.llamaindex.ai/",
+            "sources": {
+                "summary": "https://www.llamaindex.ai/blog",
+                "pricing": "https://www.llamaindex.ai/"
+            },
+            "features": [
+                {
+                    "name": "데이터 파이프라인 시각화",
+                    "desc": "비구조화된 데이터를 지식 그래프로 변환하는 과정을 시각화하여 관리"
+                },
+                {
+                    "name": "고출력 쿼리 엔진",
+                    "desc": "수억 개의 벡터 데이터 속에서 가장 관련성 높은 문맥을 실시간 검색"
+                },
+                {
+                    "name": "오브저버빌리티(관측성)",
+                    "desc": "에이전트의 사고 과정과 검색 소스를 투명하게 추적하여 디버깅 지원"
+                },
+                {
+                    "name": "하이브리드 검색 최적화",
+                    "desc": "키워드 기반bm25와 벡터 검색을 조합하여 답변의 정확성을 극대화"
+                }
+            ],
+            "timelines": [
+                "LlamaIndex Studio 출시: 복합 에이전트 워크플로우의 실시간 가시화 및 디버깅 지원 (2026.03)"
+            ]
+        },
+        {
+            "tier": "코드 중심 빌더",
+            "name": "AutoGPT Enterprise",
+            "provider": "Significant Gravitas",
+            "origin": "국외",
+            "llm": "GPT-5.4 / o4",
+            "latency": "자율 루프 기반 실행",
+            "accuracy": "목표 달성 자율 최적화",
+            "genTime": "목표 설정 후 자동 실행",
+            "speakerSep": "Agentic Loop v2",
+            "deployment": "Web / Local Hub",
+            "integration": "Web Browsing, Filespace",
+            "pricing": "월 $50 (Business)",
+            "strength": "사용자의 최종 목표만 있으면, AI가 스스로 할 일을 분해하고 순서대로 실행하며 목표를 달성",
+            "summary": "단기 기억과 장기 기억을 활용해 스스로 목표를 수행하는 자율 에이전트의 대명사",
+            "update": "AutoGPT v3.0: 멀티 에이전트 팀 구성 및 실시간 협업 실행 기능 도입 (2026.04)",
+            "rank": "자율성 기반 상위",
+            "review": "정해진 규칙 없이도 AI가 '알아서' 문제를 해결해나가는 과정을 지켜보는 것만으로도 혁신적",
+            "link": "https://agpt.co",
+            "sources": {
+                "summary": "https://agpt.co/blog",
+                "pricing": "https://agpt.co"
+            },
+            "features": [
+                {
+                    "name": "자율 워크플로우 실행",
+                    "desc": "목표 설정만으로 AI가 스스로 할 일을 분해하고 끝까지 수행"
+                },
+                {
+                    "name": "영구적 기억 저장소",
+                    "desc": "과거의 과업 수행 결과를 기억하여 유사한 작업 시 효율 극대화"
+                },
+                {
+                    "name": "다중 도구 선택 실행",
+                    "desc": "브라우징, 파일 편집, 메일 발송 등 필요한 도구를 스스로 선택"
+                },
+                {
+                    "name": "팀 기반 멀티 에이전트",
+                    "desc": "서로 다른 역할을 가진 인공지능들이 협업하여 과업 달성"
+                }
+            ],
+            "timelines": [
+                "AutoGPT v3.0: 멀티 에이전트 팀 구성 및 실시간 협업 실행 기능 도입 (2026.04)"
+            ]
+        },
+        {
+            "tier": "코드 중심 빌더",
+            "name": "Claude Projects API",
+            "provider": "Anthropic",
+            "origin": "국외",
+            "llm": "Claude 3.5 Sonnet / 4.0 Pro",
+            "latency": "초거대 컨텍스트 처리",
+            "accuracy": "글쓰기 및 코딩 논리 최상",
+            "genTime": "API 즉시 응답",
+            "speakerSep": "Project Context Mesh",
+            "deployment": "Cloud API / SaaS",
+            "integration": "AWS Bedrock, GC Vertex AI",
+            "pricing": "사용량 기반 종량제",
+            "strength": "수천 페이지의 프로젝트 문서를 컨텍스트로 업로드하고, 그 안에서 고도로 정교한 에이전트를 즉각 구동",
+            "summary": "가장 인간다운 문장력과 논리적 엄밀함을 가진 클로드 모델 기반의 에이전트 구축 환경",
+            "update": "Claude 4.0 하위 모델 탑재 및 1M 토큰 컨텍스트 실시간 처리 기능 강화 (2026.04)",
+            "rank": "추론 성능 TOP 2",
+            "review": "긴 코드를 분석하거나 전문적인 기획안을 작성하는 에이전트라면 클로드가 단연 최고",
+            "link": "https://claude.ai/projects",
+            "sources": {
+                "summary": "https://www.anthropic.com/news",
+                "pricing": "https://www.anthropic.com/news"
+            },
+            "features": [
+                {
+                    "name": "Project Context Mesh",
+                    "desc": "수천 페이지의 프로젝트 문서를 하나의 맥락으로 엮어 분석"
+                },
+                {
+                    "name": "Artifacts UI",
+                    "desc": "생성된 코드나 디자인, 문서를 실시간으로 렌더링하고 편집"
+                },
+                {
+                    "name": "Anthropic 4.0 모델",
+                    "desc": "인간의 추론 능력에 가장 근접한 논리적 정교함 제공"
+                },
+                {
+                    "name": "사내 지식 베이스 격리",
+                    "desc": "기업 데이터를 개별 프로젝트 단위로 안전하게 격리 및 관리"
+                }
+            ],
+            "timelines": [
+                "Claude 4.0 하위 모델 탑재 및 1M 토큰 컨텍스트 실시간 처리 기능 강화 (2026.04)"
+            ]
+        },
+        {
+            "tier": "코드 중심 빌더",
+            "name": "OpenAI Assistants API",
+            "provider": "OpenAI",
+            "origin": "국외",
+            "llm": "GPT-5 / o4-Flash",
+            "latency": "초고효율 추론 엔진",
+            "accuracy": "글로벌 상용 서비스 검증",
+            "genTime": "Run 단위 비동기 응답",
+            "speakerSep": "Threads Agent Logic",
+            "deployment": "Azure / OpenAI Cloud",
+            "integration": "Any External Tools",
+            "pricing": "토큰 기반 종량제",
+            "strength": "대화 상태(Thread)와 파일 도구, 함수 호출을 API 수준에서 관리해 복잡한 비서 서비스 구축에 최적",
+            "summary": "별도 서버 관리 없이도 대화 상태와 지식 기반을 유지하는 강력한 API 기반 에이전트 엔진",
+            "update": "o4-Flash 모델 지원 및 추론 속도 2배 향상, 캐싱 레이어 도입 (2026.04)",
+            "rank": "상용화 지원 1위",
+            "review": "가장 많은 개발자가 이미 사용 중인 검증된 API로, 어떤 서비스에도 에이전트를 쉽게 연동 가능",
+            "link": "https://platform.openai.com/docs/assistants",
+            "sources": {
+                "summary": "https://openai.com/news",
+                "pricing": "https://platform.openai.com/docs/assistants"
+            },
+            "features": [
+                {
+                    "name": "Thread State Management",
+                    "desc": "LLM이 대화의 상태를 서버 측에서 관리하여 끊김 없는 경험 제공"
+                },
+                {
+                    "name": "Code Interpreter 통합",
+                    "desc": "파일 데이터를 직접 분석하고 시각화하는 파이썬 코드 자율 실행"
+                },
+                {
+                    "name": "Search (RAG) 내장",
+                    "desc": "별도 구축 없이도 업로드된 파일 속 정보를 지능적으로 검색"
+                },
+                {
+                    "name": "Function Calling",
+                    "desc": "외부 도구와 API를 에이전트가 스스로 판단하여 호출 및 실행"
+                }
+            ],
+            "timelines": [
+                "o4-Flash 모델 지원 및 추론 속도 2배 향상, 캐싱 레이어 도입 (2026.04)"
+            ]
+        },
+        {
+            "tier": "시각적 노드 빌더",
+            "name": "Voiceflow Enterprise",
+            "provider": "Voiceflow",
+            "origin": "국외",
+            "llm": "Knowledge Base AI (Gemini/GPT)",
+            "latency": "실시간 채팅/음성 응답",
+            "accuracy": "대화 트리 및 NLP 결합 정교함",
+            "genTime": "캔버스 편집 즉시",
+            "speakerSep": "Voice/Chat UI Framework",
+            "deployment": "SaaS / SDK",
+            "integration": "WhatsApp, SMS, Web Chat",
+            "pricing": "월 $50~ (Team)",
+            "strength": "피그마처럼 대화 흐름을 시각적으로 설계하고, 지식 기반 AI를 결합해 직관적인 고객 접점을 구축",
+            "summary": "음성 비서와 다이얼로그 형 에이전트의 UI/UX 설계를 위한 글로벌 1위 저작 도구",
+            "update": "신규 지식 기반 AI 엔진 2.0 및 옴니채널 고객 관리 대시보드 강화 (2026.03)",
+            "rank": "UX 디자인 1위",
+            "review": "단순 기록용이 아니라 실제 고객과 대화하며 문제를 해결하는 프론트엔드 에이전트라면 필수",
+            "link": "https://www.voiceflow.com/",
+            "sources": {
+                "summary": "https://www.voiceflow.com/blog",
+                "pricing": "https://www.voiceflow.com/"
+            },
+            "features": [
+                {
+                    "name": "멀티모달 대화 설계",
+                    "desc": "음성 인식과 텍스트 채팅 모드를 동시에 아우르는 에이전트 설계"
+                },
+                {
+                    "name": "팀 협업 프로토타이핑",
+                    "desc": "피그마처럼 팀원들과 실시간으로 대화 흐름을 기획하고 공유"
+                },
+                {
+                    "name": "KB(Knowledge Base) 통합",
+                    "desc": "문서를 업로드하면 AI가 학습하여 대화 중 관련 정보 즉시 인용"
+                },
+                {
+                    "name": "글로벌 배포 가속화",
+                    "desc": "한 번의 버튼 클릭으로 다양한 브라우저 및 앱 임베드 위젯 배포"
+                }
+            ],
+            "timelines": [
+                "신규 지식 기반 AI 엔진 2.0 및 옴니채널 고객 관리 대시보드 강화 (2026.03)"
+            ]
+        },
+        {
+            "tier": "시각적 노드 빌더",
+            "name": "Flowise AI Builder",
+            "provider": "Flowise",
+            "origin": "국외",
+            "llm": "Agnostic Hub",
+            "latency": "컨테이너 기반 로컬 실행",
+            "accuracy": "커스텀 컴포넌트 확장성",
+            "genTime": "드래그 앤 드롭 즉시",
+            "speakerSep": "LangChain Visualizer",
+            "deployment": "Docker / Local / Cloud",
+            "integration": "LangChain, LlamaIndex API",
+            "pricing": "무료 (오픈소스)",
+            "strength": "복잡한 랭체인 코드를 사전에 정의된 노드들로 시각화하여 비개발자도 에이전트 체인을 구성 가능",
+            "summary": "드래그 앤 드롭 방식으로 복잡한 AI 에이전트 워크플로우를 구성하는 로우코드 플랫폼",
+            "update": "멀티 에이전트 오케스트레이션 노드 추가 및 실시간 배포 모니터링 기능 강화 (2026.02)",
+            "rank": "로우코드 효율 상위",
+            "review": "코딩 없이도 전문적인 에이전트 파이프라인을 시각적으로 설계하고 바로 API로 쓸 수 있음",
+            "link": "https://flowiseai.com/",
+            "sources": {
+                "summary": "https://github.com/FlowiseAI/Flowise",
+                "pricing": "https://flowiseai.com/"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "멀티 에이전트 오케스트레이션 노드 추가 및 실시간 배포 모니터링 기능 강화 (2026.02)"
+            ]
+        },
+        {
+            "tier": "코드 중심 빌더",
+            "name": "Vercel AI SDK",
+            "provider": "Vercel",
+            "origin": "국외",
+            "llm": "Multi-Model Gateway",
+            "latency": "엣지 런타임 초고속 응답",
+            "accuracy": "React/Next.js 완전 통합",
+            "genTime": "UI 컴포넌트 즉각 생성",
+            "speakerSep": "Edge AI Streaming",
+            "deployment": "Vercel / Next.js",
+            "integration": "Next.js, LangChain, OpenAI",
+            "pricing": "Vercel 요금제 통합",
+            "strength": "웹 서비스 화면에 AI 스트리밍과 챗 UI를 가장 자연스럽고 빠르게 녹여낼 수 있는 개발 도구",
+            "summary": "모던 웹 프레임워크와 결합해 사용자 경험 중심의 AI 에이전트 서비스를 구현하는 라이브러리",
+            "update": "Vercel AI SDK v4.0: 서버리스 엣지 환경 최적화 및 신규 'Generative UI' 기능 강화 (2026.04)",
+            "rank": "프론트엔드 개발 표준",
+            "review": "사용자와 대화하며 화면을 실시간으로 그려주는 미래형 서비스를 만들기에 최적",
+            "link": "https://sdk.vercel.ai/",
+            "sources": {
+                "summary": "https://sdk.vercel.ai/docs",
+                "pricing": "https://sdk.vercel.ai/"
+            },
+            "features": [
+                {
+                    "name": "엣지 런타임 최적화",
+                    "desc": "글로벌 엣지 인프라에서 구동되어 0.1초 수준의 빠른 AI 응답 속도 보장"
+                },
+                {
+                    "name": "프런트엔드 스트리밍",
+                    "desc": "ChatGPT 같은 실시간 텍스트 스트리밍 UI를 손쉽게 구현하는 오픈소스 SDK"
+                },
+                {
+                    "name": "프레임워크 독립성",
+                    "desc": "Next.js뿐만 아니라 React, Vue 등 다양한 웹 프레임워크와 완벽 호환"
+                },
+                {
+                    "name": "강력한 데이터 시각화",
+                    "desc": "AI가 생성한 데이터를 차트나 테이블 등으로 전환하는 컴포넌트 라이브러리"
+                }
+            ],
+            "timelines": [
+                "Vercel AI SDK v4.0: 서버리스 엣지 환경 최적화 및 신규 'Generative UI' 기능 강화 (2026.04)"
+            ]
+        },
+        {
+            "tier": "코드 중심 빌더",
+            "name": "Pinecone Canopy",
+            "provider": "Pinecone",
+            "origin": "국외",
+            "llm": "RAG Specialized Hub",
+            "latency": "밀리초 단위 벡터 검색",
+            "accuracy": "하이브리드 검색 정밀도 완성",
+            "genTime": "검색 결과 실시간 합성",
+            "speakerSep": "Managed RAG Architecture",
+            "deployment": "Serverless Pinecone",
+            "integration": "Any LLM / Cloud Storage",
+            "pricing": "무료 / 구간별 종량제",
+            "strength": "데이터를 업로드하면 AI 에이전트가 완벽하게 검색해 답변할 수 있는 하이웨이를 자동으로 구축",
+            "summary": "에이전트에게 강력한 장기 기억 저장소와 검색 능력을 부여하는 RAG 전문 프레임워크",
+            "update": "Canopy v2: 실시간 오토 인덱싱 및 멀티 테넌트 보안 구조 강화 (2026.03)",
+            "rank": "벡터 스토어 1위",
+            "review": "에이전트가 과거의 대화나 방대한 사내 규정을 기억해야 한다면 파인콘이 가장 확실한 선택",
+            "link": "https://www.pinecone.io/canopy/",
+            "sources": {
+                "summary": "https://www.pinecone.io/blog/",
+                "pricing": "https://www.pinecone.io/canopy/"
+            },
+            "features": [
+                {
+                    "name": "RAG 가속 프레임워크",
+                    "desc": "복잡한 에이전트 검색 로직을 단 몇 줄의 코드로 구현 및 배포"
+                },
+                {
+                    "name": "서버리스 벡터 DB",
+                    "desc": "인프라 관리 없이 데이터 규모에 따라 자동으로 확장되는 DB 제공"
+                },
+                {
+                    "name": "지능형 데이터 청킹",
+                    "desc": "문서를 의미 단위로 똑똑하게 잘라 검색 정확도를 획기적으로 향상"
+                },
+                {
+                    "name": "실시간 인덱싱 동기화",
+                    "desc": "데이터가 변경되는 즉시 검색 결과에 반영되는 실시간 성능"
+                }
+            ],
+            "timelines": [
+                "Canopy v2: 실시간 오토 인덱싱 및 멀티 테넌트 보안 구조 강화 (2026.03)"
+            ]
+        },
+        {
+            "tier": "엔터프라이즈 빌더",
+            "name": "Konan Watcher",
+            "provider": "Konan Technology",
+            "origin": "국내",
+            "llm": "Konan LLM (Agentic)",
+            "latency": "실시간 데이터 감시 및 분석",
+            "accuracy": "금융/공공 도메인 특화",
+            "genTime": "이슈 발생 즉시 탐지",
+            "speakerSep": "Multi-Source Monitoring",
+            "deployment": "On-premise / Private Cloud",
+            "integration": "사내 데이터 소스, 공공 API",
+            "pricing": "기업 맞춤형 도입",
+            "strength": "실시간으로 쏟아지는 사내외 데이터를 감시하며, 특정 패턴 발생 시 에이전트가 스스로 조치를 수행",
+            "summary": "기업의 안전한 디지털 전환을 위해 자율로봇 기술과 AI 분석을 결합한 모니터링 에이전트",
+            "update": "Konan LLM 고도화 및 실시간 동영상 분석 기반 에이전틱 액션 기능 추가 (2026.03)",
+            "rank": "국내 기술력 상위",
+            "review": "보안이 중요한 국내 상황에서 망 분리 환경에 에이전트를 심고 싶을 때 가장 안정적임",
+            "link": "https://www.konantech.com/",
+            "sources": {
+                "summary": "https://www.konantech.com/news",
+                "pricing": "https://www.konantech.com/"
+            },
+            "features": [
+                {
+                    "name": "실시간 영상 분석 에이전트",
+                    "desc": "CCTV나 실시간 영상 속 객체를 탐지하고 비정상 상황 알림"
+                },
+                {
+                    "name": "대규모 비정형 데이터 검색",
+                    "desc": "수억 건의 사내 문서와 영상을 벡터 검색으로 초고속 탐색"
+                },
+                {
+                    "name": "한국어 언어 분석 1위",
+                    "desc": "형태소 분석기 기반의 정교한 텍스트 의미 파악 및 요약"
+                },
+                {
+                    "name": "자체 LLM 'Konan LLM'",
+                    "desc": "외산 모델 없이 순수 국내 기술로 구축하는 AI 에이전트 환경"
+                }
+            ],
+            "timelines": [
+                "Konan LLM 고도화 및 실시간 동영상 분석 기반 에이전틱 액션 기능 추가 (2026.03)"
+            ]
+        },
+        {
+            "tier": "엔터프라이즈 빌더",
+            "name": "Saltlux Luxia Builder",
+            "provider": "Saltlux",
+            "origin": "국내",
+            "llm": "Luxia (Fine-tuned)",
+            "latency": "고성능 온프레미스 엔진",
+            "accuracy": "지식 그래프 결합 무결성",
+            "genTime": "지식 베이스 구축 즉시",
+            "speakerSep": "Knowledge Graph Hybrid",
+            "deployment": "On-premise / SaaS",
+            "integration": "정부/공공/금융 시스템 전용",
+            "pricing": "엔터프라이즈 맞춤 요금",
+            "strength": "솔트룩스만의 방대한 지식 그래프 데이터를 AI와 결합해 환각 현상을 획기적으로 낮춘 에이전트",
+            "summary": "공공/금융 부문의 복잡한 규제와 지식을 반영해 오답 없는 에이전트를 구축하는 플랫폼",
+            "update": "Luxia v2 모델 출시 및 실시간 금융 데이터 RAG 엔진 통합 (2026.04)",
+            "rank": "국내 공공/금융 1위",
+            "review": "답이 정해져 있는 전문 영역에서 보수적이고 안전한 에이전트를 운영해야 한다면 최적",
+            "link": "https://www.saltlux.com/",
+            "sources": {
+                "summary": "https://www.saltlux.com/pr/news",
+                "pricing": "https://www.saltlux.com/"
+            },
+            "features": [
+                {
+                    "name": "금융/공공 지식 학습",
+                    "desc": "국내 전문 분야 용어에 특화된 Luxia LLM 기반 구축"
+                },
+                {
+                    "name": "할루시네이션 최소화",
+                    "desc": "지식 베이스(KB) 연동 검색을 통해 검증된 팩트만 답변"
+                },
+                {
+                    "name": "사용자 권한별 정보 제어",
+                    "desc": "조직 내 직급 및 부서별로 에이전트 접근 데이터 차등 관리"
+                },
+                {
+                    "name": "설치형(On-premise) 구축",
+                    "desc": "민감 데이터의 외부 유출을 원천 차단하는 완전 폐쇄형 서버 구축"
+                }
+            ],
+            "timelines": [
+                "Luxia v2 모델 출시 및 실시간 금융 데이터 RAG 엔진 통합 (2026.04)"
+            ]
+        },
+        {
+            "tier": "코드 중심 빌더",
+            "name": "Upstage Solar API",
+            "provider": "Upstage",
+            "origin": "국내",
+            "llm": "Solar (Agentic Ops)",
+            "latency": "글로벌 상판 모델급 응답속도",
+            "accuracy": "문서 레이아웃 이해(Layout) 1위",
+            "genTime": "API 요청 즉각 처리",
+            "speakerSep": "Solar-RAG Pipeline",
+            "deployment": "Cloud API / Private Cloud",
+            "integration": "AWS, Azure, GCP 리전 지원",
+            "pricing": "토큰 기반 종량제",
+            "strength": "복잡한 표나 레이아웃이 포함된 문서를 가장 정확하게 읽어내어 에이전트의 지식으로 변환",
+            "summary": "한 단계 높은 문서 이해를 바탕으로 실무용 RAG 에이전트를 구축하는 전문가용 엔진",
+            "update": "Solar 1.0 Pro 출시 및 다국어 문서 정밀 분석 기능 업그레이드 (2026.04)",
+            "rank": "글로벌 리딩 국내사",
+            "review": "표가 많은 PDF 문서를 분석해야 한다면, 솔라의 도큐먼트 AI 성능은 독보적인 선택지",
+            "link": "https://www.upstage.ai/",
+            "sources": {
+                "summary": "https://www.upstage.ai/news",
+                "pricing": "https://www.upstage.ai/"
+            },
+            "features": [
+                {
+                    "name": "성능 1위 Solar LLM",
+                    "desc": "세계 벤치마크를 석권한 고성능 경량 모델 기반 API 제공"
+                },
+                {
+                    "name": "Layout Analyzer",
+                    "desc": "표, 차트, 복잡한 레이아웃의 PDF 문서를 완벽하게 읽고 구조화"
+                },
+                {
+                    "name": "문서 AI 에이전트 최적화",
+                    "desc": "기업 내부 지식 문서(RAG)를 가장 정확하게 읽는 전용 엔진"
+                },
+                {
+                    "name": "프라이빗 AI 구축 전용",
+                    "desc": "보안이 중요한 기업을 위한 클라우드 및 온프레미스 선택 옵션"
+                }
+            ],
+            "timelines": [
+                "Solar 1.0 Pro 출시 및 다국어 문서 정밀 분석 기능 업그레이드 (2026.04)"
+            ]
+        },
+        {
+            "tier": "엔터프라이즈 빌더",
+            "name": "Allganize Alli LLM",
+            "provider": "Allganize",
+            "origin": "국내",
+            "llm": "Alli (Agnostic Connector)",
+            "latency": "엔터프라이즈 앱 즉시 가동",
+            "accuracy": "사내 실무 자동화 성능 검증",
+            "genTime": "원스탑 앱 마켓 설치",
+            "speakerSep": "App Market Orchestrator",
+            "deployment": "SaaS / Private SaaS",
+            "integration": "Excel, Slack, CRM 연동",
+            "pricing": "월별/기능별 과금",
+            "strength": "기존에 구축된 수많은 사내 업무 앱을 에이전트가 직접 실행하며 복합 태스크를 수행",
+            "summary": "기업 업무 전용 앱들과 AI를 연결해 즉시 사용 가능한 실무용 에이전트 환경",
+            "update": "Alli 앱 마켓 3.0: 100여 종의 재무/인사/법무 실무 에이전트 자동 연동 (2026.03)",
+            "rank": "실무 보급률 1위",
+            "review": "개념 실증(PoC) 수준을 넘어 실제 현업에서 바로 쓸 수 있는 에이전트 앱들이 강점",
+            "link": "https://www.allganize.ai/",
+            "sources": {
+                "summary": "https://www.allganize.ai/",
+                "pricing": "https://www.allganize.ai/",
+                "timelines": "https://www.allganize.ai/",
+                "review": "https://www.allganize.ai/"
+            },
+            "features": [
+                {
+                    "name": "사내 지식 검색(RAG)",
+                    "desc": "PDF, 오피스 문서 등 사내 산재된 지식을 에이전트의 두뇌로 활용"
+                },
+                {
+                    "name": "원클릭 시스템 연동",
+                    "desc": "Jira, Notion, Slack 등 사내 툴과 코드 없이 즉시 연결"
+                },
+                {
+                    "name": "커스텀 프롬프트 빌더",
+                    "desc": "우리 회사만의 정해진 답변 형식을 고정하여 답변 일관성 유지"
+                },
+                {
+                    "name": "보안 프라이빗 서버",
+                    "desc": "기업 내부망에 설치하여 강력한 보안 수준을 유지하는 구축형 지원"
+                }
+            ],
+            "timelines": [
+                "Alli 앱 마켓 3.0: 100여 종의 재무/인사/법무 실무 에이전트 자동 연동 (2026.03)"
+            ]
         }
     ],
     "reportSlideData": [
@@ -1079,10 +2524,31 @@
             "update": "GPT-5 멀티모달 디자인 엔진 및 기업 브랜드 킷 자동 학습 도입 (2026.03)",
             "rank": "디자인 1위 추천",
             "sources": {
-                "summary": "https://www.beautiful.ai/features",
-                "pricing": "https://www.beautiful.ai/pricing",
+                "summary": "https://www.beautiful.ai",
+                "pricing": "https://www.beautiful.ai",
                 "models": "https://www.beautiful.ai/blog"
-            }
+            },
+            "features": [
+                {
+                    "name": "DesignerBot v4",
+                    "desc": "텍스트 입력만으로 완벽한 스토리라인과 레이아웃 자동 구성"
+                },
+                {
+                    "name": "브랜드 가이드 준수",
+                    "desc": "기업 로고와 색상을 학습하여 모든 장표의 브랜드 일관성 유지"
+                },
+                {
+                    "name": "데이터 시각화 자동화",
+                    "desc": "엑셀 데이터를 업로드하면 가장 적합한 차트와 인포그래픽 생성"
+                },
+                {
+                    "name": "스마트 레이아웃 엔진",
+                    "desc": "요소 추가/삭제 시 디자인 균형을 맞추기 위해 실시간 리사이징"
+                }
+            ],
+            "timelines": [
+                "GPT-5 멀티모달 디자인 엔진 및 기업 브랜드 킷 자동 학습 도입 (2026.03)"
+            ]
         },
         {
             "tier": "리서치 및 보고서 전문",
@@ -1104,9 +2570,31 @@
             "update": "Skywork 2.0 Nexus 아키텍처 및 실시간 글로벌 팩트체크 엔진 탑재 (2026.04)",
             "rank": "리서치 상위",
             "sources": {
-                "summary": "https://skywork.ai/product",
-                "models": "https://skywork.ai/news"
-            }
+                "summary": "https://skywork.ai",
+                "models": "https://skywork.ai/news",
+                "pricing": "https://skywork.ai"
+            },
+            "features": [
+                {
+                    "name": "멀티모달 장표 생성",
+                    "desc": "텍스트 요구사항을 넘어 이미지와 도표가 가미된 세련된 리포트 생성"
+                },
+                {
+                    "name": "광범위한 데이터 수집",
+                    "desc": "글로벌 트렌드 데이터를 실시간으로 크롤링하여 리포트 근거로 활용"
+                },
+                {
+                    "name": "기업 맞춤형 톤앤매너",
+                    "desc": "회사의 기존 리포트 스타일을 학습하여 브랜드 일관성 유지"
+                },
+                {
+                    "name": "스마트 편집 가이드",
+                    "desc": "작성된 리포트의 논리적 허점을 AI가 찾아내고 수정 방향 제안"
+                }
+            ],
+            "timelines": [
+                "Skywork 2.0 Nexus 아키텍처 및 실시간 글로벌 팩트체크 엔진 탑재 (2026.04)"
+            ]
         },
         {
             "tier": "리서치 및 보고서 전문",
@@ -1128,9 +2616,31 @@
             "update": "Sparkpage 2.0 출시 및 에이전트 간 논리 교차 검증 'Reasoning Swarm' 도입 (2026.03)",
             "rank": "급상승 1위",
             "sources": {
-                "summary": "https://genspark.ai/about",
-                "models": "https://genspark.ai/news"
-            }
+                "summary": "https://genspark.ai",
+                "models": "https://genspark.ai/news",
+                "pricing": "https://genspark.ai"
+            },
+            "features": [
+                {
+                    "name": "AI Spark Page 생성",
+                    "desc": "검색 결과들을 모아 하나의 완성된 깊이 있는 논문급 리포트 자동 구성"
+                },
+                {
+                    "name": "다각도 정보 교차 검증",
+                    "desc": "여러 사이트의 정보를 비교 대조하여 편향되지 않은 객측 정보 제공"
+                },
+                {
+                    "name": "맞춤형 정보 큐레이션",
+                    "desc": "사용자의 전문성 수준(초보자/전문가)에 맞춰 리포트 난이도 조절"
+                },
+                {
+                    "name": "라이브 웹 업데이트",
+                    "desc": "고정된 문서가 아닌, 실시간 웹 정보를 반영해 지속 업데이트되는 리포트"
+                }
+            ],
+            "timelines": [
+                "Sparkpage 2.0 출시 및 에이전트 간 논리 교차 검증 'Reasoning Swarm' 도입 (2026.03)"
+            ]
         },
         {
             "tier": "리서치 및 보고서 전문",
@@ -1155,7 +2665,28 @@
                 "summary": "https://www.perplexity.ai/enterprise",
                 "models": "https://www.perplexity.ai/pro",
                 "pricing": "https://www.perplexity.ai/enterprise"
-            }
+            },
+            "features": [
+                {
+                    "name": "실시간 웹 리서치",
+                    "desc": "현재 인터넷상의 최신 정보를 바탕으로 리포트 자동 생성"
+                },
+                {
+                    "name": "스마트 소스 인용",
+                    "desc": "생성된 모든 문장마다 신뢰할 수 있는 출처를 하나하나 명시"
+                },
+                {
+                    "name": "인터랙티브 리포트",
+                    "desc": "독자가 궁금한 점을 리포트 내에서 즉시 다시 물어볼 수 있는 환경"
+                },
+                {
+                    "name": "대중적 스토리텔링",
+                    "desc": "전문적인 정보를 비전공자도 이해하기 쉬운 구조로 자동 변환"
+                }
+            ],
+            "timelines": [
+                "Sonar 4.0 기반 추론 성능 강화 및 엔터프라이즈 전용 보안 도메인 적용 (2026.04)"
+            ]
         },
         {
             "tier": "데이터 분석 및 리포트 전문",
@@ -1177,9 +2708,31 @@
             "update": "Gemini 3.0 엔진 적용 및 YouTube 영상 소스 직접 분석 기능 추가 (2026.02)",
             "rank": "데이터 처리 1위",
             "sources": {
-                "summary": "https://notebooklm.google.com/about",
-                "models": "https://deepmind.google/technologies/gemini/"
-            }
+                "summary": "https://notebooklm.google.com",
+                "models": "https://deepmind.google/technologies/gemini/",
+                "pricing": "https://notebooklm.google.com"
+            },
+            "features": [
+                {
+                    "name": "소스 기반 정확한 인용",
+                    "desc": "모든 답변 하단에 원문 문서의 직접적인 링크와 근거를 명시"
+                },
+                {
+                    "name": "오디오 오버뷰(Audio)",
+                    "desc": "문서 내용을 두 명의 AI 가 대화하며 설명해주는 팟캐스트 변환"
+                },
+                {
+                    "name": "대규모 문서 지식화",
+                    "desc": "최대 50개의 소스를 통합하여 수만 페이지 분량의 정보 요약 및 검색"
+                },
+                {
+                    "name": "사용자 맞춤 가이드라인",
+                    "desc": "공부용, 업무용, 창작용 등 목적에 맞춰 요약 방식을 AI가 조절"
+                }
+            ],
+            "timelines": [
+                "Gemini 3.0 엔진 적용 및 YouTube 영상 소스 직접 분석 기능 추가 (2026.02)"
+            ]
         },
         {
             "tier": "슬라이드 및 시각화 전문",
@@ -1201,9 +2754,30 @@
             "update": "GPT-5 Turbo 협업 캔버스 도입 및 기업 전용 보안 도메인 기능 강화 (2026.03)",
             "rank": "속도/디자인 상위",
             "sources": {
-                "summary": "https://gamma.app/product",
-                "pricing": "https://gamma.app/pricing"
-            }
+                "summary": "https://gamma.app",
+                "pricing": "https://gamma.app"
+            },
+            "features": [
+                {
+                    "name": "AI 캔버스 협업",
+                    "desc": "팀원들이 동시에 접속하여 AI와 함께 실시간으로 장표 편집"
+                },
+                {
+                    "name": "유동적 카드 시스템",
+                    "desc": "화면 크기에 맞춰 최적화되는 반응형 프레젠테이션 형태 제공"
+                },
+                {
+                    "name": "원스탑 웹 배포",
+                    "desc": "생성된 슬라이드를 즉시 웹사이트 형태로 배포하여 링크 공유"
+                },
+                {
+                    "name": "고화질 멀티모달 생성",
+                    "desc": "장표 맥락에 맞는 AI 이미지와 아이콘을 내부에서 즉석 생성"
+                }
+            ],
+            "timelines": [
+                "GPT-5 Turbo 협업 캔버스 도입 및 기업 전용 보안 도메인 기능 강화 (2026.03)"
+            ]
         },
         {
             "tier": "슬라이드 및 시각화 전문",
@@ -1225,9 +2799,31 @@
             "update": "AI 기업 브랜딩 자동화 및 광고 소재 최적화 엔진 탑재 (2026.04)",
             "rank": "국내 로컬 1위",
             "sources": {
-                "summary": "https://www.miricanvas.com/pricing",
-                "distributor": "https://www.miricanvas.com/enterprise"
-            }
+                "summary": "https://www.miricanvas.com",
+                "distributor": "https://www.miricanvas.com/enterprise",
+                "pricing": "https://www.miricanvas.com"
+            },
+            "features": [
+                {
+                    "name": "AI 기반 자동화",
+                    "desc": "최신 언어 모델을 통한 업무 프로세스 자율 최적화"
+                },
+                {
+                    "name": "실시간 데이터 분석",
+                    "desc": "복잡한 비정형 데이터를 즉각 분석하여 유의미한 인사이트 추출"
+                },
+                {
+                    "name": "엔터프라이즈 보안",
+                    "desc": "기업 표준 보안 프레임워크를 준수하여 안전한 데이터 관리"
+                },
+                {
+                    "name": "다양한 서비스 연동",
+                    "desc": "API 및 SDK를 통해 기존 업무 도구와 매끄러운 통합 지원"
+                }
+            ],
+            "timelines": [
+                "AI 기업 브랜딩 자동화 및 광고 소재 최적화 엔진 탑재 (2026.04)"
+            ]
         },
         {
             "tier": "데이터 분석 및 리포트 전문",
@@ -1249,9 +2845,30 @@
             "update": "o4-Analyst 모델 기반 추론 사슬 강화 및 실시간 SQL 연동 기능 업데이트 (2026.01)",
             "rank": "통계 분석 강력추천",
             "sources": {
-                "summary": "https://julius.ai/features",
-                "pricing": "https://julius.ai/pricing"
-            }
+                "summary": "https://julius.ai",
+                "pricing": "https://julius.ai"
+            },
+            "features": [
+                {
+                    "name": "코드 인터프리터 분석",
+                    "desc": "엑셀/SQL 데이터를 AI가 직접 Python 코드로 분석하여 팩트 제공"
+                },
+                {
+                    "name": "복합 차트 자동 생성",
+                    "desc": "단순 그래프가 아닌 통계적으로 유의미한 상관관계를 시각화 리포트화"
+                },
+                {
+                    "name": "대규모 데이터셋 처리",
+                    "desc": "수십만 행의 기가바이트급 파일도 클라우드 환경에서 고속 연산 처리"
+                },
+                {
+                    "name": "수학적 추론 기반 질문",
+                    "desc": "단순 요약을 넘어 통계적 가설 검정 등 수준 높은 분석 질의 응답"
+                }
+            ],
+            "timelines": [
+                "o4-Analyst 모델 기반 추론 사슬 강화 및 실시간 SQL 연동 기능 업데이트 (2026.01)"
+            ]
         },
         {
             "tier": "리서치 및 보고서 전문",
@@ -1273,9 +2890,32 @@
             "update": "Flux 디자인 엔진 통합으로 고퀄리티 시각 자료 생성 및 실시간 협업 모드 강화 (2026.03)",
             "rank": "스토리텔링 상위",
             "sources": {
-                "summary": "https://tome.app/product",
-                "pricing": "https://tome.app/pricing"
-            }
+                "summary": "https://tome.app",
+                "pricing": "https://tome.com/",
+                "timelines": "https://tome.com/",
+                "review": "https://tome.com/"
+            },
+            "features": [
+                {
+                    "name": "스토리텔링 엔진",
+                    "desc": "단순 정보 나열이 아닌 기승전결이 있는 서사 중심의 페이지 구성"
+                },
+                {
+                    "name": "반응형 가변 캔버스",
+                    "desc": "어떤 디스플레이에서도 완벽하게 보이는 다이내믹 레이아웃 적용"
+                },
+                {
+                    "name": "멀티미디어 생성 통합",
+                    "desc": "DALL-E 3, 비디오 생성 AI 등과 연동하여 시각 자료 직접 생성"
+                },
+                {
+                    "name": "원클릭 웹 사이트 배포",
+                    "desc": "제작된 슬라이드를 즉시 웹 주소로 만들어 외부와 공유 및 분석"
+                }
+            ],
+            "timelines": [
+                "Flux 디자인 엔진 통합으로 고퀄리티 시각 자료 생성 및 실시간 협업 모드 강화 (2026.03)"
+            ]
         }
     ]
 }

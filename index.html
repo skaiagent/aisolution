@@ -334,7 +334,7 @@
                     </div>
                 </div>
                 <div class="text-center pt-8 border-t border-slate-100">
-                    <button onclick="document.getElementById('reviewModal').classList.remove('hidden'); document.getElementById('reviewModal').classList.add('flex')" class="px-8 py-3.5 rounded-full border border-slate-200 text-slate-500 bg-slate-50 hover:bg-slate-900 hover:text-white font-black text-[11px] tracking-widest uppercase transition-colors shadow-sm inline-flex items-center gap-2">💡 AI Solution Review 읽어보기</button>
+                    <button onclick="document.getElementById('reviewModal').style.display='flex'; document.getElementById('reviewModal').style.zIndex='9999';" class="px-8 py-3.5 rounded-full border border-slate-200 text-slate-500 bg-slate-50 hover:bg-slate-900 hover:text-white font-black text-[11px] tracking-widest uppercase transition-colors shadow-sm inline-flex items-center gap-2">💡 AI Solution Review 읽어보기</button>
                 </div>
             </div>
         </section>
@@ -464,71 +464,60 @@
     <div id="modal-overlay" class="fixed inset-0 z-[60] bg-slate-900/70 items-center justify-center p-4">
         <div class="bg-white w-full max-w-6xl max-h-[90vh] rounded-3xl shadow-2xl overflow-hidden flex flex-col relative text-left"
             id="modal-content">
-            <div class="px-8 py-6 border-b flex justify-between bg-slate-50/50 items-start">
-                <div class="text-left text-left"><span id="modal-tier"
-                        class="inline-block px-3 py-1 text-[10px] font-bold rounded-full mb-3 text-white uppercase tracking-wide"></span>
-                    <h3 id="modal-title" class="text-2xl font-black text-gray-900"></h3>
-                    <div class="flex items-center gap-3 mt-2 text-xs text-slate-500 font-bold"><span id="modal-provider"
-                            class="bg-white px-2 py-1 rounded border border-slate-200"></span><span id="modal-rank"
-                            class="bg-slate-900 text-white px-2 py-0.5 rounded"></span><span id="modal-origin"></span>
+            <div class="px-8 py-5 border-b flex justify-between bg-white items-center">
+                <div class="flex-grow">
+                    <div id="modal-tier" class="px-3 py-1 text-[9px] font-black rounded-lg text-white uppercase tracking-wider mb-2 inline-block shadow-sm"></div>
+                    <div class="flex items-center gap-4">
+                        <h3 id="modal-title" class="text-[28px] font-black text-slate-900 leading-none"></h3>
+                        <div class="h-6 w-[1.5px] bg-slate-200 mx-2"></div>
+                        <span id="modal-strength-header" class="text-[13px] font-bold text-slate-500 flex items-center gap-1"></span>
                     </div>
                 </div>
-                <button onclick="closeModal()"
-                    class="text-slate-400 hover:text-slate-700 text-4xl font-black">&times;</button>
+                <div class="flex items-center gap-3">
+                    <div class="flex items-center gap-2 text-[11px] font-black">
+                        <div id="modal-provider" class="bg-white px-4 py-2.5 rounded-xl border border-slate-200 text-slate-500 shadow-sm min-w-[90px] text-center"></div>
+                        <div id="modal-rank" class="bg-slate-900 text-white px-4 py-2.5 rounded-xl shadow-lg min-w-[95px] text-center"></div>
+                        <div id="modal-origin" class="bg-white px-4 py-2.5 rounded-xl border border-slate-200 text-slate-400 min-w-[70px] text-center"></div>
+                    </div>
+                    <button onclick="closeModal()" class="text-slate-300 hover:text-slate-900 text-5xl font-extralight leading-none ml-2 transition-colors">&times;</button>
+                </div>
             </div>
-            <div class="p-8 overflow-y-auto flex-grow bg-white text-left">
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
-                    <div class="lg:col-span-5 space-y-6">
+            <div class="px-8 py-8 overflow-y-auto flex-grow bg-white text-left">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
+                    <div class="lg:col-span-6 space-y-8">
                         <div>
-                            <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 text-left">
-                                💎 핵심 특장점</h4>
-                            <p id="modal-strength"
-                                class="text-slate-800 text-sm font-medium leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-100">
-                            </p>
+                            <h4 class="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-3 text-left flex items-center gap-2">⚡ 핵심 기능 <span class="bg-emerald-100 text-emerald-600 rounded-full p-0.5"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></span></h4>
+                            <div id="modal-feature-list" class="space-y-1"></div>
                         </div>
                         <div>
-                            <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 text-left">
-                                🔄 최신 업데이트</h4>
-                            <p id="modal-update"
-                                class="text-indigo-900 text-sm leading-relaxed bg-indigo-50 p-4 rounded-xl border border-indigo-100 font-bold mb-1">
-                            </p>
-                            <a id="modal-source" href="#" target="_blank" class="hidden text-xs text-indigo-600 underline float-right font-bold">📰 뉴스 출처 원문 보기 &rarr;</a>
+                            <h4 class="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-3 text-left flex items-center gap-2">⏳ 업데이트 타임라인 (TIMELINE) <span class="bg-emerald-100 text-emerald-600 rounded-full p-0.5"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></span></h4>
+                            <div id="modal-update-list" class="space-y-2 pl-4 border-l-2 border-slate-100"></div>
                         </div>
                         <div id="modal-review-container" class="hidden">
-                            <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-3 text-left">
-                                💬 사용자 리뷰</h4>
-                            <div class="bg-slate-50 p-4 rounded-xl border border-slate-100 text-left">
-                                <p id="modal-review" class="text-slate-600 text-xs italic leading-relaxed text-left">
-                                </p>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-3 gap-3">
-                            <div
-                                class="bg-emerald-50 p-4 rounded-2xl border border-emerald-100 text-center flex flex-col justify-center min-h-[5rem]">
-                                <span class="block text-[10px] text-emerald-600 font-black mb-1 uppercase"
-                                    id="stat-label-1">지표1</span><span id="modal-stat-1"
-                                    class="text-emerald-700 font-black text-[14px]"></span>
-                            </div>
-                            <div
-                                class="bg-amber-50 p-4 rounded-2xl border border-amber-100 text-center flex flex-col justify-center min-h-[5rem] text-amber-500">
-                                <span class="block text-[10px] text-amber-600 font-black mb-1 uppercase"
-                                    id="stat-label-2">지표2</span><span id="modal-stat-2"
-                                    class="text-amber-700 font-black text-[14px]"></span>
-                            </div>
-                            <div
-                                class="bg-indigo-50 p-4 rounded-2xl border border-indigo-100 text-center flex flex-col justify-center min-h-[5rem]">
-                                <span class="block text-[10px] text-indigo-600 font-black mb-1 uppercase"
-                                    id="stat-label-3">지표3</span><span id="modal-stat-3"
-                                    class="text-indigo-700 font-black text-[14px]"></span>
+                            <h4 class="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-4 text-left flex items-center gap-2">💬 사용자 리뷰 <span class="bg-emerald-100 text-emerald-600 rounded-full p-0.5"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></span></h4>
+                            <div class="bg-slate-50/80 p-6 rounded-3xl border border-slate-100 text-left">
+                                <p id="modal-review" class="text-slate-600 text-[13px] italic font-medium leading-relaxed text-left"></p>
                             </div>
                         </div>
                     </div>
-                    <div class="lg:col-span-7">
-                        <h4 class="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-4 text-left">🛠️
-                            상세 기술 사양</h4>
-                        <div class="bg-white border border-slate-200 rounded-2xl overflow-hidden">
-                            <ul class="text-xs divide-y divide-gray-100" id="modal-spec-list"></ul>
+                    <div class="lg:col-span-6">
+                        <div class="grid grid-cols-3 gap-4 mb-8">
+                            <div class="bg-emerald-50/50 p-6 rounded-3xl border border-emerald-100/50 text-center flex flex-col items-center justify-center min-h-[8rem]">
+                                <span class="block text-[10px] text-emerald-600 font-black mb-3 uppercase tracking-tighter" id="stat-label-1">지표1</span>
+                                <span id="modal-stat-1" class="text-[#065F46] font-black text-base leading-tight"></span>
+                            </div>
+                            <div class="bg-amber-50/50 p-6 rounded-3xl border border-amber-100/50 text-center flex flex-col items-center justify-center min-h-[8rem]">
+                                <span class="block text-[10px] text-amber-600 font-black mb-3 uppercase tracking-tighter" id="stat-label-2">지표2</span>
+                                <span id="modal-stat-2" class="text-[#92400E] font-black text-base leading-tight"></span>
+                            </div>
+                            <div class="bg-indigo-50/50 p-6 rounded-3xl border border-indigo-100/50 text-center flex flex-col items-center justify-center min-h-[8rem]">
+                                <span class="block text-[10px] text-indigo-600 font-black mb-3 uppercase tracking-tighter" id="stat-label-3">지표3</span>
+                                <span id="modal-stat-3" class="text-[#3730A3] font-black text-base leading-tight"></span>
+                            </div>
                         </div>
+                        
+                        <h4 class="text-[11px] font-black text-slate-400 uppercase tracking-widest mb-5 text-left flex items-center gap-2">🛠️ 상세 기술 사양 <span class="bg-emerald-100 text-emerald-600 rounded-full p-0.5"><svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></span></h4>
+                        <div id="modal-spec-list" class="space-y-1"></div>
                     </div>
                 </div>
             </div>
@@ -594,12 +583,16 @@
             if (!url) return "";
             const status = urlHealthMap[url];
             let indicator = "";
-            if (status === 'ok') indicator = '<span class="w-1.5 h-1.5 bg-emerald-500 rounded-full inline-block ml-0.5 animate-pulse"></span>';
-            else if (status === 'err') indicator = '<span class="w-1.5 h-1.5 bg-rose-500 rounded-full inline-block ml-0.5"></span>';
-            else if (status === 'checking') indicator = '<span class="w-1.5 h-1.5 bg-amber-400 rounded-full inline-block ml-0.5 animate-spin"></span>';
+            if (status === 'ok') indicator = '<span class="w-1.5 h-1.5 bg-emerald-500 rounded-full absolute -top-0.5 -right-0.5 animate-pulse border border-white"></span>';
+            else if (status === 'err') indicator = '<span class="w-1.5 h-1.5 bg-rose-500 rounded-full absolute -top-0.5 -right-0.5 border border-white"></span>';
+            else if (status === 'checking') indicator = '<span class="w-1.5 h-1.5 bg-amber-400 rounded-full absolute -top-0.5 -right-0.5 animate-spin border border-white"></span>';
 
-            return `<a href="${url}" target="_blank" class="inline-flex items-center justify-center ml-1 text-indigo-400 hover:text-indigo-600 transition-colors" title="${label || '출처 데이터 확인'}">
-                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>${indicator}</a>`;
+            return `<a href="${url}" target="_blank" class="inline-flex items-center justify-center relative ml-1 hover:scale-110 transition-transform" title="${label || '출처 데이터 확인'}">
+                <span class="flex items-center justify-center w-4 h-4 bg-emerald-100 rounded-full">
+                    <svg class="w-2.5 h-2.5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"></path>
+                    </svg>
+                </span>${indicator}</a>`;
         }
 
         async function checkSourcesHealth() {
@@ -646,6 +639,8 @@
         }
 
         // --- 2. Core UI Logics ---
+
+
         function switchMainTab(tab) {
             ['home', 'enterprise', 'minutes', 'builder', 'report'].forEach(s => {
                 const el = document.getElementById(`section-${s}`);
@@ -685,46 +680,94 @@
         function renderGrid(type, data) {
             const grid = document.getElementById(`solution-grid-${type}`);
             if (!grid) return;
-            grid.innerHTML = data.map(item => {
+            grid.innerHTML = data.map((item, idx) => {
                 const color = colors[item.tier] || '#64748b';
-                const safeItem = JSON.stringify(item).replace(/'/g, "&#39;");
-                return `<div class="bg-white rounded-3xl p-6 card-transition border border-slate-200 flex flex-col cursor-pointer h-full" onclick='openUnifiedModal(${safeItem}, "${type}")'>
-                    <div class="flex justify-between items-center mb-5 text-[10px] font-bold uppercase"><span class="px-2.5 py-1 rounded-lg text-white" style="background:${color}">${item.tier.split(' ')[0]}</span><span class="text-slate-400 bg-slate-50 px-2 py-1 rounded flex items-center">${item.origin}${srcIcon('summary', item)}</span></div>
+                return `<div class="bg-white rounded-3xl p-6 card-transition border border-slate-200 flex flex-col cursor-pointer h-full" 
+                        data-type="${type}" 
+                        data-index="${idx}"
+                        onclick="handleCardClick(this)">
+                    <div class="flex justify-between items-center mb-5 text-[10px] font-bold uppercase"><span class="px-2.5 py-1 rounded-lg text-white" style="background:${color}">${item.tier.split(' ')[0]}</span><span class="text-slate-400 bg-slate-50 px-2 py-1 rounded flex items-center">${item.origin}</span></div>
                     <h4 class="font-bold text-slate-900 text-lg mb-1">${item.name}</h4><p class="text-xs text-slate-400 mb-4 font-semibold uppercase">${item.provider}</p>
                     <p class="text-xs text-slate-600 line-clamp-2 bg-slate-50 p-3 rounded-xl border border-slate-100 mb-4">${item.strength || item.summary}</p>
-                    <div class="mt-auto pt-4 border-t flex justify-between items-center"><span class="text-sm font-extrabold text-slate-800 flex items-center">${(typeof item.accuracy === 'number') ? (type === 'minutes' ? "한국어 정확도 " : "") + item.accuracy + '%' : item.accuracy}${srcIcon('models', item)}</span><span class="text-xs font-bold" style="color:${color}">분석 &rarr;</span></div></div>`;
+                    <div class="mt-auto pt-4 border-t flex justify-between items-center"><span class="text-sm font-extrabold text-slate-800 flex items-center">${(typeof item.accuracy === 'number') ? (type === 'minutes' ? "한국어 정확도 " : "") + item.accuracy + '%' : item.accuracy}</span><span class="text-xs font-bold" style="color:${color}">분석 &rarr;</span></div></div>`;
             }).join('');
+            
+            // 전역 세션 데이터 보관 (클릭 시 참조용)
+            window._gridData = window._gridData || {};
+            window._gridData[type] = data;
         }
 
-        function openUnifiedModal(item, type) {
+        function handleCardClick(el) {
+            const type = el.getAttribute('data-type');
+            const idx = el.getAttribute('data-index');
+            const item = window._gridData[type][idx];
+            openUnifiedModal(type, item);
+        }
+
+        function openUnifiedModal(type, item) {
+            if (!item) return;
             const color = colors[item.tier] || '#64748b';
-            const mt = document.getElementById('modal-tier'); if (mt) { mt.innerText = item.tier; mt.style.backgroundColor = color; }
             
+            safeSetText('modal-tier', item.tier);
+            const mt = document.getElementById('modal-tier'); if (mt) mt.style.backgroundColor = color;
             safeSetText('modal-title', item.name); 
             safeSetText('modal-provider', item.provider); 
-            safeSetText('modal-origin', item.origin); 
+            safeSetText('modal-origin', item.origin || '글로벌'); 
+            safeSetText('modal-rank', item.rank || '-');
             
-            const strengthEl = document.getElementById('modal-strength');
-            if (strengthEl) strengthEl.innerHTML = (item.strength || item.summary) + srcIcon('summary', item);
+            const strengthHeader = document.getElementById('modal-strength-header');
+            if (strengthHeader) {
+                strengthHeader.innerHTML = `${item.strength || item.summary} ${srcIcon('summary', item)}`;
+            }
             
-            const updateEl = document.getElementById('modal-update');
-            if (updateEl) updateEl.innerHTML = item.update + srcIcon('models', item);
+            // 핵심 기능 리스트 렌더링 (리서치 도구 스타일)
+            const featureList = document.getElementById('modal-feature-list');
+            if (featureList) {
+                if (item.features && item.features.length > 0) {
+                    featureList.innerHTML = item.features.map(f => {
+                        const title = typeof f === 'string' ? f : f.name;
+                        const desc = typeof f === 'string' ? '' : f.desc;
+                        return `<div class="flex items-start gap-4 py-2.5 px-3 rounded-xl hover:bg-slate-50 transition-colors border-b border-slate-50/50">
+                            <div class="w-1/4 shrink-0"><h5 class="text-[12.5px] font-black text-slate-800 tracking-tight">${title}</h5></div>
+                            <div class="flex-grow"><p class="text-[12px] text-slate-500 font-medium leading-relaxed">${desc}</p></div>
+                        </div>`;
+                    }).join('');
+                } else {
+                    featureList.innerHTML = '<p class="text-xs text-slate-400 italic p-4">상세 기능 정보 준비 중...</p>';
+                }
+            }
+            
+            const updateList = document.getElementById('modal-update-list');
+            if (updateList) {
+                const check = `<span class="bg-emerald-100 text-emerald-600 rounded-full p-0.5 inline-block ml-1 scale-75 opacity-70"><svg class="w-2.5 h-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7"></path></svg></span>`;
+                if (item.timelines && item.timelines.length > 0) {
+                    updateList.innerHTML = item.timelines.map(t => `<div class="text-[12px] font-bold text-slate-700 bg-slate-50 p-3 rounded-xl border border-slate-100 leading-relaxed">${t}${check}</div>`).join('');
+                } else {
+                    updateList.innerHTML = `<div class="text-slate-700 text-[12px] leading-relaxed bg-slate-50 p-4 rounded-xl border border-slate-100 font-bold mb-1">${item.update || "최근 업데이트 정보 없음"}${check}</div>`;
+                }
+            }
 
             safeSetText('modal-pricing', item.pricing || "별도 협의"); 
-            const pricingEl = document.getElementById('modal-pricing'); if (pricingEl) pricingEl.innerHTML += srcIcon('pricing', item);
-            safeSetText('modal-rank', item.rank);
+            const pricingEl = document.getElementById('modal-pricing'); 
+            if (pricingEl) pricingEl.innerHTML += srcIcon('pricing', item);
             
-            const ms = document.getElementById('modal-source'); if (ms) { if (item.source_url) { ms.href = item.source_url; ms.classList.remove('hidden'); } else { ms.classList.add('hidden'); } }
-            const mlb = document.getElementById('modal-link-btn'); if (mlb) { mlb.href = item.link; mlb.style.backgroundColor = color; }
-            const rc = document.getElementById('modal-review-container'); const re = document.getElementById('modal-review');
-            if (item.review) { if (rc) rc.classList.remove('hidden'); if (re) re.innerText = `"${item.review}"`; } else { if (rc) rc.classList.add('hidden'); }
+            const mlb = document.getElementById('modal-link-btn'); 
+            if (mlb) { mlb.href = item.link; mlb.style.backgroundColor = color; }
 
-            let labels = [type === 'minutes' ? "한국어 정확도" : "추론/분석력", "변환방식", "생성시간 (1시간기준)"];
-            if (type === 'builder') labels = ["수행/추론성능", "빌더 유형", "배포 환경"];
-            else if (type === 'report') labels = ["추론/분석력", "리서치 방식", "제작 속도"];
+            if (type === 'builder') labels = ["수행 성능", "수행 방식", "배포 환경"];
+            else if (type === 'report') labels = ["추론/분석력", "저작 방식", "제작 속도"];
+            else if (type === 'enterprise') labels = ["창의적 추론력", "파라미터/성능", "엔터프라이즈 최적화"];
             
+            const stats = [
+                item.accuracy || item.logic || 'N/A',
+                item.latency || item.tech_field || 'N/A',
+                item.genTime || item.speed || 'N/A'
+            ];
+
             safeSetText('stat-label-1', labels[0]); safeSetText('stat-label-2', labels[1]); safeSetText('stat-label-3', labels[2]);
-            safeSetText('modal-stat-1', typeof item.accuracy === 'number' ? item.accuracy + "%" : item.accuracy); safeSetText('modal-stat-2', item.latency); safeSetText('modal-stat-3', item.genTime);
+            safeSetText('modal-stat-1', typeof stats[0] === 'number' ? stats[0] + "%" : stats[0]); 
+            safeSetText('modal-stat-2', stats[1]); 
+            safeSetText('modal-stat-3', stats[2]);
 
             const specList = document.getElementById('modal-spec-list');
             if (specList) {
@@ -738,19 +781,34 @@
                 }
                 specList.innerHTML = specs.map(s => {
                     const idx = s.indexOf(':');
-                    const key = s.toLowerCase().includes('업데이트') ? 'timelines' : (s.toLowerCase().includes('모델') || s.toLowerCase().includes('엔진') ? 'models' : 'summary');
-                    return `<li class="p-4 flex justify-between font-bold border-b border-slate-50">
-                        <span class="text-slate-400 flex items-center">${s.substring(0, idx)}${srcIcon(key, item)}</span>
-                        <span class="text-slate-800 text-right">${s.substring(idx + 1).trim()}</span>
+                    const label = s.substring(0, idx);
+                    const val = s.substring(idx + 1).trim();
+                    const key = label.toLowerCase().includes('모델') || label.toLowerCase().includes('엔진') ? 'models' : (label.toLowerCase().includes('연동') || label.toLowerCase().includes('환경') ? 'features' : 'summary');
+                    return `<li class="py-3 flex justify-between border-b border-slate-50 px-1">
+                        <span class="text-slate-400 text-[12px] font-black uppercase tracking-tight flex items-center">${label}${srcIcon(key, item)}</span>
+                        <span class="text-slate-800 text-right text-[12.5px] font-black tracking-tight">${val}</span>
                     </li>`;
                 }).join('');
             }
-            document.getElementById('modal-overlay').classList.add('active');
-            setTimeout(() => { const mc = document.getElementById('modal-content'); if (mc) { mc.classList.replace('opacity-0', 'opacity-100'); mc.classList.replace('scale-95', 'scale-100'); } }, 10);
+            const overlay = document.getElementById('modal-overlay');
+            overlay.style.display = 'flex';
+            overlay.style.zIndex = '9999'; 
             document.body.style.overflow = 'hidden';
+            
+            setTimeout(() => { 
+                const mc = document.getElementById('modal-content'); 
+                if (mc) { mc.classList.replace('opacity-0', 'opacity-100'); mc.classList.replace('scale-95', 'scale-100'); } 
+            }, 10);
         }
 
-        function closeModal() { document.getElementById('modal-overlay').classList.remove('active'); document.body.style.overflow = ''; }
+        function closeModal() { 
+            const overlay = document.getElementById('modal-overlay');
+            if (overlay) {
+                overlay.style.display = 'none'; 
+                overlay.style.zIndex = '';
+            }
+            document.body.style.overflow = ''; 
+        }
 
         function renderEnterprise() {
             const container = document.getElementById('entToolTabs');
@@ -765,7 +823,7 @@
             if (btn) { btn.style.backgroundColor = '#4F46E5'; btn.style.color = '#fff'; }
             const feedback = (tool.feedback && tool.feedback.length > 0) ? tool.feedback[0] : "피드백 정보 없음";
             
-            const srcIcon = (srcKey) => (tool.sources && tool.sources[srcKey]) ? `<a href="${tool.sources[srcKey]}" target="_blank" class="inline-flex items-center justify-center mx-1 align-text-bottom text-emerald-500 hover:text-emerald-700 hover:scale-110 transition-transform" title="출처 데이터 확인 (새창)"><svg class="w-[14px] h-[14px]" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg></a>` : '';
+            const srcIcon = (srcKey) => window.srcIcon(srcKey, tool);
 
             document.getElementById('entToolContent').innerHTML = `<div class="flex flex-col h-full space-y-8">
                 <div class="flex flex-col md:flex-row justify-between items-start lg:items-center pb-6 border-b border-slate-200 gap-6">
@@ -1237,7 +1295,7 @@
         <div class="bg-white rounded-[2rem] shadow-2xl max-w-3xl w-full max-h-[85vh] overflow-y-auto overflow-x-hidden relative">
             <div class="sticky top-0 bg-white/90 backdrop-blur-md px-8 py-6 border-b border-slate-200 flex justify-between items-center z-10">
                 <h3 class="text-[17px] font-black tracking-tight text-slate-900">2026 AI Tool Dashboard Review</h3>
-                <button onclick="document.getElementById('reviewModal').classList.add('hidden'); document.getElementById('reviewModal').classList.remove('flex')" class="text-slate-400 hover:text-slate-900 text-3xl leading-none">&times;</button>
+                <button onclick="document.getElementById('reviewModal').style.display='none';" class="text-slate-400 hover:text-slate-900 text-3xl leading-none">&times;</button>
             </div>
             <div class="p-8 text-left space-y-12 text-sm text-slate-800 leading-relaxed">
                 <!-- 1 -->
@@ -1312,7 +1370,7 @@
                 </div>
             </div>
             <div class="p-6 bg-slate-50 border-t border-slate-200 text-center">
-                <button onclick="document.getElementById('reviewModal').classList.add('hidden'); document.getElementById('reviewModal').classList.remove('flex')" class="px-10 py-3 bg-slate-800 text-white rounded-full font-black text-[12px] tracking-widest uppercase hover:bg-slate-900 shadow-md transition-colors">닫기 (Close)</button>
+                <button onclick="document.getElementById('reviewModal').style.display='none';" class="px-10 py-3 bg-slate-800 text-white rounded-full font-black text-[12px] tracking-widest uppercase hover:bg-slate-900 shadow-md transition-colors">닫기 (Close)</button>
             </div>
         </div>
     </div>
