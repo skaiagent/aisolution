@@ -754,7 +754,9 @@
             const mlb = document.getElementById('modal-link-btn'); 
             if (mlb) { mlb.href = item.link; mlb.style.backgroundColor = color; }
 
-            if (type === 'builder') labels = ["수행 성능", "수행 방식", "배포 환경"];
+            let labels = ["데이터 분석", "수행 방식", "제작 속도"];
+            if (type === 'minutes') labels = ["한글 정확도", "인식 속도", "지원 엔진"];
+            else if (type === 'builder') labels = ["수행 성능", "수행 방식", "배포 환경"];
             else if (type === 'report') labels = ["추론/분석력", "저작 방식", "제작 속도"];
             else if (type === 'enterprise') labels = ["창의적 추론력", "파라미터/성능", "엔터프라이즈 최적화"];
             
