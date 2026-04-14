@@ -41,7 +41,7 @@
                 "2026.03: GPT-5.4 통합 및 o4 엔진 적용",
                 "2026.04: Codex Seat 및 연간 계약 단가 $20 수준 인하"
             ],
-            "clients": "SK네트웍스, 아모레퍼시픽, 넥슨, 현대자동차 등 전사적 도입",
+            "clients": "GS건설, 고려아연, LG유플러스, 에코프로 등 전사적 도입 완료",
             "distributor": "삼성SDS, LG CNS",
             "sources": {
                 "summary": "https://openai.com/enterprise",
@@ -206,7 +206,7 @@
                 "2025년 9월 16일: Copilot Wave 2 자율 협업 캔버스 Pages 통합",
                 "2026년 3월: Windows 12 커널 전면 통합 및 GPT-5.4 엔진 적용 완료"
             ],
-            "clients": "LG전자, HD현대, KB국민은행, 대한항공, SK디스커버리 등 대기업군",
+            "clients": "SK네트웍스, LG전자, HD현대, KB금융, 대상그룹, SK텔레콤 등",
             "distributor": "삼성SDS, 다우데이타, 디모아",
             "sources": {
                 "features": "https://www.microsoft.com/microsoft-365/enterprise/copilot-for-microsoft-365",
