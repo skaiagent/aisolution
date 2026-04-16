@@ -3034,6 +3034,92 @@
     ],
     "autonomousData": [
         {
+            "name": "Claude Code",
+            "provider": "Anthropic",
+            "tier": "Desktop-OS",
+            "origin": "글로벌",
+            "rank": "개발자 에이전트 1위",
+            "summary": "터미널 내에서 코드 베이스를 직접 수정하고 실행하는 자율형 엔지니어링 에이전트",
+            "strength": "전체 코드베이스 맥락 이해 및 독립적인 디버깅/Git 워크플로우 수행 능력",
+            "accuracy": "Level 4+ 자율성",
+            "latency": "98% 과업 성공률",
+            "speed": "초단위 소스 인덱싱",
+            "link": "https://www.anthropic.com/claude-code",
+            "pricing": "Claude Pro/Team/Ent 요금제 포함",
+            "controlRange": "로컬 파일시스템, 터미널, Git 커밋",
+            "security": "로컬 권한 승인 기반 실행 계층",
+            "integration": "VS Code, JetBrains, Terminal 전용 CLI 지원",
+            "llm": "Claude 3.7 Sonnet (Agentic Edition)",
+            "features": [
+                {
+                    "name": "코드베이스 풀-스택 인덱싱",
+                    "desc": "프로젝트 전반의 파일 관계를 스스로 분석하여 멀티 파일 수정 및 대규모 리팩토링 수행"
+                },
+                {
+                    "name": "자율형 디버깅 및 테스트",
+                    "desc": "에러 발생 시 스스로 코드를 수정하고 테스트를 실행하여 패스할 때까지 반복 루프 수행"
+                },
+                {
+                    "name": "Git 워크플로우 자동화",
+                    "desc": "작업 내용에 맞는 커밋 메시지 작성, 브랜치 생성 및 PR 가이드라인 자동 생성 지원"
+                }
+            ],
+            "timelines": [
+                "2025.02: Claude Code 리서치 프리뷰 최초 버전 공개",
+                "2026.03: 컴퓨터 유즈(Computer Use) 기능을 통한 GUI/브라우저 조작 통합",
+                "2026.04: 미션 컨트롤(Mission Control) 데스크톱 인터페이스 정식 출시"
+            ],
+            "sources": {
+                "summary": "https://anthropic.com/news/claude-code-preview",
+                "features": "https://anthropic.com/claude-code/features",
+                "pricing": "https://anthropic.com/pricing",
+                "models": "https://anthropic.com/claude-3-7-sonnet"
+            }
+        },
+        {
+            "name": "Claude Cowork",
+            "provider": "Anthropic",
+            "tier": "Hybrid",
+            "origin": "글로벌",
+            "rank": "업무 자동화 GA 출시",
+            "summary": "비기술자를 위한 GUI 기반 데스크톱 워크플로우 자율 실행 에이전트",
+            "strength": "복잡한 웹 앱 조작 및 샌드박스 VM 내 안전한 디지털 사무 자동화 수행",
+            "accuracy": "Level 3 자율성",
+            "latency": "94% 과업 성공률",
+            "speed": "실시간 GUI 제어",
+            "link": "https://www.anthropic.com/claude-cowork",
+            "pricing": "월 $25 (개인) / 엔터프라이즈 전용 요금제",
+            "controlRange": "데스크톱 GUI, 웹 브라우저, 로컬 오피스 솔루션",
+            "security": "Sandboxed Virtual Machine 기반 보안 격리 실행",
+            "integration": "Claude Desktop App 내장 및 엔터프라이즈 RBAC 지원",
+            "llm": "Claude 3.7 (Agentic Hybrid)",
+            "features": [
+                {
+                    "name": "No-Terminal GUI 인터페이스",
+                    "desc": "터미널 지식 없이도 화면 내 아이콘과 워크플로우 탭을 통해 자율 과업 지시 가능"
+                },
+                {
+                    "name": "샌드박스 기반 멀티태스킹",
+                    "desc": "가상화된 환경 내에서 안전하게 파일을 이동시키거나 다양한 웹 대시보드 정보를 취합 정리"
+                },
+                {
+                    "name": "엔터프라이즈 분석 및 관측",
+                    "desc": "에이전트의 작업 로그를 OpenTelemetry 기반으로 모니터링하고 사용량 가이드라인 설정 가능"
+                }
+            ],
+            "timelines": [
+                "2026.01: Claude Cowork 프리뷰 버전 공개",
+                "2026.03: 퍼시스턴트 프로젝트(Persistent Projects) 워크스페이스 연동",
+                "2026.04: GA(General Availability) 정식 버전 릴리즈 및 글로벌 배포"
+            ],
+            "sources": {
+                "summary": "https://anthropic.com/news/claude-cowork-ga",
+                "features": "https://anthropic.com/claude-cowork/features",
+                "pricing": "https://anthropic.com/pricing",
+                "models": "https://anthropic.com/claude-models"
+            }
+        },
+        {
             "tier": "Desktop-OS",
             "name": "OpenClaw",
             "provider": "Open Source",
