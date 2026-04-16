@@ -2917,5 +2917,193 @@
                 "Flux 디자인 엔진 통합으로 고퀄리티 시각 자료 생성 및 실시간 협업 모드 강화 (2026.03)"
             ]
         }
+    ],
+    "autonomousData": [
+        {
+            "tier": "Desktop-OS",
+            "name": "OpenClaw",
+            "provider": "Open Source",
+            "origin": "Global",
+            "llm": "LLM Agnostic",
+            "accuracy": "Level 3",
+            "latency": "78% (OSWorld)",
+            "genTime": "1.5s / action",
+            "controlRange": "Windows, macOS, Linux UI 전반",
+            "security": "On-premise 망분리 지원",
+            "integration": "터미널, 데스크톱 앱 API 연동 불가 앱",
+            "pricing": "Free",
+            "strength": "모델 제약 없이 PC 운영체제를 직접 제어하는 오픈소스의 표준",
+            "summary": "비전 언어 모델을 활용해 스크린을 캡처하고 마우스와 키보드를 직접 구동하는 완전 자동화 스크립팅 도구",
+            "update": "멀티모달 응답 속도 최적화 V2 릴리즈 (2026.03)",
+            "rank": "오픈소스 1위",
+            "review": "오픈소스 기반으로 보안이 중요한 사내망 PC에서도 안전한 자율 제어가 가능한 훌륭한 선택지입니다.",
+            "link": "https://github.com/openclaw",
+            "sources": { "summary": "https://github.com/openclaw" },
+            "features": [
+                { "name": "시각 기반 화면 탐색", "desc": "DOM이나 API 없이도 인간처럼 화면을 눈으로 보고 클릭 좌표를 추론" },
+                { "name": "크로스 플랫폼 제어", "desc": "파이썬 기반으로 거의 모든 데스크톱 운영 체제에서 네이티브 입력 신호 시뮬레이션" },
+                { "name": "로컬 보안 환경", "desc": "인터넷 연결 없이 로컬 VLM 만으로도 제한적 자율성 확보 가능" }
+            ],
+            "timelines": [
+                "2024.08: OpenClaw V1 최초 공개 (기초 스크립팅 모델)",
+                "2025.10: 완전 로컬 구동 모드 추가 (On-device LLM 프레임워크)",
+                "2026.03: 다양한 오픈소스 VLM 연동 및 멀티모달 응답 속도 최적화 V2 릴리즈"
+            ]
+        },
+        {
+            "tier": "Desktop-OS",
+            "name": "NemoClaw",
+            "provider": "NVIDIA (Expected)",
+            "origin": "Global",
+            "llm": "Nemotron Vision",
+            "accuracy": "Level 4",
+            "latency": "82% (OSWorld)",
+            "genTime": "0.4s / action",
+            "controlRange": "엔비디아 GPU 가속 인프라 전반",
+            "security": "하드웨어 레벨 보안 격리",
+            "integration": "Omniverse, RTX 데스크톱",
+            "pricing": "미정 (엔터프라이즈 번들 예상)",
+            "strength": "GPU 텐서 코어를 극한으로 활용한 지연 없는 픽셀 단위 PC 자율 제어",
+            "summary": "NVIDIA의 하드웨어 가속을 받아 화면 인식 및 추론 속도를 모니터 주사율 수준으로 끌어올린 고성능 에이전트",
+            "update": "초저지연 비전 추론 엔진 통합 (2026)",
+            "rank": "성능 최고점",
+            "review": "기존 에이전트들의 '캡처-추론-클릭' 딜레이를 완벽히 극복하고 인간과 동등한 속도로 컴퓨터를 조작합니다.",
+            "link": "https://www.nvidia.com",
+            "sources": { "summary": "https://www.nvidia.com" },
+            "features": [
+                { "name": "실시간 비전 스트리밍", "desc": "스틸컷 캡처가 아닌 비디오 스트림을 실시간 분석 후 즉각 조작" },
+                { "name": "GPU 가속 추론", "desc": "클라우드 왕복 없이 로컬 RTX 환경에서 즉각적인 UI 이해 및 명령 하달" },
+                { "name": "개발자/디자이너 특화", "desc": "Omniverse 생태계 내의 복잡한 3D 도구를 자율적으로 구동하는 워크플로우 제공" }
+            ],
+            "timelines": [
+                "2025.07: NVIDIA Nemotron-4 기반 데스크톱 제어 모델 연구 발표",
+                "2025.12: Omniverse 전용 자율 에이전트 모듈 클로즈드 베타 시작",
+                "2026.04: 하드웨어 통합형 에이전트 아키텍처 및 NemoClaw 정식 공개"
+            ]
+        },
+        {
+            "tier": "Web-Action",
+            "name": "OpenAI Operator",
+            "provider": "OpenAI",
+            "origin": "Global",
+            "llm": "CUA (Computer-Using Agent)",
+            "accuracy": "Level 3+",
+            "latency": "87% (WebVoyager)",
+            "genTime": "1~2s / action",
+            "controlRange": "모든 최신 브라우저 기반 웹사이트",
+            "security": "클라우드 세션 격리 / 결제 승인 확인",
+            "integration": "ChatGPT Plus, Enterprise",
+            "pricing": "구독 요금제 (Premium)",
+            "strength": "복잡한 예약, 탐색, 구매 과정을 브라우저 상에서 스스로 완수하는 일상/업무 비서",
+            "summary": "웹 환경에 특화되어 사용자를 대신해 수십 개의 탭을 오가며 데이터를 수집하고 양식을 작성하는 강력한 브라우저 에이전트",
+            "update": "CUA 모델 기반 기능 안정화 (2026.01)",
+            "rank": "웹 자율성 1위",
+            "review": "회의실 예약, 물품 구매 등 매일 반복하는 귀찮은 온라인 잡무를 완벽하게 브라우저 밖으로 아웃소싱했습니다.",
+            "link": "https://openai.com",
+            "sources": { "summary": "https://openai.com" },
+            "features": [
+                { "name": "자기 교정 프로세스", "desc": "웹페이지 구조가 바뀌거나 팝업이 뜨면 스스로 인지하고 우회 경로를 탐색" },
+                { "name": "연속 작업 수행력", "desc": "단순 클릭이 아닌 리서치-비교-결정-결제로 이어지는 장기 로직 수행" },
+                { "name": "인간-AI 협력 모드", "desc": "보안이 중요한 로그인이나 결제 순간에는 사용자에게 명시적으로 승인 요청" }
+            ],
+            "timelines": [
+                "2024.11: Computer-Using Agent (CUA) 연구 논문 및 초기 프로토타입 공개",
+                "2025.04: 비공개 엔터프라이즈 환경 대상 제한적 웹 브라우징 테스트",
+                "2026.01: CUA 모델 기반 OpenAI Operator (웹 특화) 정식 릴리즈"
+            ]
+        },
+        {
+            "tier": "Hybrid",
+            "name": "Genspark Claw",
+            "provider": "Genspark",
+            "origin": "Global",
+            "llm": "Genspark Omni",
+            "accuracy": "Level 4",
+            "latency": "84% (Web/OS 통합)",
+            "genTime": "Real-time",
+            "controlRange": "웹 엔진과 로컬 데스크톱 동시 제어",
+            "security": "엔터프라이즈 보안 등급 적용",
+            "integration": "Genspark 플랫폼 확장 체계",
+            "pricing": "Enterprise License",
+            "strength": "강력한 리서치 역량과 클라이언트 OS 제어를 융합한 범용 검색-행동 에이전트",
+            "summary": "Genspark의 압도적인 AI 검색 엔진으로 데이터를 수집한 뒤, 결과물을 사용자의 로컬 엑셀이나 프레젠테이션 도구에 직접 입력",
+            "update": "클로즈드 베타 피드백 반영 및 UX 개선 (2026.03)",
+            "rank": "리서치 직결형",
+            "review": "조사된 데이터가 단순히 텍스트로 끝나는 게 아니라 직접 내 로컬 엑셀 차트로 그려지는 경험은 가히 충격적입니다.",
+            "link": "https://genspark.ai",
+            "sources": { "summary": "https://genspark.ai" },
+            "features": [
+                { "name": "검색-행동 통합 파이프라인", "desc": "외부 리서치 결과를 내 PC 환경의 오피스 도구와 곧바로 연동" },
+                { "name": "하이브리드 인식 체계", "desc": "웹 DOM 기반 직접 제어와 화면 픽셀 기반 제어를 상황에 맞게 섞어 사용" },
+                { "name": "보안망 내 문서 열람", "desc": "로컬 폴더의 민감 정보는 외부 클라우드로 보내지 않고 로컬 모듈이 직접 분석" }
+            ],
+            "timelines": [
+                "2025.02: Genspark 검색 기반 요약 비서 기능 론칭",
+                "2025.09: 웹-데스크톱 연동 하이브리드 제어 기술(Claw 방식) 도입 및 테스트",
+                "2026.03: 리서치-실행 통합 파이프라인 B2B 베타 공개"
+            ]
+        },
+        {
+            "tier": "Hybrid",
+            "name": "Manus AI",
+            "provider": "Manus",
+            "origin": "Global",
+            "llm": "Proprietary Autonomous Model",
+            "accuracy": "Level 5 지향",
+            "latency": "91% (Internal Benchmark)",
+            "genTime": "Adaptive",
+            "controlRange": "범용 디지털 워크스페이스 전역",
+            "security": "다중 계층 액세스 제어",
+            "integration": "SaaS 도구(Slack, Jira) 및 OS 클라이언트",
+            "pricing": "맞춤형 B2B 플랜",
+            "strength": "특정 과업이 아닌 '일(Job)' 단위의 복잡한 추상적 지시를 실무적으로 달성하는 완전자율 에이전트",
+            "summary": "인사 채용, 시장 조사 등 모호한 범주의 목표를 주면 스스로 계획을 세우고 이메일 송수신부터 일정 관리까지 완수",
+            "update": "협업 툴 (Slack, Teams) 자율 조작 확장 (2026.02)",
+            "rank": "복합 업무 효율 1위",
+            "review": "'후보자 이력서를 검토하고 면접 일정을 잡아줘' 단 한 마디면 모든 프로세스를 끝내는 진정한 AI 비서.",
+            "link": "https://manus.ai",
+            "sources": { "summary": "https://manus.ai" },
+            "features": [
+                { "name": "추상적 목표 달성력", "desc": "'여행 계획 짜줘' 수준이 아닌 예약, 결제 대기, 동선 체크 등 현실 프로세스 수행" },
+                { "name": "디지털 툴 통합 제어", "desc": "구글 워크스페이스부터 사내 그룹웨어까지 다양한 SaaS 인터페이스를 직접 다룸" },
+                { "name": "상태 모니터링 로그", "desc": "에이전트가 어떤 클릭과 타이핑을 하고 있는지 실시간 비디오 및 텍스트 로그로 투명하게 제공" }
+            ],
+            "timelines": [
+                "2024.05: 기초 자율 에이전트 프레임워크 및 파이프라인 설계 완료",
+                "2025.08: Slack, Jira 연동 등 B2B 타겟 SaaS 확장 베타 피드백 수렴",
+                "2026.02: 워크스페이스 전역 제어 및 복합 업무(Job) 자율성 고도화"
+            ]
+        },
+        {
+            "tier": "Desktop-OS",
+            "name": "Copilot+ PC",
+            "provider": "Microsoft",
+            "origin": "Global",
+            "llm": "GPT-4o & Local SLM",
+            "accuracy": "Level 3",
+            "latency": "98% (Windows Native)",
+            "genTime": "Real-time (NPU)",
+            "controlRange": "Windows 11 네이티브 및 Office",
+            "security": "On-device NPU 데이터 격리",
+            "integration": "Microsoft 365, Windows OS",
+            "pricing": "Windows 라이선스 포함",
+            "strength": "Windows 운영체제의 커널 단위까지 직접 제어할 수 있는 가장 압도적이고 안정적인 PC 비서",
+            "summary": "PC 화면을 기억하는 Recall 기능과 화면 속 개체를 이해하는 Vision을 바탕으로 윈도우 조작을 음성과 텍스트로 대체",
+            "update": "Copilot Vision 정식 배포 및 자율 앱 제어 확대 (2026.03)",
+            "rank": "OS 통합 환경",
+            "review": "별도의 솔루션을 깔 필요 없이 운영체제 자체가 에이전트화 되어가는 마이크로소프트의 청사진을 체험할 수 있습니다.",
+            "link": "https://www.microsoft.com/windows/copilot-plus-pcs",
+            "sources": { "summary": "https://www.microsoft.com" },
+            "features": [
+                { "name": "Recall 및 시점 복원", "desc": "과거에 PC 작업했던 모든 화면의 맥락을 이해하고 언제든 해당 상태로 복귀 및 조작" },
+                { "name": "NPU 로컬 처리", "desc": "민감한 화면 정보는 인터넷 전송 없이 기기 내장 NPU(신경망 처리 장치)에서 직접 추론" },
+                { "name": "네이티브 OS 커맨드", "desc": "시각적 우회가 아닌 운영체제 자체 API를 직접 호출하므로 제어 오류율이 극히 낮음" }
+            ],
+            "timelines": [
+                "2024.05: Copilot+ PC 브랜드 공식 발표 및 Snapdragon X Elite 출시",
+                "2024.11: Recall 논란 이후 암호화 및 보안 계층 대규모 재설계 후 재공개",
+                "2026.03: Copilot Vision 데스크톱 전면 통합 기반 자율 워크플로우 확대 배포"
+            ]
+        }
     ]
 }
