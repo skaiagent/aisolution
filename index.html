@@ -356,11 +356,12 @@
                 <h1 class="text-lg font-bold text-gray-900 tracking-tight">AI Solution 2026</h1>
             </div>
             <nav class="hidden md:flex gap-4 lg:gap-8">
-                <div onclick="switchMainTab('enterprise')" id="nav-enterprise" class="main-tab-btn active">AI Enterprise</div>
-                <div onclick="switchMainTab('minutes')" id="nav-minutes" class="main-tab-btn">AI 회의록</div>
-                <div onclick="switchMainTab('builder')" id="nav-builder" class="main-tab-btn">Agent Builder</div>
-                <div onclick="switchMainTab('autonomous')" id="nav-autonomous" class="main-tab-btn">Autonomous Agent</div>
-                <div onclick="switchMainTab('report')" id="nav-report" class="main-tab-btn">AI Report/Slide</div>
+                <div onclick="switchMainTab('enterprise')" id="nav-enterprise" class="main-tab-btn active">Enterprise</div>
+                <div onclick="switchMainTab('minutes')" id="nav-minutes" class="main-tab-btn">회의록</div>
+                <div onclick="switchMainTab('builder')" id="nav-builder" class="main-tab-btn">Builder</div>
+                <div onclick="switchMainTab('autonomous')" id="nav-autonomous" class="main-tab-btn">Autonomous</div>
+                <div onclick="switchMainTab('report')" id="nav-report" class="main-tab-btn">Report/Slide</div>
+                <div onclick="switchMainTab('creative')" id="nav-creative" class="main-tab-btn">Creative</div>
             </nav>
             <button id="open-chat"
                 class="flex items-center gap-2 px-4 py-2 bg-slate-900 text-white rounded-full hover:bg-indigo-700 transition-all font-bold text-xs shadow-lg"><span>🔍</span>
@@ -375,9 +376,9 @@
             <div class="max-w-5xl mx-auto py-12 text-center">
                 <h2 class="text-4xl font-black text-slate-900 mb-5 tracking-tight">Global AI Solution Sensing <span class="text-indigo-600">Dashboard</span></h2>
                 <p class="text-slate-500 font-bold mb-16 text-sm max-w-3xl mx-auto break-keep">엔터프라이즈 AI부터 자율형 에이전트까지, 변화하는 AI 생태계의 핵심 도구를 실시간으로 모니터링하고 분석하는 통합 기술 센싱 플랫폼</p>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-16 text-left">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16 text-left">
                     <div onclick="switchMainTab('enterprise')"
-                        class="group cursor-pointer flex flex-col justify-between h-80 p-8 bg-gradient-to-b from-indigo-50/50 to-white border border-indigo-100 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:-translate-y-2 transition-all">
+                        class="group cursor-pointer flex flex-col justify-between h-64 p-7 bg-gradient-to-b from-indigo-50/50 to-white border border-indigo-100 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:-translate-y-2 transition-all">
                         <div><span class="text-5xl block mb-6">🚀</span>
                             <h3 class="text-[19px] font-black text-slate-900 mb-3 leading-tight">AI Enterprise</h3>
                             <p class="text-xs text-slate-500 font-bold leading-relaxed break-keep">글로벌 Top 최고사양 엔터프라이즈
@@ -388,7 +389,7 @@
                             Explore <span class="group-hover:translate-x-2 transition-transform">&rarr;</span></div>
                     </div>
                     <div onclick="switchMainTab('minutes')"
-                        class="group cursor-pointer flex flex-col justify-between h-80 p-8 bg-gradient-to-b from-emerald-50/50 to-white border border-emerald-100 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:-translate-y-2 transition-all">
+                        class="group cursor-pointer flex flex-col justify-between h-64 p-7 bg-gradient-to-b from-emerald-50/50 to-white border border-emerald-100 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:-translate-y-2 transition-all">
                         <div><span class="text-5xl block mb-6">🎙️</span>
                             <h3 class="text-[19px] font-black text-slate-900 mb-3 leading-tight">AI 회의록</h3>
                             <p class="text-xs text-slate-500 font-bold leading-relaxed break-keep">사내 그룹웨어 및 보안망에 완벽 특화된
@@ -399,7 +400,7 @@
                             Explore <span class="group-hover:translate-x-2 transition-transform">&rarr;</span></div>
                     </div>
                     <div onclick="switchMainTab('builder')"
-                        class="group cursor-pointer flex flex-col justify-between h-80 p-8 bg-gradient-to-b from-amber-50/50 to-white border border-amber-100 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:-translate-y-2 transition-all">
+                        class="group cursor-pointer flex flex-col justify-between h-64 p-7 bg-gradient-to-b from-amber-50/50 to-white border border-amber-100 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:-translate-y-2 transition-all">
                         <div><span class="text-5xl block mb-6">🛠️</span>
                             <h3 class="text-[19px] font-black text-slate-900 mb-3 leading-tight">Agent Builder</h3>
                             <p class="text-xs text-slate-500 font-bold leading-relaxed break-keep">업무 자동화 워크플로우를 코딩 없이
@@ -410,7 +411,7 @@
                             Explore <span class="group-hover:translate-x-2 transition-transform">&rarr;</span></div>
                     </div>
                     <div onclick="switchMainTab('autonomous')"
-                        class="group cursor-pointer flex flex-col justify-between h-80 p-8 bg-gradient-to-b from-blue-50/50 to-white border border-blue-100 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:-translate-y-2 transition-all">
+                        class="group cursor-pointer flex flex-col justify-between h-64 p-7 bg-gradient-to-b from-blue-50/50 to-white border border-blue-100 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:-translate-y-2 transition-all">
                         <div><span class="text-5xl block mb-6">🤖</span>
                             <h3 class="text-[19px] font-black text-slate-900 mb-3 leading-tight">Autonomous Agent</h3>
                             <p class="text-xs text-slate-500 font-bold leading-relaxed break-keep">OS 및 브라우저를 직접 제어하며 복잡한 명령을 수행하는 자율형 기기 제어 에이전트</p>
@@ -420,7 +421,7 @@
                             Explore <span class="group-hover:translate-x-2 transition-transform">&rarr;</span></div>
                     </div>
                     <div onclick="switchMainTab('report')"
-                        class="group cursor-pointer flex flex-col justify-between h-80 p-8 bg-gradient-to-b from-pink-50/50 to-white border border-pink-100 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:-translate-y-2 transition-all">
+                        class="group cursor-pointer flex flex-col justify-between h-64 p-7 bg-gradient-to-b from-pink-50/50 to-white border border-pink-100 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:-translate-y-2 transition-all">
                         <div><span class="text-5xl block mb-6">📊</span>
                             <h3 class="text-[19px] font-black text-slate-900 mb-3 leading-tight">AI Report</h3>
                             <p class="text-xs text-slate-500 font-bold leading-relaxed break-keep">방대한 리서치, 문서 포맷 변환 및
@@ -428,6 +429,16 @@
                         </div>
                         <div
                             class="text-pink-600 font-black text-[10px] tracking-widest uppercase flex items-center justify-between mt-6">
+                            Explore <span class="group-hover:translate-x-2 transition-transform">&rarr;</span></div>
+                    </div>
+                    <div onclick="switchMainTab('creative')"
+                        class="group cursor-pointer flex flex-col justify-between h-64 p-7 bg-gradient-to-b from-purple-50/50 to-white border border-purple-100 rounded-3xl shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-xl hover:-translate-y-2 transition-all">
+                        <div><span class="text-5xl block mb-6">🎨</span>
+                            <h3 class="text-[19px] font-black text-slate-900 mb-3 leading-tight">Creative AI</h3>
+                            <p class="text-xs text-slate-500 font-bold leading-relaxed break-keep">초고화질 비디오, 이미지, 오디오를 넘나드는 선도적 멀티모달 창작 파이프라인</p>
+                        </div>
+                        <div
+                            class="text-purple-600 font-black text-[10px] tracking-widest uppercase flex items-center justify-between mt-6">
                             Explore <span class="group-hover:translate-x-2 transition-transform">&rarr;</span></div>
                     </div>
                 </div>
@@ -589,7 +600,42 @@
             <div id="filter-container-report" class="flex flex-wrap gap-2 mb-8"></div>
             <div id="solution-grid-report" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
         </section>
+
+        <section id="section-creative" class="hidden fade-in">
+            <div class="max-w-2xl mb-12 text-left">
+                <h2 class="text-3xl font-black text-gray-900 mb-2 tracking-tight">Creative AI <span
+                        class="text-indigo-600">핵심 트렌드</span></h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-20 text-left">
+                <div class="trend-box text-indigo-600">
+                    <div class="trend-line-mark bg-indigo-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">초고화질 리얼리즘</h4>
+                    <p class="text-slate-500 text-xs text-justify">실사와 구분이 불가능한 4K/8K급 화질 및 물리 법칙을 준수하는 비디오 생성 기술의 대중화</p>
+                </div>
+                <div class="trend-box text-emerald-600">
+                    <div class="trend-line-mark bg-emerald-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">전문가급 제어 기능</h4>
+                    <p class="text-slate-500 text-xs text-justify">프롬프트를 넘어 레이어 분리, 특정 화풍 고정(Sref), 키프레임 제어 등 정밀 편집 기능 강화</p>
+                </div>
+                <div class="trend-box text-amber-500">
+                    <div class="trend-line-mark bg-amber-500"></div>
+                    <div class="trend-dot-mark"></div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-2">멀티모달 통합 제작</h4>
+                    <p class="text-slate-500 text-xs text-justify">텍스트, 이미지, 영상, 음악이 하나로 연결되는 끊김 없는(Seamless) 콘텐츠 제작 파이프라인 형성</p>
+                </div>
+            </div>
+            <div id="filter-container-creative" class="flex flex-wrap gap-2 mb-8"></div>
+            <div id="solution-grid-creative" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+        </section>
     </main>
+
+    <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 pb-12 text-center fade-in">
+        <p class="text-[10px] sm:text-xs font-medium text-slate-400 opacity-80 max-w-5xl mx-auto tracking-tight break-keep border-t border-slate-100 pt-6">
+            * 본 대시보드의 콘텐츠는 AI가 실시간 기술 트렌드를 분석하여 제작하였습니다. AI 특성상 일부 정보에 오류가 있을 수 있으니, 실무 적용 시에는 반드시 담당자의 추가 검증을 권장합니다.
+        </p>
+    </footer>
 
     <!-- Modal Layout -->
     <div id="modal-overlay" class="fixed inset-0 z-[60] bg-slate-900/70 items-center justify-center p-4">
@@ -745,7 +791,7 @@
     <script>
         // --- 1. 전역 유틸리티 및 데이터 ---
         const safeSetText = (id, text) => { const el = document.getElementById(id); if (el) el.innerText = text || "N/A"; };
-        const colors = { '생태계 통합': '#4F46E5', '보안 특화': '#10B981', '실시간 번역': '#F59E0B', '분석 전문': '#8B5CF6', '엔터프라이즈 빌더': '#4F46E5', '시각적 노드 빌더': '#10B981', '코드 중심 빌더': '#F59E0B', 'IDE 및 자동화 빌더': '#8B5CF6', '리서치 및 보고서 전문': '#4F46E5', '슬라이드 및 시각화 전문': '#10B981', '데이터 분석 및 리포트 전문': '#F59E0B', 'Web-Action': '#4F46E5', 'Desktop-OS': '#10B981', 'Hybrid': '#F59E0B' };
+        const colors = { '생태계 통합': '#4F46E5', '보안 특화': '#10B981', '실시간 번역': '#F59E0B', '분석 전문': '#8B5CF6', '엔터프라이즈 빌더': '#4F46E5', '시각적 노드 빌더': '#10B981', '코드 중심 빌더': '#F59E0B', 'IDE 및 자동화 빌더': '#8B5CF6', '리서치 및 보고서 전문': '#4F46E5', '슬라이드 및 시각화 전문': '#10B981', '데이터 분석 및 리포트 전문': '#F59E0B', 'Web-Action': '#4F46E5', 'Desktop-OS': '#10B981', 'Hybrid': '#F59E0B', 'Video/Motion': '#4F46E5', 'High-Res Image': '#10B981', 'Audio/Music': '#F59E0B', '3D Asset': '#8B5CF6' };
 
         let urlHealthMap = {};
         function srcIcon(key, item, label = "") {
@@ -790,6 +836,7 @@
         let builderData = [];
         let reportSlideData = [];
         let autonomousData = [];
+        let creativeData = [];
 
         async function loadData() {
             try {
@@ -800,6 +847,7 @@
                 builderData = data.builderData || [];
                 reportSlideData = data.reportSlideData || [];
                 autonomousData = data.autonomousData || [];
+                creativeData = data.creativeData || [];
                 switchMainTab('home');
             } catch (error) {
                 console.error("데이터 로드 실패:", error);
@@ -814,7 +862,7 @@
 
 
         function switchMainTab(tab) {
-            ['home', 'enterprise', 'minutes', 'builder', 'autonomous', 'report'].forEach(s => {
+            ['home', 'enterprise', 'minutes', 'builder', 'autonomous', 'report', 'creative'].forEach(s => {
                 const el = document.getElementById(`section-${s}`);
                 if (el) el.classList.add('hidden');
                 const nav = document.getElementById(`nav-${s}`);
@@ -830,6 +878,7 @@
             else if (tab === 'builder') { renderGrid('builder', builderData); renderFilters('builder'); }
             else if (tab === 'autonomous') { renderGrid('autonomous', autonomousData); renderFilters('autonomous'); }
             else if (tab === 'report') { renderGrid('report', reportSlideData); renderFilters('report'); }
+            else if (tab === 'creative') { renderGrid('creative', creativeData); renderFilters('creative'); }
         }
 
         function renderFilters(type) {
@@ -842,6 +891,8 @@
                 filters = ['all', '엔터프라이즈 빌더', '시각적 노드 빌더', '코드 중심 빌더', 'IDE 및 자동화 빌더'];
             } else if (type === 'autonomous') {
                 filters = ['all', 'Web-Action', 'Desktop-OS', 'Hybrid'];
+            } else if (type === 'creative') {
+                filters = ['all', 'Video/Motion', 'High-Res Image', 'Audio/Music', '3D Asset'];
             } else {
                 filters = ['all', '리서치 및 보고서 전문', '슬라이드 및 시각화 전문', '데이터 분석 및 리포트 전문'];
             }
@@ -853,7 +904,7 @@
             const buttons = btn.parentElement.querySelectorAll('button');
             buttons.forEach(b => { b.style.backgroundColor = '#fff'; b.style.color = '#64748b'; });
             btn.style.backgroundColor = activeColor; btn.style.color = '#fff';
-            const dataMap = { 'minutes': minutesData, 'builder': builderData, 'autonomous': autonomousData, 'report': reportSlideData };
+            const dataMap = { 'minutes': minutesData, 'builder': builderData, 'autonomous': autonomousData, 'report': reportSlideData, 'creative': creativeData };
             renderGrid(type, val === 'all' ? dataMap[type] : dataMap[type].filter(i => i.tier === val));
         }
 
@@ -862,6 +913,16 @@
             if (!grid) return;
             grid.innerHTML = data.map((item, idx) => {
                 const color = colors[item.tier] || '#64748b';
+                
+                // 도메인별 대표 지표 선택 (undefined 방지)
+                let primaryMetric = '-';
+                if (type === 'minutes') primaryMetric = `한국어 정확도 ${item.accuracy}%`;
+                else if (type === 'builder') primaryMetric = item.accuracy || item.logic || '-';
+                else if (type === 'autonomous') primaryMetric = item.level || item.accuracy || '-';
+                else if (type === 'report') primaryMetric = item.logic || item.accuracy || '-';
+                else if (type === 'creative') primaryMetric = item.resolution || '-';
+                else if (type === 'enterprise') primaryMetric = item.logic || item.accuracy || '-';
+
                 return `<div class="bg-white rounded-3xl p-6 card-transition border border-slate-200 flex flex-col cursor-pointer h-full" 
                         data-type="${type}" 
                         data-index="${idx}"
@@ -869,7 +930,7 @@
                     <div class="flex justify-between items-center mb-5 text-[10px] font-bold uppercase"><span class="px-2.5 py-1 rounded-lg text-white" style="background:${color}">${item.tier.split(' ')[0]}</span><span class="text-slate-400 bg-slate-50 px-2 py-1 rounded flex items-center">${item.origin}</span></div>
                     <h4 class="font-bold text-slate-900 text-lg mb-1">${item.name}</h4><p class="text-xs text-slate-400 mb-4 font-semibold uppercase">${item.provider}</p>
                     <p class="text-xs text-slate-600 line-clamp-2 bg-slate-50 p-3 rounded-xl border border-slate-100 mb-4">${item.strength || item.summary}</p>
-                    <div class="mt-auto pt-4 border-t flex justify-between items-center"><span class="text-sm font-extrabold text-slate-800 flex items-center">${(typeof item.accuracy === 'number') ? (type === 'minutes' ? "한국어 정확도 " : "") + item.accuracy + '%' : item.accuracy}</span><span class="text-xs font-bold" style="color:${color}">분석 &rarr;</span></div></div>`;
+                    <div class="mt-auto pt-4 border-t flex justify-between items-center"><span class="text-sm font-extrabold text-slate-800 flex items-center">${primaryMetric}</span><span class="text-xs font-bold" style="color:${color}">상세 보기 &rarr;</span></div></div>`;
             }).join('');
 
             // 전역 세션 데이터 보관 (클릭 시 참조용)
@@ -940,11 +1001,12 @@
             else if (type === 'report') labels = ["추론/분석력", "저작 방식", "제작 속도"];
             else if (type === 'autonomous') labels = ["자율성 레벨", "과업 성공률", "실행 속도"];
             else if (type === 'enterprise') labels = ["창의적 추론력", "파라미터/성능", "엔터프라이즈 최적화"];
+            else if (type === 'creative') labels = ["생성 해상도", "프롬프트 준수율", "생성 속도"];
 
             const stats = [
-                item.accuracy || item.logic || 'N/A',
-                item.latency || item.tech_field || 'N/A',
-                item.genTime || item.speed || 'N/A'
+                item.resolution || item.accuracy || item.logic || 'N/A',
+                item.compliance || item.precision || item.latency || item.tech_field || 'N/A',
+                item.genTime || item.commercial || item.speed || 'N/A'
             ];
 
             safeSetText('stat-label-1', labels[0]); safeSetText('stat-label-2', labels[1]); safeSetText('stat-label-3', labels[2]);
@@ -961,6 +1023,14 @@
                     specs = [`핵심모델: ${item.llm || '-'}`, `파이프라인: ${item.speakerSep || '-'}`, `제공환경: ${item.deployment || '-'}`, `외부연동: ${item.integration || '-'}`];
                 } else if (type === 'autonomous') {
                     specs = [`핵심모델: ${item.llm || '-'}`, `제어 범위: ${item.controlRange || '-'}`, `보안 장치: ${item.security || '-'}`, `연동 환경: ${item.integration || '-'}`];
+                } else if (type === 'creative') {
+                    specs = [
+                        `제어 정밀도: ${item.precision || '-'}`,
+                        `상업적 활용성: ${item.commercial || '-'}`,
+                        `AI 모델 엔진: ${item.engine || '-'}`,
+                        `제공 및 구동 플랫폼: ${item.platform || '-'}`,
+                        `출력 콘텐츠 지원: ${item.contentType || '-'}`
+                    ];
                 } else {
                     specs = [`분석엔진: ${item.llm || '-'}`, `포맷엔진: ${item.speakerSep || '-'}`, `구동환경: ${item.deployment || '-'}`, `외부연동: ${item.integration || '-'}`, `접근방식: 클라우드`];
                 }
@@ -1105,6 +1175,7 @@
                 addItems(builderData, '빌더');
                 addItems(reportSlideData, '리포트');
                 addItems(autonomousData, '자율형 에이전트');
+                addItems(creativeData, '크리에이티브');
             },
 
             // 구축 목적 자동 추론
@@ -1116,6 +1187,7 @@
                 if (/분석|리포트|인사이트|코칭/.test(txt)) return '분석';
                 if (/코딩|개발|ide|code/.test(txt)) return '개발';
                 if (/자율형|오토노머스|실행형|제어|pc|접근|클릭|행동/.test(txt)) return '자율행동';
+                if (/이미지|비디오|영상|오디오|음악|디자인|창작|스튜디오|멀티모달|크리에이티브/.test(txt)) return '멀티미디어';
                 if (/노드|워크플로우|자동화|빌더/.test(txt)) return '자동화';
                 if (/슬라이드|ppt|발표|프레젠/.test(txt)) return '발표';
                 return '범용';
@@ -1155,7 +1227,8 @@
                 { intent: 'ENTERPRISE', regex: /엔터프라이즈|기업|chatgpt|gemini|claude|copilot/ },
                 { intent: 'TRANSLATION', regex: /번역|통역|다국어|deepl|언어/ },
                 { intent: 'ANALYSIS', regex: /분석|인사이트|데이터|영업|코칭/ },
-                { intent: 'AUTONOMOUS', regex: /자율형|에이전트|오토노머스|pc|클릭|실행형|브라우저 제어|autonomous|클로|claw/ }
+                { intent: 'AUTONOMOUS', regex: /자율형|에이전트|오토노머스|pc|클릭|실행형|브라우저 제어|autonomous|클로|claw/ },
+                { intent: 'CREATIVE', regex: /이미지|비디오|영상|오디오|음악|디자인|창작|그림|음원|음성|크리에이티브|미드저니|런웨이|파이어플라이/ }
             ],
 
             // 의도 식별 + 컨텍스트 추출
@@ -1170,6 +1243,7 @@
                 if (/빌더|워크플로우/.test(q)) domainHints.push('빌더');
                 if (/에이전트|자율형|오토노머스|실행형/.test(q)) { domainHints.push('자율형 에이전트'); domainHints.push('빌더'); } // 에이전트는 빌더와 교집합이 존재
                 if (/리포트|슬라이드|ppt/.test(q)) domainHints.push('리포트');
+                if (/이미지|비디오|영상|오디오|음악|디자인|크리에이티브/.test(q)) domainHints.push('크리에이티브');
                 if (/엔터프라이즈|enterprise/.test(q)) domainHints.push('엔터프라이즈');
 
                 // 토큰화: 한국어 조사 제거 + 2자 이상 필터
@@ -1646,6 +1720,14 @@
                                 <li><span class="font-bold text-cyan-400">자율성 레벨:</span> 사용자의 개입 없이 복합 과업을 스스로 수행하는 수준</li>
                                 <li><span class="font-bold text-cyan-400">과업 성공률 / 속도:</span> 외부 환경(웹, OS) 통제 성공 확률 및 소요 시간</li>
                                 <li><span class="font-bold text-cyan-400">제어 범위 / 연동:</span> 대상 시스템(웹 브라우저, 로컬 앱) 권한 접근 범위</li>
+                            </ul>
+                        </div>
+                        <div class="md:col-span-2">
+                            <p class="font-black text-fuchsia-500 mb-1">● Creative AI (멀티미디어 창작)</p>
+                            <ul class="space-y-0.5 pl-2">
+                                <li><span class="font-bold text-fuchsia-400">생성 해상도:</span> 이미지/비디오/오디오 최종 렌더링 화질 및 물리적 규격</li>
+                                <li><span class="font-bold text-fuchsia-400">프롬프트 준수율:</span> 입력어(텍스트/이미지) 맥락을 왜곡 없이 정확하게 구현하는 파악 능력</li>
+                                <li><span class="font-bold text-fuchsia-400">생성 속도:</span> 배치 렌더링 및 클라이언트 요청 시 결괏값을 즉시 도출해 내는 소요 시간</li>
                             </ul>
                         </div>
                     </div>
