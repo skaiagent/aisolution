@@ -3414,7 +3414,7 @@
                 "models": "https://www.midjourney.com/research"
             },
             "rank": "디자인 선호도 1위",
-            "engine": "Midjourney V6",
+            "engine": "Midjourney V8.1 Alpha",
             "platform": "Discord, Web Alpha",
             "integration": "REST API 제공 및 워크플로우 툴 연계",
             "compliance": "매우 우수 (Cref 등 파라미터 제어)",
@@ -3461,7 +3461,7 @@
                 "models": "https://firefly.adobe.com/research"
             },
             "rank": "기업용 라이선스 1위",
-            "engine": "Firefly Image 3",
+            "engine": "Firefly 4 (Agentic AI)",
             "platform": "Web, Adobe CC (PS, IL)",
             "integration": "전체 Adobe 제품군 연동 API",
             "compliance": "레이어 기반 정밀 구조 100% 준수",
@@ -3508,7 +3508,7 @@
                 "models": "https://runwayml.com/research"
             },
             "rank": "비디오 프로덕션 1위",
-            "engine": "Gen-3 Alpha",
+            "engine": "Runway Gen-4.5 Turbo",
             "platform": "클라우드 Web, App 기반 환경",
             "integration": "프리미어 프로 NLE 익스텐션 배포",
             "compliance": "모션 방향성 및 브러시 타겟팅 우수",
@@ -3555,7 +3555,7 @@
                 "models": "https://lumalabs.ai/dream-machine/research"
             },
             "rank": "웹 프루이드 제어 1위",
-            "engine": "Dream Machine V1",
+            "engine": "Luma Ray 3.14 / Uni1",
             "platform": "클라우드 Web, App 기반 환경",
             "integration": "REST API 제공 및 워크플로우 툴 연계",
             "compliance": "전체 씬의 분위기 맥락 인지 최우수",
@@ -3602,7 +3602,7 @@
                 "models": "https://deepmind.google/technologies/veo/research"
             },
             "rank": "시네마틱 영상 1위",
-            "engine": "자체 구축 생성형 코어(V2+)",
+            "engine": "Google Veo 3.1",
             "platform": "YouTube, Vertex AI",
             "integration": "REST API 제공 및 워크플로우 툴 연계",
             "compliance": "복잡한 시나리오 및 멀티 프롬프트 탁월",
@@ -3649,7 +3649,7 @@
                 "models": "https://klingai.com/research"
             },
             "rank": "주요 핵심 플랫폼",
-            "engine": "자체 구축 생성형 코어(V2+)",
+            "engine": "Kling 3.0 Omni",
             "platform": "클라우드 Web, App 기반 환경",
             "integration": "REST API 제공 및 워크플로우 툴 연계",
             "compliance": "물리 역학 및 디테일 일관성 극대화",
@@ -3696,7 +3696,7 @@
                 "models": "https://suno.com/research"
             },
             "rank": "AI 음원 생성 1위",
-            "engine": "Suno V3.5",
+            "engine": "Suno V5.5 (Personal Voice)",
             "platform": "클라우드 Web, App 기반 환경",
             "integration": "REST API 제공 및 워크플로우 툴 연계",
             "compliance": "구조(Verse/Chorus) 및 가사 딕션 완벽 충족",
@@ -3743,7 +3743,7 @@
                 "models": "https://www.udio.com/research"
             },
             "rank": "주요 핵심 플랫폼",
-            "engine": "Udio Core",
+            "engine": "Udio v4 (48kHz Stereo)",
             "platform": "클라우드 Web, App 기반 환경",
             "integration": "REST API 제공 및 워크플로우 툴 연계",
             "compliance": "음악적 기교(장르, BPM, 악기) 마이크로 매핑",
@@ -3790,7 +3790,7 @@
                 "models": "https://www.canva.com/research"
             },
             "rank": "글로벌 점유율 1위",
-            "engine": "Magic Studio Engine",
+            "engine": "Canva Magic Studio 2026",
             "platform": "클라우드 Web, App 기반 환경",
             "integration": "DALL-E, Runway 타사 앱 플러그인 호환",
             "compliance": "입력된 레이아웃 규칙 및 템플릿 100% 준수",
@@ -3837,7 +3837,7 @@
                 "models": "https://elevenlabs.io/research"
             },
             "rank": "보이스 클론 1위",
-            "engine": "자체 구축 생성형 코어(V2+)",
+            "engine": "ElevenLabs Agents v2",
             "platform": "클라우드 Web, App 기반 환경",
             "integration": "REST API 제공 및 워크플로우 툴 연계",
             "compliance": "구두점, 따옴표 등에 따른 감정선 완벽 인지",
@@ -3858,7 +3858,7 @@
             "coreFeature": "텍스트 프롬프트를 통한 3D 폴리곤 메쉬 및 렌더링 환경 동시 구축",
             "license": "라이선스 약관에 준거한 상업 목적 재배포 한정 허가",
             "pricing": "부분 유료 / 월간 Pro 모델",
-            "engine": "Genie Core (Luma 3D Vision)",
+            "engine": "Genie v2 (Uni-Architecture)",
             "platform": "웹, 디스코드 환경",
             "integration": "Unity, Unreal Engine, Blender 네이티브 파일(.obj, .gltf) 익스포트 호환",
             "link": "https://lumalabs.ai/genie",
@@ -3905,7 +3905,7 @@
             "coreFeature": "레퍼런스 이미지 기반의 자동화된 하이폴리/로우폴리 토폴로지 분석 및 생성",
             "license": "라이선스 기반 상용 프로젝트 무단조합 허용",
             "pricing": "요금제별 포인트 소진 모델 (월 $15~)",
-            "engine": "Rodin Diffusion 3D",
+            "engine": "Rodin Gen-3 Diffusion",
             "platform": "웹 애플리케이션",
             "integration": "Maya, 3ds Max 전용 포맷 추출 및 ZBrush 호환성 강화",
             "link": "https://hyperhuman.deemos.com/rodin",
